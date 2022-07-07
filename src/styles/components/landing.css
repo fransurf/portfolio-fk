@@ -1,0 +1,44 @@
+.landing-container {
+  height: 100vh;
+  max-width: 1200px;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  background-color: aquamarine;
+}
+
+.landing-container .landing-content {
+  width: 75%;
+}
+
+.landing-container .landing-nav {
+  width: 25%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: end;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  float: right;
+  background-color: magenta;
+}
+
+.landing-container .landing-nav .link {
+  height: 75px;
+  width: 300px;
+  border: solid 2px black;
+  text-decoration: none;
+}
+/*# sourceMappingURL=landing.css.map */

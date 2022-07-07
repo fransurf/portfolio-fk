@@ -1,0 +1,102 @@
+body {
+  background-color: $black;
+}
+
+.landing-container {
+
+  height: 100vh;
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  // background-color: $black;
+  font-family: $marker;
+  color: white;
+
+
+  .landing-content {
+    width: 75%;
+    transform: translateY(30%);
+
+    h1 {
+      font-size: 40px;
+      transform: rotate(30%);
+    }
+    h2 {
+      font-size: 30px;
+    }
+  }
+
+
+  .landing-nav {
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    justify-content: center;
+    float: right;
+    // background-color: magenta;
+
+    .list {
+      width: 100%;
+      list-style: none;
+
+      li {
+        min-height: 75px;
+        min-width: 300px;
+        border: solid 2px white;
+        font-size: 30px;
+        margin: 0 auto;
+
+
+        .link {
+          color: white;
+          text-decoration: none !important;
+          vertical-align: -30%;
+          padding: 14px;
+        }
+      }
+    }
+    
+
+
+  }
+
+
+
+}
+
+.link:hover:before {
+  content: '';
+  position: absolute;
+  display: block;
+  top: 0; bottom: 0; left: 0; right: 0;
+  z-index: -1;
+}
+
+.link:hover {
+  font-size: 45px;
+  // box-shadow:  0px 0px 10px rgba(0, 0, 0, 0.6), $yellow;
+  // background-color: yellow;
+  // min-height: 75px;
+  // min-width: 300px;
+  cursor: pointer;
+}
+// a:hover {
+//   mix-blend-mode: difference;
+// }
+
+li:nth-of-type(1) .link:hover:before {
+  background-color: $aqua;
+}
+
+li:nth-of-type(2) .link:hover:before {
+  background-color: $pink;
+}
+li:nth-of-type(3) .link:hover:before {
+  background-color: $blue;
+}
+li:nth-of-type(4) .link:hover:before {
+  // background-color: $yellow;
+  background-color: $navy;
+}

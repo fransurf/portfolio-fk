@@ -1,0 +1,222 @@
+@import url("https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap");
+body {
+  background-color: #070707;
+}
+
+.landing-container {
+  height: 100vh;
+  max-width: 1200px;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  font-family: "Permanent Marker", cursive;
+  color: white;
+}
+
+.landing-container .landing-content {
+  width: 75%;
+  -webkit-transform: translateY(30%);
+          transform: translateY(30%);
+}
+
+.landing-container .landing-content h1 {
+  font-size: 40px;
+  -webkit-transform: rotate(30%);
+          transform: rotate(30%);
+}
+
+.landing-container .landing-content h2 {
+  font-size: 30px;
+}
+
+.landing-container .landing-nav {
+  width: 25%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: end;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  float: right;
+}
+
+.landing-container .landing-nav .list {
+  width: 100%;
+  list-style: none;
+}
+
+.landing-container .landing-nav .list li {
+  min-height: 75px;
+  min-width: 300px;
+  border: solid 2px white;
+  font-size: 30px;
+  margin: 0 auto;
+}
+
+.landing-container .landing-nav .list li .link {
+  color: white;
+  text-decoration: none !important;
+  vertical-align: -30%;
+}
+
+.link:hover:before {
+  content: '';
+  position: absolute;
+  display: block;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: -1;
+}
+
+li:nth-of-type(1) .link:hover:before {
+  background-color: #00F0B5;
+}
+
+li:nth-of-type(2) .link:hover:before {
+  background-color: #FF3CC7;
+}
+
+li:nth-of-type(3) .link:hover:before {
+  background-color: #454ADE;
+}
+
+li:nth-of-type(4) .link:hover:before {
+  background-color: #FCF300;
+}
+
+#about-container {
+  height: 100vh;
+  max-width: 1200px;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: aquamarine;
+}
+
+#about-container #about-left {
+  width: 75%;
+}
+
+#about-container #about-right {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: magenta;
+  border: solid 2px blue;
+  width: 25%;
+}
+
+#about-container #about-right .about-div {
+  border: solid 2px lightgreen;
+  height: 75px;
+  width: 300px;
+}
+
+#about-container #about-right .long-text {
+  display: none;
+}
+
+#about-container #about-right .expand:hover .short-text {
+  display: none;
+}
+
+#about-container #about-right .expand:hover .long-text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+#about-container #about-right .long-text-box {
+  border: solid 2px magenta;
+  -webkit-transform: translate(-100%, -70%);
+          transform: translate(-100%, -70%);
+  width: 50vw;
+  height: 60vh;
+}
+
+#about-container #about-right #se-box {
+  -webkit-transform: translate(-100%, -40%);
+          transform: translate(-100%, -40%);
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#about-container #about-right #se-img {
+  width: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+#about-container #about-right #se-desc {
+  width: 500px;
+  margin-top: 30px;
+}
+
+#about-container #about-right .brain-img {
+  height: 300px;
+}
+
+#about-container #about-right #brain-img2 {
+  -webkit-transform: translate(20%, 110%);
+          transform: translate(20%, 110%);
+}
+
+#about-container #about-right #neuro-desc {
+  height: 300px;
+  min-width: 400px;
+  -webkit-transform: translate(-140%, 70%);
+          transform: translate(-140%, 70%);
+  border: solid 2px blue;
+}
+
+#about-container #about-right #snowboarder-img {
+  height: 300px;
+  width: 300px;
+  -webkit-transform: translateX(30%);
+          transform: translateX(30%);
+}
+
+#about-container #about-right #snowboarder-desc {
+  height: 400px;
+  width: 400px;
+  -webkit-transform: translateY(40%);
+          transform: translateY(40%);
+  border: solid 2px blue;
+}
+
+* {
+  text-align: center;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+/*# sourceMappingURL=main.css.map */
