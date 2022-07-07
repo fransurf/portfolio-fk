@@ -1,0 +1,63 @@
+#projects-container {
+  height: calc(100vh - 20px);
+  max-width: 1200px;
+  border: 2px solid lightgreen;
+  margin: 0 auto;
+  background-color: $yellow;
+
+  display: flex;
+  align-items: end;
+
+  .proj-selectors {
+    height: 40%;
+    width: calc(100% / 5);
+    padding: 0 10px;
+    border: 2px solid magenta;
+
+  }
+
+  // BACKGROUND IMAGES FOR PROJECT DIVS
+  #proj4 {
+    background-image: url('../assets/projects/p4-img4.png');
+    background-size: contain;
+  }
+  #proj3 {
+    background-image: url('../assets/projects/p3-img2.png');
+    background-size: contain;
+  }
+  #proj2 {
+    background-image: url('../assets/projects/p4-img4.png');
+    background-size: contain;
+  }
+  #proj1 {
+    background-image: url('../assets/projects/p1-img2.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+  #uob {
+    background-image: url('../assets/projects/mobero.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+
+
+  // ON HOVER EFFECT
+
+  .expand {
+    display: none;
+  }
+  .proj-selectors:hover .expand {
+    cursor: pointer;
+    display: flex;
+    border: 2px solid yellow;
+    height: 40vh;
+    width: 60vw;
+    background-color: white;
+    // transform: translate();
+    position: absolute;
+    top: 20%;
+    left: 20%;
+
+    
+  }
+}
