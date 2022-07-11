@@ -1,0 +1,57 @@
+#projects-container {
+  height: calc(100vh - 20px);
+  max-width: 1200px;
+  border: 2px solid lightgreen;
+  margin: 0 auto;
+  // background-color: $pink; 
+  color: white;
+  cursor: url('../assets/swirl.png'), auto;
+
+  h1 {
+    text-align: left;
+  }
+
+  .proj-selectors {
+    width: inherit;
+    height: 500px;
+    display: flex;
+    border: 2px solid magenta;
+    padding: 30px;
+
+  }
+
+  .proj-img {
+    width: 50%;
+    object-fit: contain;
+    transition: all .5s ease-in-out;
+    z-index: 2;
+    
+  }
+
+  .proj-img:hover {
+    transform: scale(1.2);
+    mix-blend-mode: difference !important;
+    filter: invert(.75) !important ;
+    // filter: contrast(1.75) !important ;
+    // cursor: pointer;
+    cursor: url('../assets/cursor.png'), pointer;
+    
+  }
+
+  .expand {
+    display: none;
+  }
+
+  .title-rotate {
+    font-size: 50px;
+    vertical-align: middle;
+    mix-blend-mode: difference;
+  }
+
+  .img-left.title-rotate {
+    text-align: right;
+  }
+
+
+
+}

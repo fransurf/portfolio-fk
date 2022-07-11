@@ -36,6 +36,7 @@
 
     .expand:hover .long-text {
       display: flex;
+
     }
 
     .expand:hover .long-text-title {
@@ -43,35 +44,87 @@
       text-align: center;
       object-fit: contain;
       white-space: nowrap;
+      margin-top: 10px;
     }
 
     .long-text-box.academics {
       border: solid 2px magenta;
       position: absolute;
       top: 20%;
-      right: 10%;
-      width: 60vw;
-      height: 60vh;
+      left: 50%;
+      transform: translateX(-38%);
+      width: 100%;
+      height: 70%;
+      max-width: calc((1200px / 100 * 70)) ;
+      padding-left: 50px;
 
     }
 
     .long-text-inner {
+      width: inherit;
+      height: inherit;
+
+      .description {
+        font-style: italic;
+      }
 
       ul {
         list-style: none;
       }
 
+      #publication-divs {
+        width: inherit;
+        height: inherit;
+        position: absolute;
+      }
+
+      .pubs {
+        width: 70%;
+        height: 30%;
+        border: 2px $aqua solid;
+        background-size: cover;
+        position: relative;
+
+      }
+
+      
+      .pubs-link {
+        width: 100%;
+        height: inherit;
+
+      }
+
+
+      .pubs:hover {
+        width: 100%;
+        z-index: 10;
+        cursor: pointer;
+        text-align: right;
+        position: relative;
+        left: 0;
+      }
+
       #myrto {
         background-image: url('../assets/publications/myrto.png');
+
       }
+
       #braincando {
         background-image: url('../assets/publications/braincando.png');
+        top: -8%;
+        left: 10%;
       }
+
       #adhd-sleep {
         background-image: url('../assets/publications/adhd-sleep.png');
+        top: -16%;
+        left: 20%;
       }
+
       #adol-sleep {
         background-image: url('../assets/publications/adol-sleep.png');
+        top: -20%;
+        left: 30%;
       }
 
     }

@@ -1,13 +1,36 @@
 @import './variables.scss';
+@import './navbar.scss';
 @import './components/landing.scss';
 @import './components/about.scss';
 @import './components/projects.scss';
+@import './components/projects-2.scss';
 @import './components/accordian.scss';
 @import './components/academics.scss';
 
-@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Rock+Salt&display=swap');
 
 * {
   text-align: center;
   box-sizing: border-box;
 }
+
+// MOUSE
+
+// .custom-cursor {
+//   position: fixed;
+//   opacity: 0;
+//   pointer-events: none;
+//   mix-blend-mode: difference;
+//   width: 50px;
+//   height: 50px;
+//   border-radius: 50%;
+//   background-color: white;
+//   transition: transform 350ms ease;
+//   transform: translate(-50%, -50%) scale(.3);
+//   z-index: 1000;
+// }
+// .custom-cursor--link {
+//   transform: translate(-50%, -50%) scale(1);
+// }
+
+

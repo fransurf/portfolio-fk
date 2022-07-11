@@ -6,6 +6,7 @@
   display: -ms-flexbox;
   display: flex;
   background-color: aquamarine;
+  color: white;
 }
 
 #about-container #about-left {

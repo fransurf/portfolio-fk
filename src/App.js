@@ -24,6 +24,8 @@ function App() {
         </Routes>
 
       </BrowserRouter>
+
+      {/* <div className="custom-cursor"></div> */}
     </main>
   );
 }

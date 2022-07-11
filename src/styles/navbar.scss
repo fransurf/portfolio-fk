@@ -1,0 +1,19 @@
+#navbar {
+  height: 50px;
+  background-color: white;
+  border: 2px solid black;
+
+  .link {
+    text-decoration: none;
+    color: black;
+    font-family: $marker;
+    font-size: 30px;
+  }
+
+  .link:hover {
+    color: $aqua;
+    font-size: 35px;
+
+  }
+
+}
