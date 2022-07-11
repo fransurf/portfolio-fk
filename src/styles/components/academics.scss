@@ -1,0 +1,81 @@
+#academics-container {
+  color: white;
+  background-color: $blue;
+  display: flex;
+  height: 100vh;
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+
+  #academics-right {
+    width: 75%;
+  }
+
+  #academics-left {
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: solid 2px blue;
+
+    .academic-div {
+      border: solid 2px white;
+      height: 75px;
+      width: 300px;
+    }
+
+    // MAKING EXPANDABLE CONTENT
+    .long-text {
+      display: none;
+    }
+
+    .expand:hover .short-text {
+      display: none;
+    }
+
+    .expand:hover .long-text {
+      display: flex;
+    }
+
+    .expand:hover .long-text-title {
+      font-size: 35px;
+      text-align: center;
+      object-fit: contain;
+      white-space: nowrap;
+    }
+
+    .long-text-box.academics {
+      border: solid 2px magenta;
+      position: absolute;
+      top: 20%;
+      right: 10%;
+      width: 60vw;
+      height: 60vh;
+
+    }
+
+    .long-text-inner {
+
+      ul {
+        list-style: none;
+      }
+
+      #myrto {
+        background-image: url('../assets/publications/myrto.png');
+      }
+      #braincando {
+        background-image: url('../assets/publications/braincando.png');
+      }
+      #adhd-sleep {
+        background-image: url('../assets/publications/adhd-sleep.png');
+      }
+      #adol-sleep {
+        background-image: url('../assets/publications/adol-sleep.png');
+      }
+
+    }
+  }
+
+
+}

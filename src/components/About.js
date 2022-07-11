@@ -11,7 +11,7 @@ const About = () => {
       <div id='about-left'>
         <h1>About</h1>
       </div>
-      <div id='about-right'>
+      <div id='about-right' >
         <div className='about-div expand' id='se'>
           <h2 className='short-text' id='se-text'>SOFTWARE ENGINEER</h2>
           <h2 className='long-text long-text-title' id='se-text'>SOFTWARE ENGINEER</h2>

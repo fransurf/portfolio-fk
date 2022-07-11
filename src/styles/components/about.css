@@ -13,6 +13,7 @@
 }
 
 #about-container #about-right {
+  width: 25%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -27,7 +28,6 @@
       -ms-flex-pack: center;
           justify-content: center;
   border: solid 2px blue;
-  width: 25%;
 }
 
 #about-container #about-right .about-div {
@@ -52,10 +52,10 @@
 
 #about-container #about-right .expand:hover .long-text-title {
   font-size: 35px;
-  overflow-wrap: normal;
   text-align: center;
   -o-object-fit: contain;
      object-fit: contain;
+  white-space: nowrap;
 }
 
 #about-container #about-right .long-text-box {
