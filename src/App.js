@@ -6,6 +6,7 @@ import About from './components/About'
 import Projects from './components/Projects'
 import Academics from './components/Academics'
 import Contact from './components/Contact'
+import Accordion from './components/AccordianWVW'
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
           <Route path='/projects' element={<Projects />} />
           <Route path='/academics' element={<Academics />} />
           <Route path='/contact' element={<Contact />} />
+          <Route path='/contact' element={<Accordion />} />
 
         </Routes>
 

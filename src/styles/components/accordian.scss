@@ -1,0 +1,122 @@
+html,body{
+  width: 100%;
+  height: 100%;
+}
+
+h1{
+  position: relative;
+  margin-bottom: 45px;
+  font-family: 'Oswald', sans-serif;
+  font-size: 44px;
+  text-transform: uppercase;
+  color: #424242;
+}
+
+.gallery-wrap {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  border: 1px solid lightgreen;
+  border-radius: 4px;
+  margin: 20px;
+
+}
+
+.item {
+  flex: 1;
+  height: 100%;
+  float: right;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  transition: flex 0.8s ease;
+	border: 1px solid lightgreen;
+  // box-shadow: 10px -10px 10px 2px rgba(144,238,144,.8);
+  // box-shadow: -10px 0px 10px 1px #aaaaaa;
+
+  // .expand-accord{
+  //   display: none;
+  // }
+
+
+  &:hover{
+    flex: 12;
+    // background-size: contain;
+    // background-repeat: no-repeat;
+    // transition: all ease-in-out;
+
+    .expand-accord{
+      display: block;
+      transition-delay: display .4s ease-out;
+    }
+  }
+}
+
+
+// PROJECT 4 PHOTOS
+#proj4 .item-1 {
+  background-image: url('../assets/projects/p4-img1.png');
+}
+#proj4 .item-2 {
+  background-image: url('../assets/projects/p4-img2.png');
+}
+#proj4 .item-3 {
+  background-image: url('../assets/projects/p4-img3.png');
+}
+#proj4 .item-4 {
+  background-image: url('../assets/projects/p4-img5.png');
+}
+#proj4 .item-5 {
+  background-image: url('../assets/projects/p4-img4.png');
+}
+#proj4 .item-6 {
+  background-image: url('../assets/projects/p4-img6.png');
+}
+
+// PROJECT 3 PHOTOS
+#proj3 .item-1 {
+  background-image: url('../assets/projects/p3-img2.png');
+}
+#proj3 .item-2 {
+  background-image: url('../assets/projects/p3-img1.png');
+}
+#proj3 .item-3 {
+  background-image: url('../assets/projects/p3-img3.png');
+}
+#proj3 .item-4 {
+  background-image: url('../assets/projects/p3-img4.png');
+}
+
+// PROJECT 2 PHOTOS
+#proj2 .item-1 {
+  background-image: url('../assets/projects/p2-img1.png');
+}
+#proj2 .item-2 {
+  background-image: url('../assets/projects/p2-img2.png');
+}
+#proj2 .item-3 {
+  background-image: url('../assets/projects/p2-img3.png');
+}
+#proj2 .item-4 {
+  background-image: url('../assets/projects/p2-img4.png');
+}
+#proj2 .item-5 {
+  background-image: url('../assets/projects/p2-img5.png');
+}
+
+// PROJECT 1 PHOTOS
+#proj1 .item-1 {
+  background-image: url('../assets/projects/p1-img1.png');
+}
+#proj1 .item-2 {
+  background-image: url('../assets/projects/p1-img2.png');
+}
+#proj1 .item-3 {
+  background-image: url('../assets/projects/p1-img3.png');
+}
+#proj1 .item-4 {
+  background-image: url('../assets/projects/p1-img4.png');
+}
+
+
+

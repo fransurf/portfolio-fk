@@ -8,7 +8,7 @@
   display: flex;
   -webkit-box-align: end;
       -ms-flex-align: end;
-          align-items: end;
+          align-items: flex-end;
 }
 
 #projects-container .proj-selectors {
@@ -18,31 +18,8 @@
   border: 2px solid magenta;
 }
 
-#projects-container #proj4 {
-  background-image: url("../assets/projects/p4-img4.png");
-  background-size: contain;
-}
-
-#projects-container #proj3 {
-  background-image: url("../assets/projects/p3-img2.png");
-  background-size: contain;
-}
-
-#projects-container #proj2 {
-  background-image: url("../assets/projects/p4-img4.png");
-  background-size: contain;
-}
-
-#projects-container #proj1 {
-  background-image: url("../assets/projects/p1-img2.png");
-  background-size: contain;
-  background-repeat: no-repeat;
-}
-
-#projects-container #uob {
-  background-image: url("../assets/projects/mobero.png");
-  background-size: contain;
-  background-repeat: no-repeat;
+#projects-container .proj-selectors:hover {
+  cursor: pointer;
 }
 
 #projects-container .expand {
@@ -50,9 +27,14 @@
 }
 
 #projects-container .proj-selectors:hover .expand {
+  cursor: pointer;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   border: 2px solid yellow;
   height: 40vh;
   width: 60vw;

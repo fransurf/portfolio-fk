@@ -3,45 +3,37 @@
   max-width: 1200px;
   border: 2px solid lightgreen;
   margin: 0 auto;
-  background-color: $yellow;
+  background-color: $pink;
 
   display: flex;
-  align-items: end;
+  align-items: flex-end;
 
   .proj-selectors {
     height: 40%;
     width: calc(100% / 5);
     padding: 0 10px;
     border: 2px solid magenta;
+    text-align: center;
+    display: inline-block;
+
+    .title-rotate {
+      transform: rotate(270deg) translateX(-50%);
+      text-align: end;
+      color: white;
+      font-family: $marker;
+      position: relative;
+      overflow-wrap: normal;
+      width: 120%;
+    }
 
   }
 
-  // BACKGROUND IMAGES FOR PROJECT DIVS
-  #proj4 {
-    background-image: url('../assets/projects/p4-img4.png');
-    background-size: contain;
-  }
-  #proj3 {
-    background-image: url('../assets/projects/p3-img2.png');
-    background-size: contain;
-  }
-  #proj2 {
-    background-image: url('../assets/projects/p4-img4.png');
-    background-size: contain;
-  }
-  #proj1 {
-    background-image: url('../assets/projects/p1-img2.png');
-    background-size: contain;
-    background-repeat: no-repeat;
-  }
-  #uob {
-    background-image: url('../assets/projects/mobero.png');
-    background-size: contain;
-    background-repeat: no-repeat;
-  }
 
 
-  // ON HOVER EFFECT
+  // ON HOVER EFFECTS
+  .proj-selectors:hover {
+    cursor: pointer;
+  }
 
   .expand {
     display: none;
@@ -49,15 +41,69 @@
   .proj-selectors:hover .expand {
     cursor: pointer;
     display: flex;
-    border: 2px solid yellow;
-    height: 40vh;
-    width: 60vw;
-    background-color: white;
+    justify-content: space-between;
+    // border: 2px solid yellow;
+    height: 60%;
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    // background-color: white;
     // transform: translate();
     position: absolute;
-    top: 20%;
-    left: 20%;
+    top: 20px;
+    // left: 5%;
+    // top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translateX(-50%);
 
+
+    .expand-content {
+      width: 40%;
+      height: 80%;
+      padding: 20px;
+      border: 2px solid yellow;
+      background-color: white;
+      margin-top: 5%;
+      margin-right: 30px;
+
+    }
+
+    .accordian {
+      position: absolute;
+      top: 0;
+      right: 0;
+    }
+
+    #mobero-img {
+      width: 55%;
+      object-fit: contain;
+    }
     
   }
+
+  // BACKGROUND IMAGES FOR PROJECT DIVS
+  // #proj4 {
+  //   background-image: url('../assets/projects/p4-img4.png');
+  //   background-size: contain;
+  // }
+  // #proj3 {
+  //   background-image: url('../assets/projects/p3-img2.png');
+  //   background-size: contain;
+  // }
+  // #proj2 {
+  //   background-image: url('../assets/projects/p4-img4.png');
+  //   background-size: contain;
+  // }
+  // #proj1 {
+  //   background-image: url('../assets/projects/p1-img2.png');
+  //   background-size: contain;
+  //   background-repeat: no-repeat;
+  // }
+  // #uob {
+  //   background-image: url('../assets/projects/mobero.png');
+  //   background-size: contain;
+  //   background-repeat: no-repeat;
+  // }
+
 }

@@ -7,7 +7,7 @@ const NavBar = () => {
     <header>
       <nav>
 
-        <Link to='/'>THIS IS THE NAVBAR</Link>
+        <Link to='/'>TAKE ME HOME</Link>
       </nav>
     </header>
   )

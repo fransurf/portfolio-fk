@@ -1,5 +1,14 @@
 body {
-  background-color: $black;
+  background-color: $black;  
+  h1, h2 {
+    font-family: $marker;
+  }
+  
+  h1{
+    color: white;
+  }
+
+
 }
 
 .landing-container {
@@ -13,6 +22,14 @@ body {
   font-family: $marker;
   color: white;
 
+  @keyframes slideInLeft {
+    0% {
+      transform: translateX(-100%);
+    }
+    100% {
+      transform: translateX(0);
+    }
+  }
 
   .landing-content {
     width: 75%;
@@ -20,19 +37,23 @@ body {
 
     h1 {
       font-size: 40px;
-      transform: rotate(30%);
+      // transform: rotate(30deg);
+      animation: 1s ease-out 0s 1 slideInLeft;
     }
     h2 {
       font-size: 30px;
+      animation: 1.2s ease-out 0s 1 slideInLeft;
     }
   }
+
+
 
 
   .landing-nav {
     width: 25%;
     display: flex;
     flex-direction: column;
-    align-items: end;
+    align-items: flex-end;
     justify-content: center;
     float: right;
     // background-color: magenta;
@@ -57,12 +78,8 @@ body {
         }
       }
     }
-    
-
 
   }
-
-
 
 }
 

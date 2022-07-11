@@ -21,10 +21,7 @@ const LandingPage = () => {
           <li><Link to='/academics' className='link' id='academics'>ACADEMICS</Link></li>
           <li><Link to='/contact' className='link' id='contact'>CONTACT</Link></li>
         </ul>
-        {/* <Link to='/about' className='link' id='about'>ABOUT</Link>
-        <Link to='/projects' className='link' id='projects'>PROJECTS</Link>
-        <Link to='/academics' className='link' id='academics'>ACADEMICS</Link>
-        <Link to='/contact' className='link' id='contact'>CONTACT</Link> */}
+
       </section>
 
     </Container>

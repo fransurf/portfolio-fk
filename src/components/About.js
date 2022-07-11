@@ -14,7 +14,7 @@ const About = () => {
       <div id='about-right'>
         <div className='about-div expand' id='se'>
           <h2 className='short-text' id='se-text'>SOFTWARE ENGINEER</h2>
-          <h2 className='long-text' id='se-text'>SOFTWARE ENGINEER</h2>
+          <h2 className='long-text long-text-title' id='se-text'>SOFTWARE ENGINEER</h2>
           <div className='long-text long-text-box' id='se-box' >
             <img src='../assets/Excalidraw.png' alt='wireframe' id='se-img'/>
             <div id='se-desc'>
@@ -25,8 +25,8 @@ const About = () => {
         </div>
 
         <div className='about-div expand' id='neuro'>
-          <h2 className='short-text' id='neuro-text'>PASSIONATE NEUROSCIENTIST</h2>
-          <h2 className='long-text' id='neuro-text'>PASSIONATE NEUROSCIENTIST</h2>
+          <h2 className='short-text' id='neuro-text'>NEUROSCIENTIST</h2>
+          <h2 className='long-text long-text-title' id='neuro-text'>NEUROSCIENTIST</h2>
           <div className='long-text long-text-box' id='neuro-box'>
             <img src='../assets/brain2.jpg' alt='real human brain' className='brain-img' id='brain-img1'/>
             <img src='../assets/brain1.jpg' alt='real human brain' className='brain-img' id='brain-img2'/>
@@ -39,7 +39,7 @@ const About = () => {
 
         <div className='about-div expand' id='snowboarder'>
           <h2 className='short-text' id='snowboarder-text'>SNOWBOARDER</h2>
-          <h2 className='long-text' id='snowboarder-text'>SNOWBOARDER</h2>
+          <h2 className='long-text long-text-title' id='snowboarder-text'>SNOWBOARDER</h2>
           <div className='long-text long-text-box' id='snowboarder-box'>
             <img src='../assets/boardingCloseup.png' alt='snowboarder' id='snowboarder-img'/>
             <div id='snowboarder-desc'>
