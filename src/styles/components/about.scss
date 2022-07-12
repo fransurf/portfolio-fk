@@ -52,8 +52,8 @@
           white-space: nowrap;
         }
         .about-link {
-          width: inherit !important;
-          // border: 2px solid $yellow;
+          text-decoration: none;
+          font-family: $RS;
           border-radius: 6px;
           padding: 10px 60px;
           background:
@@ -62,10 +62,13 @@
             linear-gradient(to top right, $blue, transparent);
           background-blend-mode: screen;
         }
+
       }
     }
 
-
+    .about-link:hover {
+      transform: scale(1.2);
+    }
 
   }
 

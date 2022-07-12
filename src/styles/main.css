@@ -212,6 +212,10 @@ li:nth-of-type(4) .link:hover:before {
   margin: 0 auto;
 }
 
+#about-container #about-title {
+  margin-bottom: 20px !important;
+}
+
 #about-container .about-content {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -222,7 +226,7 @@ li:nth-of-type(4) .link:hover:before {
 
 #about-container .about-content .about-div {
   padding: 20px;
-  margin: 20px;
+  margin: 10px;
   border: 2px solid #00F0B5;
   width: calc((100% /3) - 10px);
 }
@@ -254,7 +258,8 @@ li:nth-of-type(4) .link:hover:before {
 }
 
 #about-container .about-content .about-div .about-bottom .about-link {
-  width: inherit !important;
+  text-decoration: none;
+  font-family: "Rock Salt", cursive;
   border-radius: 6px;
   padding: 10px 60px;
   background: -webkit-gradient(linear, left top, left bottom, from(#FF3CC7), to(transparent)), -webkit-gradient(linear, right bottom, left top, from(#00F0B5), to(transparent)), -webkit-gradient(linear, left bottom, right top, from(#454ADE), to(transparent));
@@ -477,17 +482,13 @@ h1 {
 
 #academics-container {
   color: white;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   height: 100vh;
   max-width: 1200px;
   margin: 0 auto;
-  display: flex;
 }
 
-#academics-container #academics-right {
-  width: 75%;
+#academics-container .page-title {
+  margin: 0 auto;
 }
 
 #academics-container #academics-left {
@@ -505,7 +506,6 @@ h1 {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  border: solid 2px blue;
 }
 
 #academics-container #academics-left .academic-div {
@@ -547,6 +547,10 @@ h1 {
   height: 70%;
   max-width: calc((1200px / 100 * 70));
   padding-left: 50px;
+}
+
+#academics-container #academics-left .long-text-box.academics .acad-heading {
+  font-size: 35px;
 }
 
 #academics-container #academics-left .long-text-inner {
