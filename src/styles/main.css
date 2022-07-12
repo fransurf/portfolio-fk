@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Rock+Salt&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Rock+Salt&family=Poiret+One&display=swap");
 #navbar {
   height: 50px;
   background-color: white;
@@ -15,6 +15,56 @@
 #navbar .link:hover {
   color: #00F0B5;
   font-size: 35px;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  height: 100%;
+  z-index: 10;
+  -webkit-animation: slideOut .8s ease-in-out forwards;
+          animation: slideOut .8s ease-in-out forwards;
+}
+
+.overlay#about {
+  background-color: #00F0B5;
+}
+
+.overlay#projects {
+  background-color: #FF3CC7;
+}
+
+.overlay#academics {
+  background-color: #454ADE;
+}
+
+.overlay#contact {
+  background-color: #141B41;
+}
+
+@-webkit-keyframes slideOut {
+  0% {
+    -webkit-transform: translateX(0%);
+            transform: translateX(0%);
+  }
+  100% {
+    -webkit-transform: translateX(200%);
+            transform: translateX(200%);
+  }
+}
+
+@keyframes slideOut {
+  0% {
+    -webkit-transform: translateX(0%);
+            transform: translateX(0%);
+  }
+  100% {
+    -webkit-transform: translateX(200%);
+            transform: translateX(200%);
+  }
 }
 
 body {
@@ -116,9 +166,10 @@ body h1 {
 }
 
 .landing-container .landing-nav .list li .link {
+  font-family: "Permanent Marker", cursive !important;
   color: white;
   text-decoration: none !important;
-  vertical-align: -30%;
+  vertical-align: -50%;
   padding: 14px;
 }
 
@@ -156,210 +207,140 @@ li:nth-of-type(4) .link:hover:before {
 }
 
 #about-container {
-  height: 100vh;
-  max-width: 1200px;
-  margin: 0 auto;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  background-color: aquamarine;
   color: white;
+  max-width: 1400px;
+  margin: 0 auto;
 }
 
-#about-container #about-left {
-  width: 75%;
-}
-
-#about-container #about-right {
-  width: 25%;
+#about-container .about-content {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  border: solid 2px blue;
+  max-width: inherit;
+  width: inherit;
 }
 
-#about-container #about-right .about-div {
-  border: solid 2px white;
-  height: 75px;
-  width: 300px;
+#about-container .about-content .about-div {
+  padding: 20px;
+  margin: 20px;
+  border: 2px solid #00F0B5;
+  width: calc((100% /3) - 10px);
 }
 
-#about-container #about-right .long-text {
-  display: none;
+#about-container .about-content .about-div .about-top {
+  border: 2px solid #FF3CC7;
+  width: 100%;
+  height: 80%;
 }
 
-#about-container #about-right .expand:hover .short-text {
-  display: none;
+#about-container .about-content .about-div .about-top .top-contents {
+  width: 100%;
 }
 
-#about-container #about-right .expand:hover .long-text {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+#about-container .about-content .about-div .about-top .img-overlay {
+  background-image: url("../assets/boardingCloseup.png");
+  width: 100%;
 }
 
-#about-container #about-right .expand:hover .long-text-title {
+#about-container .about-content .about-div .about-bottom {
+  margin: 20px auto;
+  width: 100%;
+}
+
+#about-container .about-content .about-div .about-bottom .about-heading {
   font-size: 35px;
-  text-align: center;
-  -o-object-fit: contain;
-     object-fit: contain;
+  padding: 10px;
   white-space: nowrap;
 }
 
-#about-container #about-right .long-text-box {
-  border: solid 2px magenta;
-  position: absolute;
-  top: 20%;
-  left: 10%;
-  width: 60vw;
-  height: 60vh;
+#about-container .about-content .about-div .about-bottom .about-link {
+  width: inherit !important;
+  border-radius: 6px;
+  padding: 10px 60px;
+  background: -webkit-gradient(linear, left top, left bottom, from(#FF3CC7), to(transparent)), -webkit-gradient(linear, right bottom, left top, from(#00F0B5), to(transparent)), -webkit-gradient(linear, left bottom, right top, from(#454ADE), to(transparent));
+  background: linear-gradient(#FF3CC7, transparent), linear-gradient(to top left, #00F0B5, transparent), linear-gradient(to top right, #454ADE, transparent);
+  background-blend-mode: screen;
 }
 
-#about-container #about-right #se-box {
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-#about-container #about-right #se-img {
-  width: 100%;
-  -o-object-fit: contain;
-     object-fit: contain;
-}
-
-#about-container #about-right #se-desc {
-  width: 500px;
-  margin-top: 30px;
-}
-
-#about-container #about-right .brain-img {
-  height: 300px;
-}
-
-#about-container #about-right #brain-img2 {
-  -webkit-transform: translate(20%, 110%);
-          transform: translate(20%, 110%);
-}
-
-#about-container #about-right #neuro-desc {
-  height: 300px;
-  min-width: 400px;
-  -webkit-transform: translate(-140%, 70%);
-          transform: translate(-140%, 70%);
-  border: solid 2px blue;
-}
-
-#about-container #about-right #snowboarder-img {
-  height: 300px;
-  width: 300px;
-  -webkit-transform: translateX(30%);
-          transform: translateX(30%);
-}
-
-#about-container #about-right #snowboarder-desc {
-  height: 400px;
-  width: 400px;
-  -webkit-transform: translateY(40%);
-          transform: translateY(40%);
-  border: solid 2px blue;
+#about-container .about-text {
+  text-align: justify !important;
 }
 
 #projects-container {
   height: calc(100vh - 20px);
   max-width: 1200px;
-  border: 2px solid lightgreen;
   margin: 0 auto;
-  background-color: #FF3CC7;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: end;
-      -ms-flex-align: end;
-          align-items: flex-end;
+  color: white;
+  cursor: url("../assets/cursor.png"), auto;
+}
+
+#projects-container h1 {
+  text-align: left;
 }
 
 #projects-container .proj-selectors {
-  height: 40%;
-  width: calc(100% / 5);
-  padding: 0 10px;
-  border: 2px solid magenta;
-  text-align: center;
-  display: inline-block;
+  width: inherit;
+  height: 500px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  border-top: 2px solid magenta;
+  border-bottom: 2px solid magenta;
+  padding: 30px;
 }
 
-#projects-container .proj-selectors .title-rotate {
-  -webkit-transform: rotate(270deg) translateX(-50%);
-          transform: rotate(270deg) translateX(-50%);
-  text-align: end;
-  color: white;
-  font-family: "Permanent Marker", cursive;
-  position: relative;
-  overflow-wrap: normal;
-  width: 120%;
+#projects-container .proj-selectors .proj-content {
+  padding: 20px;
 }
 
-#projects-container .proj-selectors:hover {
-  cursor: pointer;
+#projects-container .proj-selectors .proj-content-left h2 {
+  text-align: right !important;
+}
+
+#projects-container .proj-selectors .proj-content-left p {
+  text-align: right !important;
+}
+
+#projects-container .proj-selectors .proj-content-right h2 {
+  text-align: left !important;
+}
+
+#projects-container .proj-selectors .proj-content-right p {
+  text-align: left !important;
+}
+
+#projects-container .proj-img {
+  width: 50%;
+  -o-object-fit: contain;
+     object-fit: contain;
+  -webkit-transition: all .5s ease-in-out;
+  transition: all .5s ease-in-out;
+  z-index: 2;
+}
+
+#projects-container .proj-img:hover {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+  mix-blend-mode: difference !important;
+  -webkit-filter: invert(0.75) !important;
+          filter: invert(0.75) !important;
+  cursor: url("../assets/lets-go.png"), pointer;
 }
 
 #projects-container .expand {
   display: none;
 }
 
-#projects-container .proj-selectors:hover .expand {
-  cursor: pointer;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  height: 60%;
-  width: 90%;
-  max-width: 1200px;
-  margin: 0 auto;
-  position: absolute;
-  top: 20px;
-  left: 50%;
-  margin-right: -50%;
-  -webkit-transform: translateX(-50%);
-          transform: translateX(-50%);
+#projects-container .title-rotate {
+  font-size: 50px;
+  vertical-align: middle;
+  mix-blend-mode: difference;
 }
 
-#projects-container .proj-selectors:hover .expand .expand-content {
-  width: 40%;
-  height: 80%;
-  padding: 20px;
-  border: 2px solid yellow;
-  background-color: white;
-  margin-top: 5%;
-  margin-right: 30px;
-}
-
-#projects-container .proj-selectors:hover .expand .accordian {
-  position: absolute;
-  top: 0;
-  right: 0;
-}
-
-#projects-container .proj-selectors:hover .expand #mobero-img {
-  width: 55%;
-  -o-object-fit: contain;
-     object-fit: contain;
+#projects-container .img-left.title-rotate {
+  text-align: right;
 }
 
 html, body {
@@ -496,7 +477,6 @@ h1 {
 
 #academics-container {
   color: white;
-  background-color: #454ADE;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -558,7 +538,6 @@ h1 {
 }
 
 #academics-container #academics-left .long-text-box.academics {
-  border: solid 2px magenta;
   position: absolute;
   top: 20%;
   left: 50%;
@@ -637,28 +616,25 @@ h1 {
   text-align: center;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  cursor: url("./assets/cursor.png"), auto;
 }
 
-.custom-cursor {
-  position: fixed;
-  opacity: 0;
-  pointer-events: none;
-  mix-blend-mode: difference;
-  width: 50px;
-  height: 50px;
-  border-radius: 50%;
-  background-color: white;
-  -webkit-transition: -webkit-transform 350ms ease;
-  transition: -webkit-transform 350ms ease;
-  transition: transform 350ms ease;
-  transition: transform 350ms ease, -webkit-transform 350ms ease;
-  -webkit-transform: translate(-50%, -50%) scale(0.3);
-          transform: translate(-50%, -50%) scale(0.3);
-  z-index: 1000;
+* p {
+  font-family: "Poiret One", cursive;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 35px;
 }
 
-.custom-cursor--link {
-  -webkit-transform: translate(-50%, -50%) scale(1);
-          transform: translate(-50%, -50%) scale(1);
+* li {
+  font-family: "Poiret One", cursive;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 25px;
+}
+
+* .link:hover {
+  cursor: url("./assets/lets-go2.png"), pointer;
 }
 /*# sourceMappingURL=main.css.map */

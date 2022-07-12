@@ -1,0 +1,77 @@
+#projects-container {
+  height: calc(100vh - 20px);
+  max-width: 1200px;
+  margin: 0 auto;
+  color: white;
+  cursor: url("../assets/cursor.png"), auto;
+}
+
+#projects-container h1 {
+  text-align: left;
+}
+
+#projects-container .proj-selectors {
+  width: inherit;
+  height: 500px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  border-top: 2px solid magenta;
+  border-bottom: 2px solid magenta;
+  padding: 30px;
+}
+
+#projects-container .proj-selectors .proj-content {
+  padding: 20px;
+}
+
+#projects-container .proj-selectors .proj-content-left h2 {
+  text-align: right !important;
+}
+
+#projects-container .proj-selectors .proj-content-left p {
+  text-align: right !important;
+}
+
+#projects-container .proj-selectors .proj-content-right h2 {
+  text-align: left !important;
+}
+
+#projects-container .proj-selectors .proj-content-right p {
+  text-align: left !important;
+}
+
+#projects-container .proj-img {
+  width: 50%;
+  -o-object-fit: contain;
+     object-fit: contain;
+  -webkit-transition: all .5s ease-in-out;
+  transition: all .5s ease-in-out;
+  z-index: 2;
+}
+
+#projects-container .proj-img:hover {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+  mix-blend-mode: difference !important;
+  -webkit-filter: invert(0.75) !important;
+          filter: invert(0.75) !important;
+  cursor: url("../assets/lets-go.png"), pointer;
+}
+
+#projects-container .expand {
+  display: none;
+}
+
+#projects-container .title-rotate {
+  font-size: 50px;
+  vertical-align: middle;
+  mix-blend-mode: difference;
+}
+
+#projects-container .img-left.title-rotate {
+  text-align: right;
+}
+/*# sourceMappingURL=projects-2.css.map */

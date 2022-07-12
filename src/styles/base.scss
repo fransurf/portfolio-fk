@@ -1,0 +1,32 @@
+// PAGE TRANSITION
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  height: 100%;
+  z-index: 10;
+  animation: slideOut .8s ease-in-out forwards;
+}
+.overlay#about {
+  background-color: $aqua;
+}
+.overlay#projects {
+  background-color: $pink;
+}
+.overlay#academics {
+  background-color: $blue;
+}
+.overlay#contact {
+  background-color: $navy;
+}
+
+@keyframes slideOut {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(200%);
+  }
+}

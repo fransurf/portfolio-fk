@@ -1,109 +1,76 @@
-
 #about-container {
-  height: 100vh;
-  max-width: 1200px;
-  margin: 0 auto;
-  display: flex;
-  background-color: aquamarine;
   color: white;
+  max-width: 1400px;
+  margin: 0 auto;
 
-  #about-left {
-    width: 75%;
+  #about-title {
+    margin-bottom: 20px !important;
   }
 
-  #about-right{
-    width: 25%;
+  .about-content {
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    // background-color: magenta;
-    border: solid 2px blue;
-
+    max-width: inherit;
+    width: inherit;
 
     .about-div {
-      border: solid 2px white;
-      height: 75px;
-      width: 300px;
-    }
-
-    // MAKING EXPANDABLE CONTENT
-    .long-text {
-      display: none;
-    }
-    .expand:hover .short-text {
-      display: none;
-    }
-    .expand:hover .long-text {
-      display: flex;
-    }
-
-    .expand:hover .long-text-title {
-      font-size: 35px;
-      text-align: center;
-      object-fit: contain;
-      white-space: nowrap;
-    }
-
-    .long-text-box {
-      border: solid 2px magenta;
-      position: absolute;
-      top: 20%;
-      left: 10%;
-      width: 60vw;
-      height: 60vh;
-    }
-
-    // SOFTWARE ENGINEER SECTION
-    #se-box {
-      // transform: translate(-100%, -40%);
-      flex-direction: column;
-      align-items: center;
-    }
-    #se-img {
-      width: 100%;
-      object-fit: contain;
-    }
-    #se-desc {
-      width: 500px;
-      margin-top: 30px;
-    }
+      padding: 20px;
+      margin: 10px;
+      border: 2px solid $aqua;
+      width: calc((100% /3) - 10px);
 
 
-    // NEUROSCIENTIST SECTION
-    .brain-img {
-      height: 300px;
-      // width: 300px;
-    } 
-    #brain-img2 {
-      transform: translate(20%, 110%);
-    }
-
-    #neuro-desc {
-      height: 300px;
-      min-width: 400px;
-      transform: translate(-140%, 70%);
-      border: solid 2px blue;
-    }
+      .about-top {
+        border: 2px solid $pink;
+        // position: absolute;
+        width: 100%;
+        height: 80%;
 
 
-    // SNOWBOARDER SECTION
-    #snowboarder-img {
-      height: 300px;
-      width: 300px;
-      transform: translateX(30%);
-    }
-    #snowboarder-desc {
-      height: 400px;
-      width: 400px;
-      transform: translateY(40%);
-      border: solid 2px blue;
+        .top-contents{
+          width: 100%;
+        }
+
+
+
+        .img-overlay {
+          background-image: url('../assets/boardingCloseup.png');
+          width: 100%;
+        }
+
+
+      }
+
+      .about-bottom {
+        // border: 2px solid $blue;
+        margin: 20px auto;
+        // position: absolute;
+        width: 100%;
+
+        .about-heading {
+          font-size: 35px;
+          padding: 10px;
+          white-space: nowrap;
+        }
+        .about-link {
+          width: inherit !important;
+          // border: 2px solid $yellow;
+          border-radius: 6px;
+          padding: 10px 60px;
+          background:
+            linear-gradient($pink, transparent),
+            linear-gradient(to top left, $aqua, transparent),
+            linear-gradient(to top right, $blue, transparent);
+          background-blend-mode: screen;
+        }
+      }
     }
 
 
 
   }
 
+  .about-text {
+    text-align: justify !important;
+  }
 
 }
-

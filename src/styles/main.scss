@@ -1,5 +1,6 @@
 @import './variables.scss';
 @import './navbar.scss';
+@import './base.scss';
 @import './components/landing.scss';
 @import './components/about.scss';
 @import './components/projects.scss';
@@ -7,11 +8,31 @@
 @import './components/accordian.scss';
 @import './components/academics.scss';
 
-@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Rock+Salt&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Rock+Salt&family=Poiret+One&display=swap');
 
 * {
   text-align: center;
   box-sizing: border-box;
+  p {
+    font-family: $body;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 35px;
+    // letter-spacing: 5px;
+  }
+  li {
+    font-family: $body;
+    // text-transform: uppercase;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 25px;
+  }
+
+  cursor: url('./assets/cursor.png'), auto;
+  .link:hover {
+    cursor: url('./assets/lets-go2.png'), pointer;
+  }
 }
 
 // MOUSE

@@ -60,6 +60,7 @@ body {
       list-style: none;
 
       li {
+  
         min-height: 75px;
         min-width: 300px;
         border: solid 2px white;
@@ -68,9 +69,10 @@ body {
 
 
         .link {
+          font-family: $marker !important;
           color: white;
           text-decoration: none !important;
-          vertical-align: -30%;
+          vertical-align: -50%;
           padding: 14px;
         }
       }
@@ -102,7 +104,6 @@ body {
 li:nth-of-type(1) .link:hover:before {
   background-color: $aqua;
 }
-
 li:nth-of-type(2) .link:hover:before {
   background-color: $pink;
 }
@@ -113,3 +114,6 @@ li:nth-of-type(4) .link:hover:before {
   // background-color: $yellow;
   background-color: $navy;
 }
+
+
+
