@@ -66,14 +66,18 @@
       }
     }
 
-    .about-link:hover {
-      transform: scale(1.2);
-    }
 
+
+  }
+  .about-link:hover {
+    transform: scale(1.2);
+    font-size: 25px;
+    cursor: url('../assets/lets-go2.png'), pointer;
   }
 
   .about-text {
     text-align: justify !important;
+
   }
 
 }

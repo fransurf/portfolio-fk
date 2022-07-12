@@ -1,4 +1,129 @@
 #academics-container {
   color: white;
+  height: 100vh;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+#academics-container .page-title {
+  margin: 20px auto;
+}
+
+#academics-container #academics {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+#academics-container #academics .academic-div {
+  border-bottom: solid 2px white;
+  height: 75px;
+  width: 300px;
+}
+
+#academics-container #academics .long-text {
+  display: none;
+}
+
+#academics-container #academics .expand:hover .short-text {
+  display: none;
+}
+
+#academics-container #academics .expand:hover .long-text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+#academics-container #academics .expand:hover .long-text-title {
+  font-size: 35px;
+  text-align: center;
+  -o-object-fit: contain;
+     object-fit: contain;
+  white-space: nowrap;
+  margin-top: 10px;
+}
+
+#academics-container #academics .long-text-box.academics {
+  position: absolute;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  width: 100%;
+  height: 70%;
+  max-width: calc((1200px / 100 * 70));
+  padding-left: 50px;
+}
+
+#academics-container #academics .long-text-box.academics .acad-heading {
+  font-size: 35px;
+}
+
+#academics-container #academics .long-text-inner {
+  width: inherit;
+  height: inherit;
+}
+
+#academics-container #academics .long-text-inner .description {
+  font-style: italic;
+}
+
+#academics-container #academics .long-text-inner ul {
+  list-style: none;
+}
+
+#academics-container #academics .long-text-inner #publication-divs {
+  width: inherit;
+  height: inherit;
+  position: absolute;
+}
+
+#academics-container #academics .long-text-inner .pubs {
+  width: 70%;
+  height: 30%;
+  background-size: cover;
+  position: relative;
+}
+
+#academics-container #academics .long-text-inner .pubs-link {
+  width: 100%;
+  height: inherit;
+}
+
+#academics-container #academics .long-text-inner .pubs:hover {
+  width: 100%;
+  z-index: 10;
+  cursor: pointer;
+  text-align: right;
+  position: relative;
+  left: 0;
+}
+
+#academics-container #academics .long-text-inner #myrto {
+  background-image: url("../assets/publications/myrto.png");
+}
+
+#academics-container #academics .long-text-inner #braincando {
+  background-image: url("../assets/publications/braincando.png");
+  top: -8%;
+  left: 10%;
+}
+
+#academics-container #academics .long-text-inner #adhd-sleep {
+  background-image: url("../assets/publications/adhd-sleep.png");
+  top: -16%;
+  left: 20%;
+}
+
+#academics-container #academics .long-text-inner #adol-sleep {
+  background-image: url("../assets/publications/adol-sleep.png");
+  top: -20%;
+  left: 30%;
 }
 /*# sourceMappingURL=academics.css.map */

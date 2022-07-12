@@ -19,7 +19,7 @@ function App() {
           <Route path='/projects' element={<Projects />} />
           <Route path='/academics' element={<Academics />} />
           <Route path='/contact' element={<Contact />} />
-          <Route path='/contact' element={<Accordion />} />
+          <Route path='/accordian' element={<Accordion />} />
 
         </Routes>
 

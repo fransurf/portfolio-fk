@@ -7,7 +7,7 @@ const Academics = () => {
     <>
       <Container id='academics-container'>
         <h1 className='page-title'>Academics</h1>
-        <div id='academics-left' >
+        <div id='academics' >
           <div className='academic-div expand' id='career'>
             <h2 className='short-text' id='se-text'>ACADEMIC CAREER</h2>
             <h2 className='long-text long-text-title' id='se-text'>ACADEMIC CAREER</h2>
@@ -38,14 +38,13 @@ const Academics = () => {
             <h2 className='long-text long-text-title' id='pubs-text'>PUBLICATIONS</h2>
             <div className='long-text long-text-box academics' id='publications'>
               <div className='long-text-inner'>
-                <p className='description'>{"As I specialised, my academic research consisted of two overlapping avenues; ADHD and sleep. My focus was always on understanding the current challenges faced for young people with both ADHD and poor sleep, in order to develop interventions to better support these issues"}</p>
+                <p className='description'>{`"As I specialised, my academic research consisted of two overlapping avenues; ADHD and sleep. My focus was always on understanding the current challenges faced for young people with both ADHD and poor sleep, in order to develop interventions to better support these issues"`}</p>
                 <h2 className='acad-heading'>Publications of note</h2>
                 <div id='publication-divs'>
                   <a href='https://psycnet.apa.org/record/2021-60005-001' alt='link to paper' className='pubs-link' target='blank'><div className='pubs' id='myrto' ></div></a>
                   <a href='https://www.taylorfrancis.com/chapters/edit/10.4324/9780429197741-8/sleepy-teens-classroom-frances-le-cornu-knight' alt='link to paper' className='pubs-link' target='blank'><div className='pubs' id='braincando'></div></a>
                   <a href='https://www.tandfonline.com/doi/abs/10.1080/15402002.2017.1395335?journalCode=hbsm20' alt='link to paper' className='pubs-link' target='blank'><div className='pubs' id='adhd-sleep'></div></a>
                   <a href='https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4664801/' alt='link to paper' className='pubs-link' target='blank'><div className='pubs' id='adol-sleep'></div></a>
-
                 </div>
               </div>
 
@@ -57,7 +56,7 @@ const Academics = () => {
             <h2 className='long-text long-text-title' id='pubeng-text'>PUBLIC ENGAGEMENT</h2>
             <div className='long-text long-text-box academics' id='public-engagement'>
               <div className='long-text-inner'>
-                <p className='description'>{`Given my field of research, I recognised the importance of public engagement. In my opinion, research is as much for the public interest as it is for academics. In addition to academic presentations, I regularly gave talks at ADHD & development support groups, and to pupils, parents & teachers at schools`}</p>
+                <p className='description'>{`"Given my field of research, I recognised the importance of public engagement. In my opinion, research is as much for the public interest as it is for academics. In addition to academic presentations, I regularly gave talks at ADHD & development support groups, and to pupils, parents & teachers at schools"`}</p>
                 <h2 className='acad-heading'>Presentations of note</h2>
                 <ul>
                   <li>Brownhill, Knight {'&'} Norris | Invited speaker: An ADHD Teacher Toolkit - what are the needs? | Bristol Conversations, UoB | 2020</li>

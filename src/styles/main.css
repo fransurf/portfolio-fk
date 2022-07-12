@@ -3,6 +3,12 @@
   height: 50px;
   background-color: white;
   border: 2px solid black;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 #navbar .link {
@@ -267,6 +273,13 @@ li:nth-of-type(4) .link:hover:before {
   background-blend-mode: screen;
 }
 
+#about-container .about-link:hover {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+  font-size: 25px;
+  cursor: url("../assets/lets-go2.png"), pointer;
+}
+
 #about-container .about-text {
   text-align: justify !important;
 }
@@ -293,7 +306,50 @@ li:nth-of-type(4) .link:hover:before {
       justify-content: space-around;
   border-top: 2px solid magenta;
   border-bottom: 2px solid magenta;
-  padding: 30px;
+  position: relative;
+}
+
+#projects-container .proj-selectors .content-outer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  height: inherit;
+  width: inherit;
+  position: absolute;
+  z-index: 10;
+}
+
+#projects-container .proj-selectors .content-outer:has(img):has(.moveLeft) {
+  -webkit-transition: -webkit-transform .8s ease-in-out;
+  transition: -webkit-transform .8s ease-in-out;
+  transition: transform .8s ease-in-out;
+  transition: transform .8s ease-in-out, -webkit-transform .8s ease-in-out;
+  -webkit-transform: translateX(-100vw);
+          transform: translateX(-100vw);
+}
+
+#projects-container .proj-selectors .content-inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  right: 100vw;
+  z-index: 10;
+}
+
+#projects-container .proj-selectors .content-inner .accordian {
+  width: 50%;
+}
+
+#projects-container .proj-selectors .content-inner .proj-detail {
+  width: 50%;
+  color: white;
 }
 
 #projects-container .proj-selectors .proj-content {
@@ -316,6 +372,15 @@ li:nth-of-type(4) .link:hover:before {
   text-align: left !important;
 }
 
+#projects-container .proj-img.moveLeft {
+  -webkit-transition: -webkit-transform .8s ease-in-out;
+  transition: -webkit-transform .8s ease-in-out;
+  transition: transform .8s ease-in-out;
+  transition: transform .8s ease-in-out, -webkit-transform .8s ease-in-out;
+  -webkit-transform: translateX(-100vw);
+          transform: translateX(-100vw);
+}
+
 #projects-container .proj-img {
   width: 50%;
   -o-object-fit: contain;
@@ -331,7 +396,7 @@ li:nth-of-type(4) .link:hover:before {
   mix-blend-mode: difference !important;
   -webkit-filter: invert(0.75) !important;
           filter: invert(0.75) !important;
-  cursor: url("../assets/lets-go.png"), pointer;
+  cursor: url("../assets/lets-go2.png"), pointer;
 }
 
 #projects-container .expand {

@@ -1,59 +1,15 @@
-import React, { useEffect, useState } from 'react'
+import React from 'react'
 import Container from 'react-bootstrap/Container'
-// import { Link } from 'react-router-dom'
-
 
 // IMPORT PROJECTS ACCORDIAN
-import AccordianProj4 from '../accordians/AccordianProj4'
+// import AccordianProj4 from '../accordians/AccordianProj4'
 // import AccordianProj3 from '../accordians/AccordianProj3'
 // import AccordianProj2 from '../accordians/AccordianProj2'
 // import AccordianProj1 from '../accordians/AccordianProj1'
 
 
-
 const Projects = () => {
 
-  const delay = ms => new Promise(
-    resolve => setTimeout(resolve, ms)
-  )
-  // let update = document.querySelector('.content-outer')
-  let [contentOuter, setCouterOuter] = useState(null)
-  // const [errors, setErrors] = useState(false)
-
-
-  useEffect(() => {
-    const makeSlide = async () => {
-      await delay(1000)
-
-      const update = document.querySelector('.content-outer')
-      setCouterOuter(update)
-
-      console.log('contentOuter within await', update)
-    }
-    makeSlide()
-    console.log('contentOuter', contentOuter)
-  })
-
-
-
-  const handleClick = e => {
-
-    console.log('somethings been clicked', e.target)
-
-    e.target.classList.add('moveLeft')
-
-    contentOuter.classList.add('.moveLeft')
-
-    // console.log('contentOuter', contentOuter)
-    // console.log('contentOuter', contentOuter)
-
-
-    // let contentOuter = document.querySelector('.content-outer').classList.add('leaveLeft')
-    // const contentOuter = document.getElementsByClassName('content-inner').classList.add('enterRight')
-
-    // contentOuter.classList.add('leaveLeft')
-
-  }
 
 
   return (
@@ -61,24 +17,18 @@ const Projects = () => {
       <Container id='projects-container'>
         <h1>All projects {'>>>'}</h1>
         <div className='proj-selectors img-left' id='proj4'>
-
-          <div className='content-outer' onClick={handleClick}>
             <div className='proj-content proj-content-left'>
               <h2 className='title-rotate'>Women that Shred</h2>
               <p>{`Solo project >>  1-week >>`}</p>
               <p>{`Full-stack application presenting latest female snowboards, advice on selecting a snowboard & an authenticated community area for the buying & selling of 'preloved' boards >>`}</p>
             </div>
             <img className='proj-img' id='wts-img' src='../../assets/projects/p4-img1.png' alt='Women that Shred landing page' />
-          </div>
 
-          <div className='content-inner'>
+          {/* <div className='content-inner enter-left'>
             <AccordianProj4 className='accordian' />
-            <div className='proj-detail '>
-              <h2 className='title-rotate'>Women that Shred</h2>
-              <p>We'll put some project details in here </p>
-            </div>
+            <p>We'll put some project tect </p>
 
-          </div>
+          </div> */}
 
 
           {/* <img src='arrow-right' alt='arrows' /> */}
@@ -168,7 +118,6 @@ const Projects = () => {
       <div className='overlay' id='projects'></div>
     </>
   )
-
 }
 
 export default Projects

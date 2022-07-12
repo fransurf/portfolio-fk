@@ -1,7 +1,9 @@
 #projects-container {
   height: calc(100vh - 20px);
   max-width: 1200px;
+  // border: 2px solid lightgreen;
   margin: 0 auto;
+  // background-color: $pink; 
   color: white;
   cursor: url('../assets/cursor.png'), auto;
 
@@ -16,41 +18,7 @@
     justify-content: space-around;
     border-top: 2px solid magenta;
     border-bottom: 2px solid magenta;
-    // padding: 30px;
-    position: relative;
-
-    .content-outer {
-      display: flex;
-      justify-content: space-around;
-      height: inherit;
-      width: inherit;
-      // border: 2px solid yellow;
-      position: absolute;
-      z-index: 10;
-    }
-
-    .content-outer:has(img):has(.moveLeft) {
-      transition: transform .8s ease-in-out;
-      transform: translateX(-100vw);
-    }
-
-    .content-inner {
-      // border: 2px yellow solid;
-      display: flex;
-      justify-content: space-around;
-      height: 100%;
-      width: 100%;
-      position: absolute;
-      right: 100vw;
-      z-index: 10;
-      .accordian {
-        width: 50%;
-      }
-      .proj-detail {
-        width: 50%;
-        color: white;
-      }
-    }
+    padding: 30px;
 
     .proj-content {
       padding: 20px;
@@ -71,16 +39,13 @@
 
   }
 
-  .proj-img.moveLeft {
-    transition: transform .8s ease-in-out;
-    transform: translateX(-100vw);
-  }
-
   .proj-img {
     width: 50%;
     object-fit: contain;
     transition: all .5s ease-in-out;
     z-index: 2;
+    // border: 2px solid red;
+    // border-radius: 28px;
     
   }
 
