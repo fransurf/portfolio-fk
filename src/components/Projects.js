@@ -65,8 +65,8 @@ const Projects = () => {
           <div className='content-outer' onClick={handleClick}>
             <div className='proj-content proj-content-left'>
               <h2 className='title-rotate'>Women that Shred</h2>
-              <p>{`Solo project >>  1-week >>`}</p>
-              <p>{`Full-stack application presenting latest female snowboards, advice on selecting a snowboard & an authenticated community area for the buying & selling of 'preloved' boards >>`}</p>
+              <p className='proj-text'>{`Solo project >>  1-week >>`}</p>
+              <p className='proj-text'>{`Full-stack application presenting latest female snowboards, advice on selecting a snowboard & an authenticated community area for the buying & selling of 'preloved' boards >>`}</p>
             </div>
             <img className='proj-img' id='wts-img' src='../../assets/projects/p4-img1.png' alt='Women that Shred landing page' />
           </div>
@@ -75,7 +75,7 @@ const Projects = () => {
             <AccordianProj4 className='accordian' />
             <div className='proj-detail '>
               <h2 className='title-rotate'>Women that Shred</h2>
-              <p>We'll put some project details in here </p>
+              <p className='proj-text'>We'll put some project details in here </p>
             </div>
 
           </div>
@@ -95,8 +95,8 @@ const Projects = () => {
           <img className='proj-img' id='nb-img' src='../../assets/projects/p3-img1.png' alt='national park page' />
           <div className='proj-content proj-content-right'>
             <h2 className='title-rotate'>Natural Beauty</h2>
-            <p>{`<< Group project (3ppl) << 1-week`}</p>
-            <p>{`<< Full-stack web application aimed at encouraging people to explore the natural beauty around the UK (incl. interactive map & carousels)`}</p>
+            <p className='proj-text'>{`<< Group project (3ppl) << 1-week`}</p>
+            <p className='proj-text'>{`<< Full-stack web application aimed at encouraging people to explore the natural beauty around the UK (incl. interactive map & carousels)`}</p>
           </div>
           {/* <img src='arrow-right' alt='arrows' /> */}
           {/* <div className='expand'>
@@ -112,8 +112,8 @@ const Projects = () => {
 
           <div className='proj-content proj-content-left'>
             <h2 className='title-rotate'>Fruity4You</h2>
-            <p>{`Group project >>  48hr hackathon >>`}</p>
-            <p>{`React app aimed at providing nutritional info on fruits, plus a make-a-fruit-salad user-input option >>`}</p>
+            <p className='proj-text'>{`Group project >>  48hr hackathon >>`}</p>
+            <p className='proj-text'>{`React app aimed at providing nutritional info on fruits, plus a make-a-fruit-salad user-input option >>`}</p>
           </div>
           <img className='proj-img' id='f4u-img' src='../../assets/projects/p2-img1.png' alt='Fruity4you landing page' />
           {/* <img src='arrow-right' alt='arrows' /> */}
@@ -131,8 +131,8 @@ const Projects = () => {
 
           <div className='proj-content proj-content-right'>
             <h2 className='title-rotate'>Froggers in Space</h2>
-            <p>{`Solo project << 1-week`}</p>
-            <p>{`<< Grid-based game using HTML & vanilla JavaScript >> Frogger's lost in a space/time vortex, can you get her back to her friends?? Focus on game-play & stylistic elements to create an immersive, addictive & amusing environment that compliments the storyline.`}</p>
+            <p className='proj-text'>{`Solo project << 1-week`}</p>
+            <p className='proj-text'>{`<< Grid-based game using HTML & vanilla JavaScript >> Frogger's lost in a space/time vortex, can you get her back to her friends?? Focus on game-play & stylistic elements to create an immersive, addictive & amusing environment that compliments the storyline.`}</p>
           </div>
           {/* <img src='arrow-right' alt='arrows' /> */}
           {/* <div className='expand'>
@@ -148,8 +148,8 @@ const Projects = () => {
 
           <div className='proj-content proj-content-left'>
             <h2 className='title-rotate'>MOBERO UoB</h2>
-            <p>{`6-month supervision >>`}</p>
-            <p>{`Supporting a team of BSc Computer Science students to develop a novel mobile application >> aimed at assisting families of children with ADHD & poor sleep in establishing effective bedtime routines >>`}</p>
+            <p className='proj-text'>{`6-month supervision >>`}</p>
+            <p className='proj-text'>{`Supporting a team of BSc Computer Science students to develop a novel mobile application >> aimed at assisting families of children with ADHD & poor sleep in establishing effective bedtime routines >>`}</p>
           </div>
           <img className='proj-img' id='mob-img' src='../../assets/projects/mobero.png' alt='mobero mobile interfaces' />
           {/* <img src='arrow-right' alt='arrows' /> */}

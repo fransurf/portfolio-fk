@@ -54,6 +54,9 @@
 
     .proj-content {
       padding: 20px;
+      .proj-text {
+        font-size: 30px;
+      }
     }
 
     .proj-content-left h2 {
@@ -86,10 +89,9 @@
 
   .proj-img:hover  {
     transform: scale(1.2);
-    mix-blend-mode: difference !important;
-    filter: invert(.75) !important ;
-    // filter: contrast(1.75) !important ;
+    filter: contrast(1.75) !important ;
     cursor: url('../assets/lets-go2.png'), pointer;
+    z-index: -30;
 
   }
 
@@ -101,7 +103,7 @@
   .title-rotate {
     font-size: 50px;
     vertical-align: middle;
-    mix-blend-mode: difference;
+
   }
 
   .img-left.title-rotate {

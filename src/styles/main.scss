@@ -8,14 +8,14 @@
 @import './components/accordian.scss';
 @import './components/academics.scss';
 
-@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Rock+Salt&family=Poiret+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Edu+VIC+WA+NT+Beginner&family=Square+Peg&family=Permanent+Marker&display=swap');
 
 * {
   text-align: center;
   box-sizing: border-box;
   p {
     font-family: $body;
-    text-transform: uppercase;
+    // text-transform: uppercase;
     font-weight: bold;
     font-size: 20px;
     line-height: 35px;
