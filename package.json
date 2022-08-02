@@ -1,6 +1,5 @@
 {
   "name": "portfolio-fk",
-  "homepage": "https://fransurf.github.io/portfolio-fk",
   "version": "0.1.0",
   "private": true,
   "dependencies": {

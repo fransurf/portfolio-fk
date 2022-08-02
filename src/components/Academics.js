@@ -69,6 +69,7 @@ const Academics = () => {
             </div>
           </div>
         </div>
+        <div id='emoji'></div>
 
       </Container>
       <div className='overlay' id='academics'></div>

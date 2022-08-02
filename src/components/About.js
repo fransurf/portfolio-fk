@@ -46,7 +46,7 @@ const About = () => {
                 <h2 className='about-heading' id='snowboarder-text'>SNOWBOARDER</h2>
               </div>
               <div className='about-text'>
-                <p>{`My happiest place is on the mountains or the waves. I am a dedicated snowboarder & recently took a 6-month career break to transfer those skills onto the waves in Sri Lanka. I find the experience of being at the mercy of mother nature both exhilarating & humbling.`} <br></br><br></br> {` Outside of the extreme, I love camping (the boot of my car is like an extension of Mountain Warehouse), running, yoga, dinners with good friends & a good series.`}</p>
+                <p>{`My happiest place is on the mountains or the waves. I am a dedicated snowboarder & recently took a 6-month career break to transfer those skills onto the waves in Sri Lanka. I find the experience of being at the mercy of mother nature both exhilarating & humbling.`} <br></br><br></br> {` Outside of the extreme, I love camping (the boot of my car is like an extension of Mountain Warehouse), running, yoga, dinner with friends, pub quizzes & a good series.`}</p>
               </div>
             </div>
             <Link to='/indulge' className='about-link'>Shall we indulge?</Link>
