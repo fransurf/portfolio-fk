@@ -6,8 +6,11 @@ const Academics = () => {
   return (
     <>
       <Container id='academics-container'>
-        <h1 className='page-title'>Academics</h1>
+        {/* <h1 className='page-title'>Academics</h1> */}
+        <div id='emoji'></div>
+
         <div id='academics' >
+
           <div className='academic-div expand' id='career'>
             <h2 className='short-text' id='se-text'>ACADEMIC CAREER</h2>
             <h2 className='long-text long-text-title' id='se-text'>ACADEMIC CAREER</h2>
@@ -69,7 +72,6 @@ const Academics = () => {
             </div>
           </div>
         </div>
-        <div id='emoji'></div>
 
       </Container>
       <div className='overlay' id='academics'></div>

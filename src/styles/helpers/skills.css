@@ -1,0 +1,72 @@
+.skills {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100%;
+  border-top: 2px solid magenta;
+  background-color: white;
+}
+
+.skills .tech {
+  width: 60px;
+  height: 60px;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.skills #html {
+  background-image: url(../assets/logos/html.png);
+}
+
+.skills #css {
+  background-image: url(../assets/logos/css.png);
+}
+
+.skills #js {
+  background-image: url(../assets/logos/js.png);
+}
+
+.skills #boots {
+  background-image: url(../assets/logos/boots.png);
+}
+
+.skills #sass {
+  background-image: url(../assets/logos/sass.png);
+}
+
+.skills #react {
+  background-image: url(../assets/logos/react.png);
+}
+
+.skills #python {
+  background-image: url(../assets/logos/python.png);
+}
+
+.skills #django {
+  background-image: url(../assets/logos/django.png);
+}
+
+.skills #post {
+  background-image: url(../assets/logos/post.png);
+}
+
+.skills #mongo {
+  background-image: url(../assets/logos/mongo.png);
+  width: 30px;
+}
+
+.skills #node {
+  background-image: url(../assets/logos/node.png);
+  width: 100px;
+  background-size: contain;
+}
+
+.skills #express {
+  background-image: url(../assets/logos/express.png);
+  width: 100px;
+  background-size: contain;
+}
+/*# sourceMappingURL=skills.css.map */

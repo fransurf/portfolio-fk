@@ -1,16 +1,17 @@
 import React from 'react'
 import Container from 'react-bootstrap/Container'
 import { Link } from 'react-router-dom'
+import Skills from '../helpers/Skills'
 
 const LandingPage = () => {
   return (
     <Container className='landing-container'>
       <section className='landing-content'>
         <div className='name'>
-          <h1>FRANCES KNIGHT</h1>
+          <h1 id='landing-title'>FRANCES KNIGHT<span>.</span></h1>
         </div>
         <div className='tagline'>
-          <h2>{`< from passionate neuroscientist to software engineer >`}</h2>
+          <h2 id='landing-subtitle'><span>{`{`}</span> from passionate neuroscientist to software engineer <span>{`}`}</span></h2>
         </div>
       </section>
 
@@ -23,6 +24,8 @@ const LandingPage = () => {
         </ul>
 
       </section>
+
+      {/* <Skills /> */}
 
     </Container>
     

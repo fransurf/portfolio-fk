@@ -68,6 +68,10 @@
   width: inherit;
   height: inherit;
   font-size: 35px;
+  background-color: whitesmoke;
+  color: black;
+  -webkit-transition: all .5s ease-in-out;
+  transition: all .5s ease-in-out;
 }
 
 #academics-container #academics .long-text-inner .description {
@@ -148,11 +152,7 @@
   background-size: contain;
   height: 100px;
   width: 100px;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
+  margin: 20px auto;
   -webkit-transition: all .2s ease-in-out;
   transition: all .2s ease-in-out;
 }

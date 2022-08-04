@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Edu+VIC+WA+NT+Beginner&family=Square+Peg&family=Permanent+Marker&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Edu+VIC+WA+NT+Beginner&family=Sawarabi+Mincho&family=Square+Peg&family=Permanent+Marker&display=swap");
 #navbar {
   height: 50px;
   background-color: white;
@@ -78,11 +78,24 @@ body {
 }
 
 body h1, body h2 {
-  font-family: "Permanent Marker", cursive;
+  font-family: "Sawarabi Mincho", serif;
 }
 
 body h1 {
   color: white;
+}
+
+body #landing-title {
+  font-size: 5em;
+}
+
+body #landing-title span {
+  color: yellow;
+  font-size: 5.2em;
+}
+
+body #landing-subtitle {
+  font-size: 3em;
 }
 
 .landing-container {
@@ -124,8 +137,8 @@ body h1 {
 
 .landing-container .landing-content {
   width: 75%;
-  -webkit-transform: translateY(30%);
-          transform: translateY(30%);
+  -webkit-transform: translateY(20%);
+          transform: translateY(20%);
 }
 
 .landing-container .landing-content h1 {
@@ -471,6 +484,7 @@ h1 {
       -ms-flex-direction: row;
           flex-direction: row;
   width: 100%;
+  height: 400px;
   border: 1px solid lightgreen;
   border-radius: 4px;
   margin: 20px;
@@ -490,6 +504,7 @@ h1 {
   transition: flex 0.8s ease;
   transition: flex 0.8s ease, -webkit-box-flex 0.8s ease, -ms-flex 0.8s ease;
   border: 1px solid lightgreen;
+  z-index: 100;
 }
 
 .item:hover {
@@ -504,36 +519,36 @@ h1 {
           transition-delay: display .4s ease-out;
 }
 
-#proj4 .item-1 {
+#proj4.item-1 {
   background-image: url("../assets/projects/p4-img1.png");
 }
 
-#proj4 .item-2 {
+#proj4.item-2 {
   background-image: url("../assets/projects/p4-img2.png");
 }
 
-#proj4 .item-3 {
+#proj4.item-3 {
   background-image: url("../assets/projects/p4-img3.png");
 }
 
-#proj4 .item-4 {
+#proj4.item-4 {
   background-image: url("../assets/projects/p4-img5.png");
 }
 
-#proj4 .item-5 {
+#proj4.item-5 {
   background-image: url("../assets/projects/p4-img4.png");
 }
 
-#proj4 .item-6 {
+#proj4.item-6 {
   background-image: url("../assets/projects/p4-img6.png");
 }
 
 #proj3 .item-1 {
-  background-image: url("../assets/projects/p3-img2.png");
+  background-image: url("../assets/projects/p3-img1.png");
 }
 
 #proj3 .item-2 {
-  background-image: url("../assets/projects/p3-img1.png");
+  background-image: url("../assets/projects/p3-img2.png");
 }
 
 #proj3 .item-3 {
@@ -650,6 +665,10 @@ h1 {
   width: inherit;
   height: inherit;
   font-size: 35px;
+  background-color: whitesmoke;
+  color: black;
+  -webkit-transition: all .5s ease-in-out;
+  transition: all .5s ease-in-out;
 }
 
 #academics-container #academics .long-text-inner .description {
@@ -730,11 +749,7 @@ h1 {
   background-size: contain;
   height: 100px;
   width: 100px;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
+  margin: 20px auto;
   -webkit-transition: all .2s ease-in-out;
   transition: all .2s ease-in-out;
 }
@@ -743,6 +758,78 @@ h1 {
   background-image: url("../assets/wink.png");
   background-size: cover;
   background-repeat: no-repeat;
+}
+
+.skills {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100%;
+  border-top: 2px solid magenta;
+  background-color: white;
+}
+
+.skills .tech {
+  width: 60px;
+  height: 60px;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.skills #html {
+  background-image: url(../assets/logos/html.png);
+}
+
+.skills #css {
+  background-image: url(../assets/logos/css.png);
+}
+
+.skills #js {
+  background-image: url(../assets/logos/js.png);
+}
+
+.skills #boots {
+  background-image: url(../assets/logos/boots.png);
+}
+
+.skills #sass {
+  background-image: url(../assets/logos/sass.png);
+}
+
+.skills #react {
+  background-image: url(../assets/logos/react.png);
+}
+
+.skills #python {
+  background-image: url(../assets/logos/python.png);
+}
+
+.skills #django {
+  background-image: url(../assets/logos/django.png);
+}
+
+.skills #post {
+  background-image: url(../assets/logos/post.png);
+}
+
+.skills #mongo {
+  background-image: url(../assets/logos/mongo.png);
+  width: 30px;
+}
+
+.skills #node {
+  background-image: url(../assets/logos/node.png);
+  width: 100px;
+  background-size: contain;
+}
+
+.skills #express {
+  background-image: url(../assets/logos/express.png);
+  width: 100px;
+  background-size: contain;
 }
 
 * {
