@@ -5,88 +5,200 @@
   color: white;
   cursor: url("../assets/cursor.png"), auto;
 }
+
 #projects-container h1 {
   text-align: left;
 }
+
+#projects-container .skills {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100%;
+  border-top: 2px solid magenta;
+  background-color: white;
+}
+
+#projects-container .skills .tech {
+  width: 60px;
+  height: 60px;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+#projects-container .skills #html {
+  background-image: url(../assets/logos/html.png);
+}
+
+#projects-container .skills #css {
+  background-image: url(../assets/logos/css.png);
+}
+
+#projects-container .skills #js {
+  background-image: url(../assets/logos/js.png);
+}
+
+#projects-container .skills #boots {
+  background-image: url(../assets/logos/boots.png);
+}
+
+#projects-container .skills #sass {
+  background-image: url(../assets/logos/sass.png);
+}
+
+#projects-container .skills #react {
+  background-image: url(../assets/logos/react.png);
+}
+
+#projects-container .skills #python {
+  background-image: url(../assets/logos/python.png);
+}
+
+#projects-container .skills #django {
+  background-image: url(../assets/logos/django.png);
+}
+
+#projects-container .skills #post {
+  background-image: url(../assets/logos/post.png);
+}
+
+#projects-container .skills #mongo {
+  background-image: url(../assets/logos/mongo.png);
+  width: 30px;
+}
+
+#projects-container .skills #node {
+  background-image: url(../assets/logos/node.png);
+  width: 100px;
+  background-size: contain;
+}
+
+#projects-container .skills #express {
+  background-image: url(../assets/logos/express.png);
+  width: 100px;
+  background-size: contain;
+}
+
 #projects-container .proj-selectors {
   width: inherit;
   height: 500px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-around;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
   border-top: 2px solid magenta;
   border-bottom: 2px solid magenta;
   position: relative;
 }
+
 #projects-container .proj-selectors .content-outer {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-around;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
   height: inherit;
   width: inherit;
   position: absolute;
   z-index: 10;
 }
+
 #projects-container .proj-selectors .content-outer:has(img):has(.moveLeft) {
-  transition: transform 0.8s ease-in-out;
-  transform: translateX(-100vw);
+  -webkit-transition: -webkit-transform .8s ease-in-out;
+  transition: -webkit-transform .8s ease-in-out;
+  transition: transform .8s ease-in-out;
+  transition: transform .8s ease-in-out, -webkit-transform .8s ease-in-out;
+  -webkit-transform: translateX(-100vw);
+          transform: translateX(-100vw);
 }
+
 #projects-container .proj-selectors .content-inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-around;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
   height: 100%;
   width: 100%;
   position: absolute;
   right: 100vw;
   z-index: 10;
 }
+
 #projects-container .proj-selectors .content-inner .accordian {
   width: 50%;
 }
+
 #projects-container .proj-selectors .content-inner .proj-detail {
   width: 50%;
   color: white;
 }
+
 #projects-container .proj-selectors .proj-content {
   padding: 20px;
 }
+
 #projects-container .proj-selectors .proj-content .proj-text {
   font-size: 30px;
 }
+
 #projects-container .proj-selectors .proj-content-left h2 {
   text-align: right !important;
 }
+
 #projects-container .proj-selectors .proj-content-left p {
   text-align: right !important;
 }
+
 #projects-container .proj-selectors .proj-content-right h2 {
   text-align: left !important;
 }
+
 #projects-container .proj-selectors .proj-content-right p {
   text-align: left !important;
 }
+
 #projects-container .proj-img.moveLeft {
-  transition: transform 0.8s ease-in-out;
-  transform: translateX(-100vw);
+  -webkit-transition: -webkit-transform .8s ease-in-out;
+  transition: -webkit-transform .8s ease-in-out;
+  transition: transform .8s ease-in-out;
+  transition: transform .8s ease-in-out, -webkit-transform .8s ease-in-out;
+  -webkit-transform: translateX(-100vw);
+          transform: translateX(-100vw);
 }
+
 #projects-container .proj-img {
   width: 50%;
   -o-object-fit: contain;
      object-fit: contain;
-  transition: all 0.5s ease-in-out;
+  -webkit-transition: all .5s ease-in-out;
+  transition: all .5s ease-in-out;
   z-index: 2;
 }
+
 #projects-container .proj-img:hover {
-  transform: scale(1.2);
-  filter: contrast(1.75) !important;
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+  -webkit-filter: contrast(1.75) !important;
+          filter: contrast(1.75) !important;
   cursor: url("../assets/lets-go2.png"), pointer;
   z-index: -30;
 }
+
 #projects-container .expand {
   display: none;
 }
+
 #projects-container .title-rotate {
   font-size: 50px;
   vertical-align: middle;
 }
+
 #projects-container .img-left.title-rotate {
   text-align: right;
-}/*# sourceMappingURL=projects-2.css.map */
+}
+/*# sourceMappingURL=projects-2.css.map */

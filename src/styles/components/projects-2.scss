@@ -7,6 +7,67 @@
 
   h1 {
     text-align: left;
+    // margin-bottom: 25px;
+  }
+
+  .skills {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    border-top: 2px solid magenta;
+    background-color: white;
+
+    .tech {
+      width: 60px;
+      height: 60px;
+      // border: 2px solid white;
+
+      background-position: center;
+      background-repeat: no-repeat;
+      
+    }
+    #html {
+      background-image: url(../assets/logos/html.png);
+    }
+    #css {
+      background-image: url(../assets/logos/css.png);
+    }
+    #js {
+      background-image: url(../assets/logos/js.png);
+    }
+    #boots {
+      background-image: url(../assets/logos/boots.png);
+    }
+    #sass {
+      background-image: url(../assets/logos/sass.png);
+    }
+    #react {
+      background-image: url(../assets/logos/react.png);
+    }
+
+    #python {
+      background-image: url(../assets/logos/python.png);
+    }
+    #django {
+      background-image: url(../assets/logos/django.png);
+    }
+    #post {
+      background-image: url(../assets/logos/post.png);
+    }
+    #mongo {
+      background-image: url(../assets/logos/mongo.png);
+      width: 30px;
+    }
+    #node {
+      background-image: url(../assets/logos/node.png);
+      width: 100px;
+      background-size: contain;
+    }
+    #express {
+      background-image: url(../assets/logos/express.png);
+      width: 100px;
+      background-size: contain;
+    }
   }
 
   .proj-selectors {
@@ -26,6 +87,7 @@
       width: inherit;
       // border: 2px solid yellow;
       position: absolute;
+
       z-index: 10;
     }
 

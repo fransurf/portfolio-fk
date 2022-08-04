@@ -3,9 +3,13 @@
   height: 50px;
   background-color: white;
   border: 2px solid black;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-around;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
 }
+
 #navbar .link {
   text-decoration: none;
   color: black;
@@ -13,6 +17,7 @@
   font-size: 30px;
   width: 200px;
 }
+
 #navbar .link:hover {
   color: #00F0B5;
   font-size: 35px;
@@ -26,8 +31,8 @@
   right: 0;
   height: 100%;
   z-index: 10;
-  -webkit-animation: slideOut 0.8s ease-in-out forwards;
-          animation: slideOut 0.8s ease-in-out forwards;
+  -webkit-animation: slideOut .8s ease-in-out forwards;
+          animation: slideOut .8s ease-in-out forwards;
 }
 
 .overlay#about {
@@ -48,27 +53,34 @@
 
 @-webkit-keyframes slideOut {
   0% {
-    transform: translateX(0%);
+    -webkit-transform: translateX(0%);
+            transform: translateX(0%);
   }
   100% {
-    transform: translateX(200%);
+    -webkit-transform: translateX(200%);
+            transform: translateX(200%);
   }
 }
 
 @keyframes slideOut {
   0% {
-    transform: translateX(0%);
+    -webkit-transform: translateX(0%);
+            transform: translateX(0%);
   }
   100% {
-    transform: translateX(200%);
+    -webkit-transform: translateX(200%);
+            transform: translateX(200%);
   }
 }
+
 body {
   background-color: #454ADE;
 }
+
 body h1, body h2 {
   font-family: "Permanent Marker", cursive;
 }
+
 body h1 {
   color: white;
 }
@@ -77,53 +89,80 @@ body h1 {
   height: 100vh;
   max-width: 1200px;
   margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: row;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
   font-family: "Permanent Marker", cursive;
   color: white;
 }
+
 @-webkit-keyframes slideInLeft {
   0% {
-    transform: translateX(-100%);
+    -webkit-transform: translateX(-100%);
+            transform: translateX(-100%);
   }
   100% {
-    transform: translateX(0);
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
   }
 }
+
 @keyframes slideInLeft {
   0% {
-    transform: translateX(-100%);
+    -webkit-transform: translateX(-100%);
+            transform: translateX(-100%);
   }
   100% {
-    transform: translateX(0);
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
   }
 }
+
 .landing-container .landing-content {
   width: 75%;
-  transform: translateY(30%);
+  -webkit-transform: translateY(30%);
+          transform: translateY(30%);
 }
+
 .landing-container .landing-content h1 {
   font-size: 40px;
   -webkit-animation: 1s ease-out 0s 1 slideInLeft;
           animation: 1s ease-out 0s 1 slideInLeft;
 }
+
 .landing-container .landing-content h2 {
   font-size: 30px;
   -webkit-animation: 1.2s ease-out 0s 1 slideInLeft;
           animation: 1.2s ease-out 0s 1 slideInLeft;
 }
+
 .landing-container .landing-nav {
   width: 25%;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  align-items: flex-end;
-  justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   float: right;
 }
+
 .landing-container .landing-nav .list {
   width: 100%;
   list-style: none;
 }
+
 .landing-container .landing-nav .list li {
   min-height: 75px;
   min-width: 300px;
@@ -131,6 +170,7 @@ body h1 {
   font-size: 30px;
   margin: 0 auto;
 }
+
 .landing-container .landing-nav .list li .link {
   font-family: "Permanent Marker", cursive !important;
   color: white;
@@ -140,7 +180,7 @@ body h1 {
 }
 
 .link:hover:before {
-  content: "";
+  content: '';
   position: absolute;
   display: block;
   top: 0;
@@ -177,25 +217,32 @@ li:nth-of-type(4) .link:hover:before {
   max-width: 1400px;
   margin: 0 auto;
 }
+
 #about-container .about-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   max-width: inherit;
   width: inherit;
 }
+
 #about-container .about-content .about-div {
   padding: 20px;
   margin: 10px;
   border: 2px solid #00F0B5;
-  width: calc(33.3333333333% - 10px);
+  width: calc((100% /3) - 10px);
 }
+
 #about-container .about-content .about-div .about-heading {
   font-size: 35px;
   white-space: nowrap;
   color: #00F0B5 !important;
 }
+
 #about-container .about-content .about-div #se-text {
   background-color: rgba(255, 255, 255, 0.9);
 }
+
 #about-container .about-content .about-div .about-top {
   border: 2px solid #FF3CC7;
   background-color: white;
@@ -204,13 +251,16 @@ li:nth-of-type(4) .link:hover:before {
   height: 90%;
   overflow: hidden;
 }
+
 #about-container .about-content .about-div .about-top .about-text {
   width: 100%;
 }
+
 #about-container .about-content .about-div .about-top .about-text p {
   font-size: 40px;
   color: #454ADE;
 }
+
 #about-container .about-link {
   margin: 20px auto;
   text-decoration: none;
@@ -220,39 +270,50 @@ li:nth-of-type(4) .link:hover:before {
   font-size: 30px;
   border-radius: 6px;
   padding: 10px 60px;
+  background: -webkit-gradient(linear, left top, left bottom, from(#FF3CC7), to(transparent)), -webkit-gradient(linear, right bottom, left top, from(#00F0B5), to(transparent)), -webkit-gradient(linear, left bottom, right top, from(#454ADE), to(transparent));
   background: linear-gradient(#FF3CC7, transparent), linear-gradient(to top left, #00F0B5, transparent), linear-gradient(to top right, #454ADE, transparent);
   background-blend-mode: screen;
   width: 100%;
 }
+
 #about-container .about-link:hover {
-  transform: scale(1.2);
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
   font-size: 25px;
   cursor: url("../assets/lets-go2.png"), pointer;
 }
+
 #about-container .about-text {
   text-align: justify !important;
 }
+
 #about-container .img-overlay {
   width: 100%;
   height: 100%;
+  -webkit-transition: all 1s ease-in-out;
   transition: all 1s ease-in-out;
   z-index: 100;
   position: absolute;
   background-size: cover;
 }
+
 #about-container #se-img {
   background-image: url("../assets/Excalidraw.png");
   background-position: bottom;
 }
+
 #about-container #neuro-img {
   background-image: url("../assets/brain1.JPG");
   background-position: center;
 }
+
 #about-container #snowboarder-img {
   background-image: url("../assets/boardingCloseup.png");
 }
+
 #about-container .about-top:hover .img-overlay {
-  transform: translateY(-100%);
+  -webkit-transform: translateY(-100%);
+          transform: translateY(-100%);
 }
 
 #projects-container {
@@ -262,88 +323,127 @@ li:nth-of-type(4) .link:hover:before {
   color: white;
   cursor: url("../assets/cursor.png"), auto;
 }
+
 #projects-container h1 {
   text-align: left;
 }
+
 #projects-container .proj-selectors {
   width: inherit;
   height: 500px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-around;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
   border-top: 2px solid magenta;
   border-bottom: 2px solid magenta;
   position: relative;
 }
+
 #projects-container .proj-selectors .content-outer {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-around;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
   height: inherit;
   width: inherit;
   position: absolute;
   z-index: 10;
 }
+
 #projects-container .proj-selectors .content-outer:has(img):has(.moveLeft) {
-  transition: transform 0.8s ease-in-out;
-  transform: translateX(-100vw);
+  -webkit-transition: -webkit-transform .8s ease-in-out;
+  transition: -webkit-transform .8s ease-in-out;
+  transition: transform .8s ease-in-out;
+  transition: transform .8s ease-in-out, -webkit-transform .8s ease-in-out;
+  -webkit-transform: translateX(-100vw);
+          transform: translateX(-100vw);
 }
+
 #projects-container .proj-selectors .content-inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-around;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
   height: 100%;
   width: 100%;
   position: absolute;
   right: 100vw;
   z-index: 10;
 }
+
 #projects-container .proj-selectors .content-inner .accordian {
   width: 50%;
 }
+
 #projects-container .proj-selectors .content-inner .proj-detail {
   width: 50%;
   color: white;
 }
+
 #projects-container .proj-selectors .proj-content {
   padding: 20px;
 }
+
 #projects-container .proj-selectors .proj-content .proj-text {
   font-size: 30px;
 }
+
 #projects-container .proj-selectors .proj-content-left h2 {
   text-align: right !important;
 }
+
 #projects-container .proj-selectors .proj-content-left p {
   text-align: right !important;
 }
+
 #projects-container .proj-selectors .proj-content-right h2 {
   text-align: left !important;
 }
+
 #projects-container .proj-selectors .proj-content-right p {
   text-align: left !important;
 }
+
 #projects-container .proj-img.moveLeft {
-  transition: transform 0.8s ease-in-out;
-  transform: translateX(-100vw);
+  -webkit-transition: -webkit-transform .8s ease-in-out;
+  transition: -webkit-transform .8s ease-in-out;
+  transition: transform .8s ease-in-out;
+  transition: transform .8s ease-in-out, -webkit-transform .8s ease-in-out;
+  -webkit-transform: translateX(-100vw);
+          transform: translateX(-100vw);
 }
+
 #projects-container .proj-img {
   width: 50%;
   -o-object-fit: contain;
      object-fit: contain;
-  transition: all 0.5s ease-in-out;
+  -webkit-transition: all .5s ease-in-out;
+  transition: all .5s ease-in-out;
   z-index: 2;
 }
+
 #projects-container .proj-img:hover {
-  transform: scale(1.2);
-  filter: contrast(1.75) !important;
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+  -webkit-filter: contrast(1.75) !important;
+          filter: contrast(1.75) !important;
   cursor: url("../assets/lets-go2.png"), pointer;
   z-index: -30;
 }
+
 #projects-container .expand {
   display: none;
 }
+
 #projects-container .title-rotate {
   font-size: 50px;
   vertical-align: middle;
 }
+
 #projects-container .img-left.title-rotate {
   text-align: right;
 }
@@ -356,15 +456,20 @@ html, body {
 h1 {
   position: relative;
   margin-bottom: 45px;
-  font-family: "Oswald", sans-serif;
+  font-family: 'Oswald', sans-serif;
   font-size: 44px;
   text-transform: uppercase;
   color: #424242;
 }
 
 .gallery-wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: row;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
   width: 100%;
   border: 1px solid lightgreen;
   border-radius: 4px;
@@ -372,21 +477,31 @@ h1 {
 }
 
 .item {
-  flex: 1;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
   height: 100%;
   float: right;
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
+  -webkit-transition: -webkit-box-flex 0.8s ease;
+  transition: -webkit-box-flex 0.8s ease;
   transition: flex 0.8s ease;
+  transition: flex 0.8s ease, -webkit-box-flex 0.8s ease, -ms-flex 0.8s ease;
   border: 1px solid lightgreen;
 }
+
 .item:hover {
-  flex: 12;
+  -webkit-box-flex: 12;
+      -ms-flex: 12;
+          flex: 12;
 }
+
 .item:hover .expand-accord {
   display: block;
-  transition-delay: display 0.4s ease-out;
+  -webkit-transition-delay: display .4s ease-out;
+          transition-delay: display .4s ease-out;
 }
 
 #proj4 .item-1 {
@@ -471,29 +586,43 @@ h1 {
   max-width: 1200px;
   margin: 0 auto;
 }
+
 #academics-container .page-title {
   margin: 20px auto;
 }
+
 #academics-container #academics {
   width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
-  justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
 }
+
 #academics-container #academics .academic-div {
   border-bottom: solid 2px white;
   height: 75px;
   width: 300px;
 }
+
 #academics-container #academics .long-text {
   display: none;
 }
+
 #academics-container #academics .expand:hover .short-text {
   display: none;
 }
+
 #academics-container #academics .expand:hover .long-text {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
 }
+
 #academics-container #academics .expand:hover .long-text-title {
   font-size: 35px;
   -o-object-fit: contain;
@@ -501,23 +630,28 @@ h1 {
   white-space: nowrap;
   margin-top: 10px;
 }
+
 #academics-container #academics .long-text-box.academics {
   position: absolute;
   left: 50%;
   top: 30%;
-  transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
   width: 100%;
   height: 70%;
-  max-width: 1080px;
+  max-width: calc((1200px / 100 * 90));
 }
+
 #academics-container #academics .long-text-box.academics .acad-heading {
   font-size: 35px;
 }
+
 #academics-container #academics .long-text-inner {
   width: inherit;
   height: inherit;
   font-size: 35px;
 }
+
 #academics-container #academics .long-text-inner .description {
   font-style: italic;
   font-size: 35px;
@@ -525,28 +659,34 @@ h1 {
   text-align: center;
   line-height: 110%;
 }
+
 #academics-container #academics .long-text-inner ul {
   list-style: none;
 }
+
 #academics-container #academics .long-text-inner ul li {
   margin-top: 0;
   padding: 0;
 }
+
 #academics-container #academics .long-text-inner #publication-divs {
   width: inherit;
   height: inherit;
   position: absolute;
 }
+
 #academics-container #academics .long-text-inner .pubs {
   width: 70%;
   height: 50%;
   background-size: cover;
   position: relative;
 }
+
 #academics-container #academics .long-text-inner .pubs-link {
   width: 100%;
   height: inherit;
 }
+
 #academics-container #academics .long-text-inner .pubs:hover {
   width: 100%;
   z-index: 10;
@@ -555,44 +695,95 @@ h1 {
   position: relative;
   left: 0;
 }
+
+#academics-container #academics .long-text-inner .pubs:hover #emoji {
+  display: none;
+}
+
 #academics-container #academics .long-text-inner #myrto {
   background-image: url("../assets/publications/myrto.png");
   background-position: bottom;
 }
+
 #academics-container #academics .long-text-inner #braincando {
   background-image: url("../assets/publications/braincando.png");
   top: -8%;
   left: 10%;
 }
+
 #academics-container #academics .long-text-inner #adhd-sleep {
   background-image: url("../assets/publications/adhd-sleep.png");
   background-position: bottom;
   top: -16%;
   left: 20%;
 }
+
 #academics-container #academics .long-text-inner #adol-sleep {
   background-image: url("../assets/publications/adol-sleep.png");
   top: -20%;
   left: 30%;
 }
 
+#academics-container #emoji {
+  background-image: url("../assets/geek.png");
+  background-position: center;
+  background-size: contain;
+  height: 100px;
+  width: 100px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  -webkit-transition: all .2s ease-in-out;
+  transition: all .2s ease-in-out;
+}
+
+#academics-container #emoji:hover {
+  background-image: url("../assets/wink.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
 * {
   text-align: center;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   cursor: url("./assets/cursor.png"), auto;
 }
+
 * p {
   font-family: "Square Peg", cursive;
   font-weight: bold;
   font-size: 20px;
   line-height: 35px;
 }
+
 * li {
   font-family: "Square Peg", cursive;
   font-weight: bold;
   font-size: 20px;
   line-height: 25px;
 }
+
 * .link:hover {
   cursor: url("./assets/lets-go2.png"), pointer;
-}/*# sourceMappingURL=main.css.map */
+}
+
+.contact-link {
+  padding: 10px 20px;
+  text-decoration: none;
+  font-family: "Square Peg", cursive;
+  color: white;
+  font-size: 35px;
+  font-weight: bold;
+  -webkit-transition: all ease-in-out .5s;
+  transition: all ease-in-out .5s;
+}
+
+.contact-link:hover {
+  color: #00F0B5;
+  font-size: 55px;
+  cursor: url("./assets/lets-go2.png"), pointer;
+}
+/*# sourceMappingURL=main.css.map */
