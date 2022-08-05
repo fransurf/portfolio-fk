@@ -3,26 +3,36 @@
   max-width: 1400px;
   margin: 0 auto;
 
+  #about-title {
+    margin-top: 0;
+    padding-left: 20px;
+  }
+
   .about-content {
     display: flex;
     max-width: inherit;
     width: inherit;
 
     .about-div {
-      padding: 20px;
-      margin: 10px;
-      border: 2px solid $aqua;
+      padding: 0 20px;
+      margin: 0 auto;
+      // border: 2px solid $aqua;
       width: calc((100% /3) - 10px);
 
       .about-heading {
-        font-size: 30px;
+        font-size: 40px;
         white-space: nowrap;
-        color: $aqua !important;
+        // color: $aqua !important;
         margin: 15px auto;
+        span {
+          color: yellow;
+          font-size: 2em;
+          line-height: 1em;
+        }
       }
 
       .about-top {
-        border: 2px solid $pink;
+        // border: 2px solid $pink;
         background-color: white;
         position: relative;
         width: 100%;
@@ -80,7 +90,7 @@
 
   #se-img {
     background-image: url('../assets/Excalidraw.png');
-    background-position:bottom ;
+    background-position: bottom;
 
   }
   #neuro-img {

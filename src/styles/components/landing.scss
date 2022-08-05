@@ -2,7 +2,6 @@ body {
   background-color: $blue;  
   h1, h2 {
     font-family: $title;
-    // text-transform: uppercase;
   }
   
   h1{
@@ -29,38 +28,36 @@ body {
 }
 
 .landing-container {
-
   height: 100vh;
   max-width: 1200px;
   margin: 0 auto;
   display: flex;
   flex-direction: row;
-  // background-color: $black;
   font-family: $marker;
   color: white;
 
-  @keyframes slideInLeft {
-    0% {
-      transform: translateX(-100%);
-    }
-    100% {
-      transform: translateX(0);
-    }
-  }
+  // @keyframes slideInLeft {
+  //   0% {
+  //     transform: translateX(-100%);
+  //   }
+  //   100% {
+  //     transform: translateX(0);
+  //   }
+  // }
 
   .landing-content {
     width: 75%;
     transform: translateY(10%);
 
-    h1 {
-      font-size: 40px;
-      // transform: rotate(30deg);
-      animation: 1s ease-out 0s 1 slideInLeft;
-    }
-    h2 {
-      font-size: 30px;
-      animation: 1.2s ease-out 0s 1 slideInLeft;
-    }
+    // h1 {
+    //   font-size: 40px;
+    //   // transform: rotate(30deg);
+    //   animation: 1s ease-out 0s 1 slideInLeft;
+    // }
+    // h2 {
+    //   font-size: 30px;
+    //   animation: 1.2s ease-out 0s 1 slideInLeft;
+    // }
   }
 
   .landing-nav {
@@ -99,6 +96,33 @@ body {
 
 }
 
+// TYPEWRITER EFFECT
+.typewriter {
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  border-right: .15em solid $pink; /* The typwriter cursor */
+  white-space: nowrap; /* Keeps the content on a single line */
+  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+  // letter-spacing: .15em; /* Adjust as needed */
+  animation: 
+    typing 2s steps(14, end),
+    blink-caret 1s step-end infinite;
+}
+
+/* The typing effect */
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: $pink }
+}
+
+
+
+// HOVER EFFECT ON MENU LINKS
 .link:hover:before {
   content: '';
   position: absolute;
@@ -128,7 +152,6 @@ li:nth-of-type(3) .link:hover:before {
   background-color: $navy;
 }
 li:nth-of-type(4) .link:hover:before {
-  // background-color: $yellow;
   background-color: $blue;
 }
 
