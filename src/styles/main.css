@@ -73,6 +73,17 @@
   }
 }
 
+.page-title h1 {
+  text-align: left;
+  font-size: 35px;
+  text-transform: lowercase;
+}
+
+.page-title span {
+  color: yellow;
+  font-size: 1.5em;
+}
+
 body {
   background-color: #454ADE;
 }
@@ -91,11 +102,16 @@ body #landing-title {
 
 body #landing-title span {
   color: yellow;
-  font-size: 5.2em;
+  font-size: 2em;
 }
 
 body #landing-subtitle {
   font-size: 3em;
+}
+
+body #landing-subtitle span {
+  color: yellow;
+  font-size: 1.5em;
 }
 
 .landing-container {
@@ -137,8 +153,8 @@ body #landing-subtitle {
 
 .landing-container .landing-content {
   width: 75%;
-  -webkit-transform: translateY(20%);
-          transform: translateY(20%);
+  -webkit-transform: translateY(10%);
+          transform: translateY(10%);
 }
 
 .landing-container .landing-content h1 {
@@ -247,13 +263,10 @@ li:nth-of-type(4) .link:hover:before {
 }
 
 #about-container .about-content .about-div .about-heading {
-  font-size: 35px;
+  font-size: 30px;
   white-space: nowrap;
   color: #00F0B5 !important;
-}
-
-#about-container .about-content .about-div #se-text {
-  background-color: rgba(255, 255, 255, 0.9);
+  margin: 15px auto;
 }
 
 #about-container .about-content .about-div .about-top {
@@ -261,7 +274,7 @@ li:nth-of-type(4) .link:hover:before {
   background-color: white;
   position: relative;
   width: 100%;
-  height: 90%;
+  height: 80%;
   overflow: hidden;
 }
 
@@ -339,6 +352,7 @@ li:nth-of-type(4) .link:hover:before {
 
 #projects-container h1 {
   text-align: left;
+  font-size: 35px;
 }
 
 #projects-container .proj-selectors {

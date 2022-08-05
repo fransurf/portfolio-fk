@@ -7,23 +7,6 @@
     align-items: center;
   }
 
-  // EMOJI WINK ON HOVER
-  #emoji {
-    background-image: url('../assets/geek.png');
-    background-position: center;
-    background-size: contain;
-    height: 100px;
-    width: 100px;
-    transition: all .2s ease-in-out;
-  }
-
-  #emoji:hover {
-    background-image: url('../assets/wink.png');
-    background-size: cover;
-    background-repeat: no-repeat;
-  }
-
-
   #academics {
     width: 100%;
     display: flex;
@@ -34,100 +17,48 @@
       border-bottom: solid 2px yellow;
       height: 75px;
       width: 300px;
-    }
 
-    // TEXT HOVER EFFECT
-    .academic-subtitle {
-      box-shadow: inset 0 0 0 0 yellow;
-      transition: all .3s ease-in-out;
-      font-size: 30px;
-      margin-bottom: 0px;
-      // padding-bottom: 5px;
     }
-
-    .expand:hover .academic-subtitle {
-      box-shadow: inset 300px 0 0 0 yellow;
-      color: $blue;
+    .pubs-text {
+      text-align: center;
     }
 
     // MAKING EXPANDABLE CONTENT
     .long-text {
-      padding-top: 20px;
-      height: 0;
-      // width: 600px;
-      overflow: hidden;
-      transition: all .3s ease-in-out forward;
-      transition-delay: .25s;
+      display: none;
     }
-
+    .expand:hover .short-text {
+      display: none;
+    }
     .expand:hover .long-text {
-      // margin-top: 20px;
-      height: 600px;
-      width: 600px;
+      display: flex;
       text-align: center;
-
-
     }
 
-    // EXPANDABLE CONTENT - CLICKING BETWEEN SECTIONS 
-    .expandable {
-      background: #fff;
-      overflow: hidden;
-      color: #000;
-      line-height: 50px;
-
-      transition: all .5s ease-in-out;
-      height: 0;
-    }
-
-    .expandable:target {
-      height: 500px;
-    }
-
-    // EXPANDABLE CONTENT FORMATTING
-
-    p {
-      font-size: 1em;
-      margin-top: 0;
-    }
-
-    a {
-      font-family: $body;
-      color: $aqua;
+    .expand:hover .long-text-title {
       font-size: 35px;
-      font-weight: bold;
-    }
-
-    span {
-      color: $pink;
-      font-size: 30px;
-    }
-
-    h3 {
-      text-align: left;
-      font-size: .6em;
-      font-family: $title;
-      margin: 0;
+      object-fit: contain;
+      white-space: nowrap;
       margin-top: 10px;
-      padding-left: .2em;
     }
 
-    ul {
-      margin: 0;
+    .long-text-box.academics {
+      // border: solid 2px magenta;
+      position: absolute;
+      left: 50%;
+      top: 30%;
+      transform: translateX(-50%);
+      width: 100%;
+      height: 70%;
+      max-width: calc((1200px / 100 * 90)) ;
+
+      .acad-heading{
+        font-size: 35px;
+      }
+
     }
-
-    .description-li {
-      text-align: left;
-      font-family: $title;
-      font-size: .4em;
-      margin: 0;
-    }
-
-
-    // FIND WEIRD FORMATTING FROM HERE
 
     .long-text-inner {
-      margin-top: 20px;
       width: inherit;
       height: inherit;
       font-size: 35px;
@@ -144,7 +75,13 @@
         line-height: 110%;
       }
 
-
+      ul {
+        list-style: none;
+        li {
+          margin-top: 0;
+          padding:0;
+        }
+      }
 
       #publication-divs {
         width: inherit;
@@ -161,7 +98,7 @@
 
       }
 
-
+      
       .pubs-link {
         width: 100%;
         height: inherit;
@@ -176,7 +113,6 @@
         text-align: right;
         position: relative;
         left: 0;
-
         #emoji {
           display: none;
         }
@@ -209,6 +145,20 @@
     }
   }
 
+  #emoji {
+    background-image: url('../assets/geek.png');
+    background-position: center;
+    background-size: contain;
+    // vertical-align: center;
+    height: 100px;
+    width: 100px;
+    transition: all .2s ease-in-out;
+  }
 
+  #emoji:hover {
+    background-image: url('../assets/wink.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
 
 }

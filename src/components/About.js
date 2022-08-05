@@ -7,11 +7,11 @@ const About = () => {
 
   return (
     <>
-      <Container id='about-container'>
+      <Container className='content-container' id='about-container'>
 
-        {/* <div id='about-title'>
-          <h2>About</h2>
-        </div> */}
+        <div id='about-title'>
+          <h1 className='page-title'>About me<span>.</span> </h1>
+        </div>
         <div className='about-content'>
           <div className='about-div expand' id='se'>
             <h2 className='about-heading' id='se-text'>SOFTWARE ENGINEER</h2>

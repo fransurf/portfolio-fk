@@ -60,8 +60,8 @@ const Projects = () => {
 
   return (
     <>
-      <Container id='projects-container'>
-        <h1>All projects {'>>>'}</h1>
+      <Container className='content-container' id='projects-container'>
+        <h1 className='page-title'><span>{`{`}</span> My projects <span>{`}`}</span></h1>
         <Skills />
 
         <div className='proj-selectors img-left' id='proj4'>
