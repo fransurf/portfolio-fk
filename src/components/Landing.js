@@ -8,11 +8,13 @@ const LandingPage = () => {
     <Container className='landing-container'>
       <section className='landing-content'>
         <div className='name'>
-          <h1 className='typewriter' id='landing-title'>Frances Knight<span>.</span></h1>
+          <h1  id='landing-title'>Frances Knight<span>.</span></h1>
         </div>
         <div className='tagline'>
-          <h2 id='landing-subtitle'><span>{`{`}</span> from passionate neuroscientist to software engineer <span>{`}`}</span></h2>
+          <h2 className='landing-subtitle typewriter' id='type1'><span>{`{`}</span> from passionate neuroscientist to </h2>
+          <h2 className='landing-subtitle typewriter' id='type2'>junior software engineer <span>{`}`}</span></h2>
         </div>
+        {/* <Skills id='skills-bar'/> */}
       </section>
 
       <section className='landing-nav'>
@@ -25,7 +27,7 @@ const LandingPage = () => {
 
       </section>
 
-      {/* <Skills /> */}
+
 
     </Container>
     

@@ -54,7 +54,6 @@
     .long-text {
       padding-top: 20px;
       width: 600px;
-
       height: 0;
       overflow: hidden;
       // transition: height .3s ease-in-out forward;
@@ -78,6 +77,8 @@
       background-color: whitesmoke;
       color: black;
       overflow: hidden;
+
+      // box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
 
       // border: 2px $aqua solid;
 
@@ -179,7 +180,7 @@
 
     a {
       font-family: $body;
-      color: $aqua;
+      color: $blue;
       font-size: 35px;
       font-weight: bold;
     }
@@ -187,6 +188,7 @@
     span {
       color: $pink;
       font-size: 30px;
+      font-weight: bold;
     }
 
     h3 {
@@ -208,6 +210,11 @@
       font-size: .4em;
       margin: 0;
     }
+    #li-pubs {
+      padding-top: .5em;
+
+    }
+
 
     // FORMATTING OF EXPANDABLE DIVS
     #research{

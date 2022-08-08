@@ -15,8 +15,12 @@ body {
       font-size: 2em;
     }
   }
-  #landing-subtitle {
+  .landing-subtitle {
     font-size: 3em;
+    // line-height: 1em;
+    text-align: right;
+
+
     span {
       color: yellow;
       font-size: 1.5em;
@@ -48,16 +52,6 @@ body {
   .landing-content {
     width: 75%;
     transform: translateY(10%);
-
-    // h1 {
-    //   font-size: 40px;
-    //   // transform: rotate(30deg);
-    //   animation: 1s ease-out 0s 1 slideInLeft;
-    // }
-    // h2 {
-    //   font-size: 30px;
-    //   animation: 1.2s ease-out 0s 1 slideInLeft;
-    // }
   }
 
   .landing-nav {
@@ -93,31 +87,32 @@ body {
     }
 
   }
+  
 
 }
 
-// TYPEWRITER EFFECT
+// * TYPEWRITER EFFECT
 .typewriter {
   overflow: hidden; /* Ensures the content is not revealed until the animation */
-  border-right: .15em solid $pink; /* The typwriter cursor */
   white-space: nowrap; /* Keeps the content on a single line */
   margin: 0 auto; /* Gives that scrolling effect as the typing happens */
   // letter-spacing: .15em; /* Adjust as needed */
   animation: 
-    typing 2s steps(14, end),
-    blink-caret 1s step-end infinite;
+  typing 2.5s steps(16, end) forwards;
+
+}
+
+#type2 {
+  animation-delay: 2.5s;
+  width: 0;
+  border-right: 0;
 }
 
 /* The typing effect */
 @keyframes typing {
-  from { width: 0 }
-  to { width: 100% }
-}
-
-/* The typewriter cursor effect */
-@keyframes blink-caret {
-  from, to { border-color: transparent }
-  50% { border-color: $pink }
+  from { width: 0; border-right: .15em solid $pink /* The typwriter cursor */;   }
+  99% { width: 99%; border-right: .15em solid $pink }
+  to { width: 100%; border-right: transparent /* The typwriter cursor */; }
 }
 
 
@@ -154,6 +149,8 @@ li:nth-of-type(3) .link:hover:before {
 li:nth-of-type(4) .link:hover:before {
   background-color: $blue;
 }
+
+
 
 
 
