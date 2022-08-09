@@ -1,9 +1,11 @@
+
 #about-container {
   color: white;
   max-width: 1400px;
   height: 85vh;
   margin: 0 auto;
 
+  // * PAGE HEADING
   #about-title {
     margin-top: 0;
     padding-left: 20px;
@@ -21,10 +23,10 @@
       width: calc((100% /3) - 10px);
       height: inherit;
 
+      // * DIV SUBHEADING
       .about-heading {
         font-size: 40px;
         white-space: nowrap;
-        // color: $aqua !important;
         margin: 15px auto;
         span {
           color: yellow;
@@ -33,6 +35,7 @@
         }
       }
 
+      // * DIV CONTAINERS
       .about-top {
         // border: 2px solid $pink;
         background-color: white;
@@ -43,45 +46,17 @@
         box-shadow: $strong;       
         .about-text{
           width: 100%;
-
+          text-align: justify !important;
           p {
             font-size: 40px;
             color: $blue;
           }
         }
-
       }
-
     }
-
-  }
-  .about-link {
-    margin: 20px auto;
-    text-decoration: none;
-    font-family: $body;
-    text-transform: uppercase;
-    font-weight: bold;
-    font-size: 30px;
-    border-radius: 6px;
-    padding: 10px 60px;
-    background:
-      linear-gradient($pink, transparent),
-      linear-gradient(to top left, $aqua, transparent),
-      linear-gradient(to top right, $blue, transparent);
-    background-blend-mode: screen;
-    width: 100%;
-  }
-  .about-link:hover {
-    transform: scale(1.2);
-    font-size: 25px;
-    cursor: url('../assets/lets-go2.png'), pointer;
   }
 
-  .about-text {
-    text-align: justify !important;
-
-  }
-
+// * IMAGE OVERLAYS FOR TEXT REVEAL
   .img-overlay {
     width: 100%;
     height: 100%;
@@ -95,24 +70,45 @@
   #se-img {
     background-image: url('../assets/Excalidraw.png');
     background-position: bottom;
-
   }
   #neuro-img {
     background-image: url('../assets/brain1.JPG');
     background-position: center;
-
   }
   #snowboarder-img {
     background-image: url('../assets/boardingCloseup.png');
-
   }
 
   .about-top:hover {
     .img-overlay {
       transform: translateY(-100%);
     }
-
   }
+
+
+  
+  // * FOR ADDING PAGE LINKS TO DIVS
+  // .about-link {
+  //   margin: 20px auto;
+  //   text-decoration: none;
+  //   font-family: $body;
+  //   text-transform: uppercase;
+  //   font-weight: bold;
+  //   font-size: 30px;
+  //   border-radius: 6px;
+  //   padding: 10px 60px;
+  //   background:
+  //     linear-gradient($pink, transparent),
+  //     linear-gradient(to top left, $aqua, transparent),
+  //     linear-gradient(to top right, $blue, transparent);
+  //   background-blend-mode: screen;
+  //   width: 100%;
+  // }
+  // .about-link:hover {
+  //   transform: scale(1.2);
+  //   font-size: 25px;
+  //   cursor: url('../assets/lets-go2.png'), pointer;
+  // }
 
 
 }

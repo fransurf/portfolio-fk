@@ -1,3 +1,4 @@
+// * GENERAL FORMATTING
 body {
   background-color: $blue;  
   h1, h2 {
@@ -8,6 +9,7 @@ body {
     color: white;
   }
 
+  // * TITLES
   .landing-title {
     font-size: min(5vw, 80px);
     text-align: right;
@@ -19,20 +21,15 @@ body {
   }
   .landing-subtitle {
     font-size: min(3vw, 50px);
-    // line-height: 1em;
     text-align: right;
-
-
     span {
       color: yellow;
       font-size: 1.5em;
     }
   }
-
-
-
 }
 
+// * PAGE FORMATTING
 .landing-container {
   height: calc(100vh - 50px);
   max-width: 1200px;
@@ -44,11 +41,14 @@ body {
 
   .landing-content {
     width: 75%;
-    transform: translateY(-8vh);
+    top: 50px;
     display: flex;
     flex-direction: column;
     align-items: flex-end;
     justify-content: center;
+
+    // height: calc(100% - 50px);
+    // transform: translateY(-8vh);
   }
 
   .landing-nav {
@@ -85,7 +85,6 @@ body {
     }
 
   }
-  
 
 }
 
@@ -97,16 +96,15 @@ body {
   // letter-spacing: .15em; /* Adjust as needed */
   animation: 
   typing 2.5s steps(16, end) forwards;
-
 }
-
+// SECOND LINE APPEAR AFTER FIRST
 #type2 {
   animation-delay: 2.5s;
   width: 0;
   border-right: 0;
 }
 
-/* The typing effect */
+// KEY FRAMES FOR TYPING EFFECT
 @keyframes typing {
   from { width: 0; border-right: .15em solid $pink /* The typwriter cursor */;   }
   99% { width: 99%; border-right: .15em solid $pink }
@@ -115,7 +113,7 @@ body {
 
 
 
-// HOVER EFFECT ON MENU LINKS
+// * HOVER EFFECT ON MENU LINKS
 .link:hover:before {
   content: '';
   position: absolute;
@@ -126,15 +124,11 @@ body {
 
 .link:hover {
   font-size: 45px;
-  // letter-spacing: 15px;
-  // transition: font-size .2s ease-in-out;
   white-space: nowrap;
   cursor: pointer;
 }
-// a:hover {
-//   mix-blend-mode: difference;
-// }
 
+// CREATING DIFFERENT COLOUR FOR EACH PAGE
 li:nth-of-type(1) .link:hover:before {
   background-color: $aqua;
 }

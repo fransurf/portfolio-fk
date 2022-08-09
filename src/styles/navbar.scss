@@ -4,6 +4,7 @@
   border: 2px solid black;
   display: flex;
   justify-content: space-around;
+  z-index: 1000;
 
   .link {
     text-decoration: none;
@@ -17,7 +18,5 @@
   .link:hover {
     color: $aqua;
     font-size: 35px;
-
   }
-
 }

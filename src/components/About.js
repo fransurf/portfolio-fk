@@ -9,10 +9,10 @@ const About = () => {
     <>
       <Container className='content-container' id='about-container'>
 
-
+        {/* TITLE */}
         <h1 className='page-title' id='about-title'>About me<span>.</span> </h1>
 
-
+        {/* CONTENT IN 3 DIVS WITH IMAGE OVERLAY REVEALING TEXT ON HOVER */}
         <div className='about-content'>
           <div className='about-div expand' id='se'>
             <h2 className='about-heading' id='se-text'><span>.</span>sofware engineer</h2>
@@ -49,7 +49,7 @@ const About = () => {
           </div>
         </div>
 
-      {/* SCROLL BAR */}
+      {/* SCROLL BAR - PRESENTING TECH SKILLS */}
         <div className='scroll-bar'>
           <div className='scroll-content'> HTML5 <span>|</span> CSS <span>|</span> JavaScript <span>|</span> Sass <span>|</span> Bootstrap <span>|</span> React <span>|</span> Python <span>|</span> Django <span>|</span> PostgreSQL <span>|</span> Node.js <span>|</span> Axios <span>|</span> Express.js <span>|</span> Insomnia <span>|</span> Yarn <span>|</span> npm <span>|</span> HTML5 <span>|</span> CSS <span>|</span> JavaScript <span>|</span> Sass <span>|</span> Bootstrap <span>|</span> React <span>|</span> Python <span>|</span> Django <span>|</span> PostgreSQL <span>|</span> Node.js <span>|</span> Axios <span>|</span> Express.js <span>|</span> Insomnia <span>|</span> Yarn <span>|</span> npm <span>|</span></div>
         </div>
@@ -57,12 +57,8 @@ const About = () => {
 
       </Container>
 
-
-
-
-
       <div className='overlay' id='about'></div>
-      <div className='overlay2'></div>
+      {/* <div className='overlay2'></div> */}
     </>
   )
 }

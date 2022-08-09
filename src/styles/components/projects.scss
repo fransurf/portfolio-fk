@@ -1,86 +1,166 @@
-// #projects-container {
-//   height: calc(100vh - 20px);
-//   max-width: 1200px;
-//   border: 2px solid lightgreen;
-//   margin: 0 auto;
-//   background-color: $pink;
+#projects-container {
+  height: calc(100vh - 20px);
+  max-width: 1200px;
+  margin: 0 auto;
+  color: white;
+  cursor: url('../assets/cursor.png'), auto;
 
-//   display: flex;
-//   align-items: flex-end;
+  h1 {
+    text-align: left;
+    font-size: 35px;
+  }
 
-//   .proj-selectors {
-//     height: 40%;
-//     width: calc(100% / 5);
-//     padding: 0 10px;
-//     border: 2px solid magenta;
-//     text-align: center;
-//     display: inline-block;
+  .proj-selectors {
+    width: inherit;
+    height: 500px;
+    display: flex;
+    justify-content: space-around;
+    border-top: 2px solid magenta;
+    border-bottom: 2px solid magenta;
+    position: relative;
 
-//     .title-rotate {
-//       transform: rotate(270deg) translateX(-50%);
-//       text-align: end;
-//       color: white;
-//       font-family: $marker;
-//       position: relative;
-//       overflow-wrap: normal;
-//       width: 120%;
-//     }
+    .content-outer {
+      display: flex;
+      justify-content: space-around;
+      height: inherit;
+      width: inherit;
+      // border: 2px solid yellow;
+      position: absolute;
+      z-index: 10;
+    }
 
-//   }
+    .content-outer:has(img):has(.moveLeft) {
+      transition: transform .8s ease-in-out;
+      transform: translateX(-100vw);
+    }
+
+    .proj-content {
+      padding: 20px;
+      width: inherit;
+
+      .proj-text {
+        font-size: 2em;
+        margin-top: 0;
+
+      }
+
+      .proj-tech {
+        font-family: $title;
+        font-size: 1.2em;
+      }
+
+      a {
+        text-decoration-color: yellow;
+        font-family: $title;
+        font-size: 1.2em;
+        color: white;
+        transition: all .2s ease-in-out;
+      }
+
+    }
+
+    .proj-content-left h2 {
+      text-align: right !important;
+    }
+
+    .proj-content-left p {
+      text-align: right !important;
+    }
+
+    .proj-content-left a {
+      text-align: right !important;
+      // float: right;
+    }
+
+    .proj-content-right h2 {
+      text-align: left !important;
+    }
+
+    .proj-content-right p {
+      text-align: left !important;
+    }
+
+    .proj-content-right a {
+      text-align: left !important;
+    }
+
+  }
+
+  .proj-img.moveLeft {
+    transition: transform .8s ease-in-out;
+    transform: translateX(-100vw);
+  }
+
+  .proj-img {
+    width: 50%;
+    object-fit: contain;
+    transition: all .5s ease-in-out;
+    z-index: 2;
+
+
+  }
+
+  .proj-img:hover {
+    transform: scale(1.2);
+    filter: contrast(1.75) !important;
+    cursor: url('../assets/lets-go2.png'), pointer;
+    z-index: -30;
+
+  }
+
+
+  .expand {
+    display: none;
+  }
+
+  .title-rotate {
+    font-size: 35px;
+    vertical-align: middle;
+    width: inherit;
+    text-align: right;
+    transition: all .5s ease-in-out;
+  }
+
+  .title-rotate:hover {
+    font-size: 1.3em;
+    font-weight: bold;
+    cursor: url('../assets/lets-go2.png'), pointer;
+  }
+
+  // FOR MAKING TITLE HIGHLIGHT??
+  // Current the animation flickers
+  // .proj-content:hover .title-rotate {
+  //   box-shadow: inset 100em 0 0 0 yellow;
+  //   color: $blue;
+  // }
 
 
 
-//   // ON HOVER EFFECTS
-//   .proj-selectors:hover {
-//     cursor: pointer;
-//   }
-
-//   .expand {
-//     display: none;
-//   }
-//   .proj-selectors:hover .expand {
-//     cursor: pointer;
-//     display: flex;
-//     justify-content: space-between;
-//     // border: 2px solid yellow;
-//     height: 60%;
-//     width: 90%;
-//     max-width: 1200px;
-//     margin: 0 auto;
-//     // background-color: white;
-//     // transform: translate();
-//     position: absolute;
-//     top: 20px;
-//     // left: 5%;
-//     // top: 50%;
-//     left: 50%;
-//     margin-right: -50%;
-//     transform: translateX(-50%);
+  .img-left.title-rotate {
+    text-align: right;
+  }
 
 
-//     .expand-content {
-//       width: 40%;
-//       height: 80%;
-//       padding: 20px;
-//       border: 2px solid yellow;
-//       background-color: white;
-//       margin-top: 5%;
-//       margin-right: 30px;
+  // * FOR SWITCHING BETWEEN IMG & ACCORDIAN
+  .content-inner {
+    // border: 2px yellow solid;
+    display: flex;
+    justify-content: space-around;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    right: 100vw;
+    z-index: 10;
 
-//     }
+    .accordian {
+      width: 50%;
+    }
 
-//     .accordian {
-//       position: absolute;
-//       top: 0;
-//       right: 0;
-//     }
-
-//     #mobero-img {
-//       width: 55%;
-//       object-fit: contain;
-//     }
-    
-//   }
+    .proj-detail {
+      width: 50%;
+      color: white;
+    }
+  }
 
 
-// }
+}
