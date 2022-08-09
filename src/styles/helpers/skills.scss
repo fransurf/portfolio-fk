@@ -1,3 +1,5 @@
+
+// * SKILLS BAR WITH LOGOS
 .skills {
   display: flex;
   justify-content: space-between;
@@ -56,5 +58,46 @@
     background-image: url(../assets/logos/express.png);
     width: 100px;
     background-size: contain;
+  }
+}
+
+
+// * SCROLLING TEXT BAR
+.scroll-bar {
+  width: 100%;
+  padding: 10px 0;
+
+}
+
+.scroll-content {
+  display: block;
+  width: 200%;
+  font-family: $title;
+  // font-weight: bold;
+  font-size: 3vw;
+  color: white;
+  white-space: nowrap;
+
+  animation: scroll 15s linear infinite;
+  animation-delay: .5s;
+
+  span {
+    color: yellow;
+    font-size: 1.3em;
+  }
+}
+
+#landing-scroll {
+  animation-delay: 5s;
+}
+
+#about-scroll {
+  position: absolute;
+  bottom: 0;
+}
+
+@keyframes scroll {
+  to {
+    transform: translateX(-100%);
   }
 }

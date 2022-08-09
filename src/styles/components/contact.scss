@@ -1,0 +1,25 @@
+
+#contact-subtitle {
+  margin-bottom: 1em;
+}
+
+#contacts-list {
+  display: flex;
+}
+
+.contact-link {
+  padding: 10px 20px;
+  text-decoration: none;
+  font-family: $body;
+  color:white;
+  font-size: 3em;
+  font-weight: bold;
+  transition: all ease-in-out .5s;
+}
+.contact-link:hover {
+  color: $yellow;
+  font-size: 4em;
+  cursor: url('../assets/lets-go2.png'), pointer;
+  text-decoration: underline;
+  text-decoration-color: white;
+}

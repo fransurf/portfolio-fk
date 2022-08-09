@@ -8,15 +8,17 @@ body {
     color: white;
   }
 
-  #landing-title {
-    font-size: 5em;
+  .landing-title {
+    font-size: min(5vw, 80px);
+    text-align: right;
+    margin-top: 0;
     span {
       color: yellow;
       font-size: 2em;
     }
   }
   .landing-subtitle {
-    font-size: 3em;
+    font-size: min(3vw, 50px);
     // line-height: 1em;
     text-align: right;
 
@@ -32,7 +34,7 @@ body {
 }
 
 .landing-container {
-  height: 100vh;
+  height: calc(100vh - 50px);
   max-width: 1200px;
   margin: 0 auto;
   display: flex;
@@ -40,18 +42,13 @@ body {
   font-family: $marker;
   color: white;
 
-  // @keyframes slideInLeft {
-  //   0% {
-  //     transform: translateX(-100%);
-  //   }
-  //   100% {
-  //     transform: translateX(0);
-  //   }
-  // }
-
   .landing-content {
     width: 75%;
-    transform: translateY(10%);
+    transform: translateY(-8vh);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: center;
   }
 
   .landing-nav {
@@ -66,12 +63,13 @@ body {
     .list {
       width: 100%;
       list-style: none;
+      float: right;
 
       li {
   
         min-height: 75px;
         min-width: 300px;
-        border: solid 2px white;
+        border-top: solid 2px white;
         font-size: 30px;
         margin: 0 auto;
 
