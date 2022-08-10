@@ -15,11 +15,11 @@ function App() {
         <NavBar />
         <Routes>
           <Route path='/portfolio-fk' element={<LandingPage />} />
-          <Route path='/about' element={<About />} />
-          <Route path='/projects' element={<Projects />} />
-          <Route path='/academics' element={<Academics />} />
-          <Route path='/contact' element={<Contact />} />
-          <Route path='/accordian' element={<Accordion />} />
+          <Route path='/portfolio-fk/about' element={<About />} />
+          <Route path='/portfolio-fk/projects' element={<Projects />} />
+          <Route path='/portfolio-fk/academics' element={<Academics />} />
+          <Route path='/portfolio-fk/contact' element={<Contact />} />
+          <Route path='/portfolio-fk/accordian' element={<Accordion />} />
 
         </Routes>
 
