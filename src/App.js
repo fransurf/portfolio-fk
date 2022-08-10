@@ -14,7 +14,7 @@ function App() {
       <BrowserRouter>
         <NavBar />
         <Routes>
-          <Route path='/' element={<LandingPage />} />
+          <Route path='/portfolio-fk' element={<LandingPage />} />
           <Route path='/about' element={<About />} />
           <Route path='/projects' element={<Projects />} />
           <Route path='/academics' element={<Academics />} />

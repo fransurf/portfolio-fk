@@ -1,6 +1,6 @@
 import React from 'react'
 import Container from 'react-bootstrap/Container'
-import { Link } from 'react-router-dom'
+// import { Link } from 'react-router-dom'
 
 
 const About = () => {

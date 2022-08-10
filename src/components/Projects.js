@@ -12,7 +12,12 @@ import Skills from '../helpers/Skills'
 // import AccordianProj2 from '../accordians/AccordianProj2'
 // import AccordianProj1 from '../accordians/AccordianProj1'
 
-
+// PROJECT PICTURES
+import Proj4img from '../styles/assets/projects/p4-img1.png' 
+import Proj3img from '../styles/assets/projects/p3-img1.png' 
+import Proj2img from '../styles/assets/projects/p2-img1.png' 
+import Proj1img from '../styles/assets/projects/p1-img1.png' 
+import MOBEROimg from '../styles/assets/projects/mobero.png' 
 
 const Projects = () => {
 
@@ -38,7 +43,7 @@ const Projects = () => {
               <p className='proj-text proj-tech'>{`Django | REST-framework | PostgreSQL | SASS | TablePlus | React.js | React-Slick (Carousel) >>>`}</p>
               
             </div>
-            <img className='proj-img' id='wts-img' src='../../assets/projects/p4-img1.png' alt='Women that Shred landing page' />
+            <img className='proj-img' id='wts-img' src={Proj4img} alt='Women that Shred landing page' />
           </div>
         </div>
 
@@ -46,7 +51,7 @@ const Projects = () => {
 
         <div className='proj-selectors img-right' id='proj3'>
           <div className='content-outer'>
-            <img className='proj-img' id='nb-img' src='../../assets/projects/p3-img1.png' alt='national park page' />
+            <img className='proj-img' id='nb-img' src={Proj3img} alt='national park page' />
             <div className='proj-content proj-content-right'>
               <a className='proj-text' target='blank' href="https://github.com/fransurf/SEI-PROJECT-4-WF/blob/main/README.md" ><h2 className='title-rotate'>Natural Beauty</h2></a> 
               <p className='proj-text'>{`<< Group project (3ppl) << 1-week`}</p>
@@ -69,7 +74,7 @@ const Projects = () => {
 
             </div>
             
-            <img className='proj-img' id='f4u-img' src='../../assets/projects/p2-img1.png' alt='Fruity4you landing page' />
+            <img className='proj-img' id='f4u-img' src={Proj2img} alt='Fruity4you landing page' />
           </div>
         </div>
 
@@ -77,7 +82,7 @@ const Projects = () => {
 
         <div className='proj-selectors img-right' id='proj1'>
           <div className='content-outer' >
-            <img className='proj-img' id='fis-img' src='../../assets/projects/p1-img1.png' alt='Froggers in Space intro' />
+            <img className='proj-img' id='fis-img' src={Proj1img} alt='Froggers in Space intro' />
 
             <div className='proj-content proj-content-right'>
               <a className='proj-text' target='blank' href="https://fransurf.github.io/SEI-Project-ONE/" ><h2 className='title-rotate'>Froggers in Space</h2></a>
@@ -99,7 +104,7 @@ const Projects = () => {
               <p className='proj-text'>{`Supporting a team of BSc Computer Science students to develop a novel mobile application >> aimed at assisting families of children with ADHD & poor sleep in establishing effective bedtime routines >>`}</p>
 
             </div>
-            <img className='proj-img' id='mob-img' src='../../assets/projects/mobero.png' alt='mobero mobile interfaces' />
+            <img className='proj-img' id='mob-img' src={MOBEROimg} alt='mobero mobile interfaces' />
           </div>
         </div>
 
