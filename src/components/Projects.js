@@ -5,19 +5,12 @@ import Container from 'react-bootstrap/Container'
 import Skills from '../helpers/Skills'
 
 
-// * IMPORT PROJECTS ACCORDIAN
-// IN ORDER TO DISPLAY IMAGE ACCORDIANS - WATCH THIS SPACE
-// import AccordianProj4 from '../accordians/AccordianProj4'
-// import AccordianProj3 from '../accordians/AccordianProj3'
-// import AccordianProj2 from '../accordians/AccordianProj2'
-// import AccordianProj1 from '../accordians/AccordianProj1'
-
 // PROJECT PICTURES
-import Proj4img from '../styles/assets/projects/p4-img1.png' 
-import Proj3img from '../styles/assets/projects/p3-img1.png' 
-import Proj2img from '../styles/assets/projects/p2-img1.png' 
-import Proj1img from '../styles/assets/projects/p1-img1.png' 
-import MOBEROimg from '../styles/assets/projects/mobero.png' 
+import Proj4img from './projects/p4-img1.png' 
+import Proj3img from './projects/p3-img1.png' 
+import Proj2img from './projects/p2-img1.png' 
+import Proj1img from './projects/p1-img1.png' 
+import MOBEROimg from './projects/mobero.png' 
 
 const Projects = () => {
 
