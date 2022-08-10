@@ -14,7 +14,7 @@ const Contact = () => {
           <div className='name'>
             <h1 className='landing-title' id='contact-title'>Frances Knight<span>.</span></h1>
           </div>
-          <h2 className='landing-subtitle typewriter' id='contact-subtitle' ><span>{`{`}</span> You can find me at <span>{`}`}</span></h2>
+          <h2 className='landing-subtitle typewriter' id='contact-subtitle' ><span>{`{`}</span> You can find me at ... <span>{`}`}</span></h2>
           <ul id='contacts-list' >
             <a href='https://www.linkedin.com/in/frances-knight-757691b8/' className='contact-link' alt='link to LinkedIn profile' target='blank'>LinkedIn</a>
             <a href='https://github.com/fransurf/' className='contact-link' alt='link to GitHub profile' target='blank'>GitHub</a>
