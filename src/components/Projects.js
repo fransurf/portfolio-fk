@@ -6,11 +6,11 @@ import Skills from '../helpers/Skills'
 
 
 // PROJECT PICTURES
-import Proj4img from './projects/p4-img1.png' 
-import Proj3img from './projects/p3-img1.png' 
-import Proj2img from './projects/p2-img1.png' 
-import Proj1img from './projects/p1-img1.png' 
-import MOBEROimg from './projects/mobero.png' 
+import Proj4img from '../styles/assets/projects/p4-img1.png' 
+import Proj3img from '../styles/assets/projects/p4-img1.png' 
+import Proj2img from '../styles/assets/projects/p4-img1.png' 
+import Proj1img from '../styles/assets/projects/p4-img1.png' 
+import MOBEROimg from '../styles/assets/projects/p4-img1.png' 
 
 const Projects = () => {
 
