@@ -7,10 +7,10 @@ import Skills from '../helpers/Skills'
 
 // PROJECT PICTURES
 import Proj4img from '../styles/assets/projects/p4-img1.png' 
-import Proj3img from '../styles/assets/projects/p4-img1.png' 
-import Proj2img from '../styles/assets/projects/p4-img1.png' 
-import Proj1img from '../styles/assets/projects/p4-img1.png' 
-import MOBEROimg from '../styles/assets/projects/p4-img1.png' 
+import Proj3img from '../styles/assets/projects/p3-img1.png' 
+import Proj2img from '../styles/assets/projects/p2-img1.png' 
+import Proj1img from '../styles/assets/projects/p1-img1.png' 
+import MOBEROimg from '../styles/assets/projects/mobero.png' 
 
 const Projects = () => {
 
