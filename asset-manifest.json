@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "./static/css/main.63589457.css",
-    "main.js": "./static/js/main.94f103c1.js",
+    "main.js": "./static/js/main.f3cccbdb.js",
     "static/js/787.d5c17575.chunk.js": "./static/js/787.d5c17575.chunk.js",
     "static/media/p3-img1.png": "./static/media/p3-img1.161d6dcd04efe58e1197.png",
     "static/media/p4-img6.png": "./static/media/p4-img6.63e418e6489af2166fa4.png",
@@ -25,6 +25,7 @@
     "static/media/p2-img3.png": "./static/media/p2-img3.e81a322fb2ccc363a68b.png",
     "static/media/brain1.JPG": "./static/media/brain1.fa25c028fa09897e453e.JPG",
     "static/media/p1-img3.png": "./static/media/p1-img3.ab0ca7fb3eb183509ae9.png",
+    "static/media/mobero.png": "./static/media/mobero.77384d9acfb3bbe65ee3.png",
     "static/media/braincando.png": "./static/media/braincando.6ac9915b7410dbfc1173.png",
     "static/media/adhd-sleep.png": "./static/media/adhd-sleep.aa2ea11a722ddb73a198.png",
     "static/media/myrto.png": "./static/media/myrto.87e547020d4fceb1c99c.png",
@@ -33,11 +34,11 @@
     "static/media/geek.png": "./static/media/geek.076856d9df3d007fbd60.png",
     "index.html": "./index.html",
     "main.63589457.css.map": "./static/css/main.63589457.css.map",
-    "main.94f103c1.js.map": "./static/js/main.94f103c1.js.map",
+    "main.f3cccbdb.js.map": "./static/js/main.f3cccbdb.js.map",
     "787.d5c17575.chunk.js.map": "./static/js/787.d5c17575.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.63589457.css",
-    "static/js/main.94f103c1.js"
+    "static/js/main.f3cccbdb.js"
   ]
 }
