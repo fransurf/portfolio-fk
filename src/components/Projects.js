@@ -30,7 +30,7 @@ const Projects = () => {
 
           <div className='content-outer' >
             <div className='proj-content proj-content-left'>
-              <a className='proj-text' target='blank' href="https://github.com/fransurf/SEI-PROJECT-4-WF/blob/main/README.md" ><h2 className='title-rotate'>Women that Shred</h2></a>
+              <a className='proj-text' target='blank' href="https://women-that-shred.herokuapp.com/" ><h2 className='title-rotate'>Women that Shred</h2></a>
               <p className='proj-text'>{`Solo project >>  1-week >>`}</p>
               <p className='proj-text'>{`Full-stack application presenting female snowboards, advice on board selection & an authenticated community area for the buying & selling of 'preloved' boards >>`}</p>
               <p className='proj-text proj-tech'>{`Django | REST-framework | PostgreSQL | SASS | TablePlus | React.js | React-Slick (Carousel) >>>`}</p>
