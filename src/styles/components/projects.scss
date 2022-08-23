@@ -3,7 +3,7 @@
   max-width: 1200px;
   margin: 0 auto;
   color: white;
-  cursor: url('../assets/cursor.png'), auto;
+  cursor: url('../assets/circle.png'), auto;
 
   h1 {
     text-align: left;
@@ -96,18 +96,14 @@
     object-fit: contain;
     transition: all .5s ease-in-out;
     z-index: 2;
-
-
   }
 
   .proj-img:hover {
     transform: scale(1.2);
     filter: contrast(1.75) !important;
-    cursor: url('../assets/lets-go2.png'), pointer;
+    cursor: url('../assets/circle-big.png'), pointer;
     z-index: -30;
-
   }
-
 
   .expand {
     display: none;
@@ -124,17 +120,8 @@
   .title-rotate:hover {
     font-size: 1.3em;
     font-weight: bold;
-    cursor: url('../assets/lets-go2.png'), pointer;
+    cursor: url('../assets/circle-big.png'), pointer;
   }
-
-  // FOR MAKING TITLE HIGHLIGHT??
-  // Current the animation flickers
-  // .proj-content:hover .title-rotate {
-  //   box-shadow: inset 100em 0 0 0 yellow;
-  //   color: $blue;
-  // }
-
-
 
   .img-left.title-rotate {
     text-align: right;
@@ -161,6 +148,5 @@
       color: white;
     }
   }
-
 
 }

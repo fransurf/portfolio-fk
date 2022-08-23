@@ -2,6 +2,8 @@
 @import './base.scss';
 @import './navbar.scss';
 
+@import './helpers/loading.scss';
+
 @import './components/landing.scss';
 @import './components/about.scss';
 @import './components/projects.scss';
@@ -34,9 +36,11 @@
     line-height: 25px;
   }
 
-  cursor: url('./assets/cursor.png'), auto;
+  cursor: url('./assets/circle.png'), auto;
+  transition: all .2s ease-in-out;
+
   .link:hover {
-    cursor: url('./assets/lets-go2.png'), pointer;
+    cursor: url('./assets/circle-big.png'), pointer;
   }
 }
 

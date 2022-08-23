@@ -1,0 +1,172 @@
+#academics-container {
+  color: white;
+}
+
+#academics-container #academic-title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#academics-container #academics {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+#academics-container #academics .academic-div {
+  border-bottom: solid 2px yellow;
+  height: 75px;
+  width: 300px;
+}
+
+#academics-container #academics .pubs-text {
+  text-align: center;
+}
+
+#academics-container #academics .long-text {
+  display: none;
+}
+
+#academics-container #academics .expand:hover .short-text {
+  display: none;
+}
+
+#academics-container #academics .expand:hover .long-text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-align: center;
+}
+
+#academics-container #academics .expand:hover .long-text-title {
+  font-size: 35px;
+  -o-object-fit: contain;
+     object-fit: contain;
+  white-space: nowrap;
+  margin-top: 10px;
+}
+
+#academics-container #academics .long-text-box.academics {
+  position: absolute;
+  left: 50%;
+  top: 30%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  width: 100%;
+  height: 70%;
+  max-width: calc((1200px / 100 * 90));
+}
+
+#academics-container #academics .long-text-box.academics .acad-heading {
+  font-size: 35px;
+}
+
+#academics-container #academics .long-text-inner {
+  width: inherit;
+  height: inherit;
+  font-size: 35px;
+  background-color: whitesmoke;
+  color: black;
+  -webkit-transition: all .5s ease-in-out;
+  transition: all .5s ease-in-out;
+}
+
+#academics-container #academics .long-text-inner .description {
+  font-style: italic;
+  font-size: 35px;
+  padding: 20px;
+  text-align: center;
+  line-height: 110%;
+}
+
+#academics-container #academics .long-text-inner ul {
+  list-style: none;
+}
+
+#academics-container #academics .long-text-inner ul li {
+  margin-top: 0;
+  padding: 0;
+}
+
+#academics-container #academics .long-text-inner #publication-divs {
+  width: inherit;
+  height: inherit;
+  position: absolute;
+}
+
+#academics-container #academics .long-text-inner .pubs {
+  width: 70%;
+  height: 50%;
+  background-size: cover;
+  position: relative;
+}
+
+#academics-container #academics .long-text-inner .pubs-link {
+  width: 100%;
+  height: inherit;
+}
+
+#academics-container #academics .long-text-inner .pubs:hover {
+  width: 100%;
+  z-index: 10;
+  cursor: pointer;
+  text-align: right;
+  position: relative;
+  left: 0;
+}
+
+#academics-container #academics .long-text-inner .pubs:hover #emoji {
+  display: none;
+}
+
+#academics-container #academics .long-text-inner #myrto {
+  background-image: url("../assets/publications/myrto.png");
+  background-position: bottom;
+}
+
+#academics-container #academics .long-text-inner #braincando {
+  background-image: url("../assets/publications/braincando.png");
+  top: -8%;
+  left: 10%;
+}
+
+#academics-container #academics .long-text-inner #adhd-sleep {
+  background-image: url("../assets/publications/adhd-sleep.png");
+  background-position: bottom;
+  top: -16%;
+  left: 20%;
+}
+
+#academics-container #academics .long-text-inner #adol-sleep {
+  background-image: url("../assets/publications/adol-sleep.png");
+  top: -20%;
+  left: 30%;
+}
+
+#academics-container #emoji {
+  background-image: url("../assets/geek.png");
+  background-position: center;
+  background-size: contain;
+  height: 100px;
+  width: 100px;
+  -webkit-transition: all .2s ease-in-out;
+  transition: all .2s ease-in-out;
+}
+
+#academics-container #emoji:hover {
+  background-image: url("../assets/wink.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+/*# sourceMappingURL=academics-v1.css.map */

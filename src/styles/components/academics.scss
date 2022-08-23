@@ -96,7 +96,7 @@
       // color: $pink;
       font-size: 45px;
       text-decoration: underline;
-      cursor: url('../assets/lets-go2.png'), pointer;
+      cursor: url('../assets/circle-big.png'), pointer;
     }
 
 
@@ -178,11 +178,10 @@
       .pubs:hover {
         width: 100%;
         z-index: 10;
-        cursor: pointer;
         text-align: right;
         position: relative;
         left: 0;
-        cursor: url('../assets/lets-go2.png'), pointer;
+        cursor: url('../assets/circle-big.png'), pointer;
       }
 
       #myrto {
