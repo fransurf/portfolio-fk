@@ -155,8 +155,8 @@
 
     }
 
-     // EXPANDABLE CONTENT - CLICKING BETWEEN SECTIONS 
-     .expandable {
+    // EXPANDABLE CONTENT - CLICKING BETWEEN SECTIONS 
+    .expandable {
       background: #fff;
       overflow: hidden;
       color: #000;
@@ -170,6 +170,22 @@
       height: 500px;
       overflow: hidden;
     }
+
+    // #nav-careeron {
+    //   background-color: magenta;
+    //   height: 100px;
+    //   overflow: hidden;
+    //   display: block;
+    //   transition: all .5s ease-in-out;
+    // }
+    
+    // #nav-careeroff {
+    //   background-color: aqua;
+    //   height: 0;
+    //   overflow: hidden;
+    //   display: block;
+    //   transition: all .5s ease-in-out;
+    // }
 
     // EXPANDABLE CONTENT FORMATTING
 

@@ -1,4 +1,4 @@
-import { HashRouter, Routes, Route } from 'react-router-dom'
+import { BrowserRouter, Routes, Route } from 'react-router-dom'
 // ^ using HashRouter instead of BrowserRouter for deployment on github pages
 
 import NavBar from './components/NavBar'
@@ -12,7 +12,7 @@ import Accordion from './components/AccordianWVW'
 function App() {
   return (
     <main className='main-container'>
-      <HashRouter >
+      <BrowserRouter >
         {/* ^ providing a basename which directs to the gh-page url for the routes to work off */}
         <NavBar />
         <Routes>
@@ -25,7 +25,7 @@ function App() {
 
         </Routes>
 
-      </HashRouter>
+      </BrowserRouter>
 
       {/* <div className="custom-cursor"></div> */}
     </main>

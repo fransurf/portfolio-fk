@@ -3,6 +3,25 @@ import Container from 'react-bootstrap/Container'
 
 const Academics = () => {
 
+//   function toggleDiv(divid)
+//   {
+ 
+//     const varon = divid + 'on';
+//     const varoff = divid + 'off';
+ 
+//     if(document.getElementById(varon).style.height === '100px')
+//     {
+//     document.getElementById(varon).style.height = '0';
+//     document.getElementById(varoff).style.height = '100px';
+//     }
+   
+//     else
+//     {  
+//     document.getElementById(varoff).style.height = '0';
+//     document.getElementById(varon).style.height = '100px'
+//     }
+// } 
+
   return (
     <>
       <Container className='content-container' id='academics-container'>
@@ -20,7 +39,8 @@ const Academics = () => {
               
               <div className='long-text-inner'>
                 <a href='#nav-career'><span>{`<`}</span> About my career <span>{`>`}</span></a>
-                <div class='expandable nav-top' id='nav-career'>
+                {/* <button onClick={toggleDiv} >MORE CONTENT</button> */}
+                <div className='expandable nav-top' id='nav-career'>
                   <p className='description'>{`"Before making the transition into software engineering, I started my career as a psychology lecturer, specialising in neuroscience.`}<br></br><br></br>{`I enjoyed the challenge of presenting complex concepts in accessible, engaging & humorous ways.`}<br></br><br></br>{`Across my research career, I have been drawn to understanding how different technologies can be used to support the diagnosis & intervention of developmental disorders. It was collaborating on the development of these technologies that sparked my interest in the world of software development."`}</p>
                 </div>
 
@@ -54,7 +74,7 @@ const Academics = () => {
               
               <div className='long-text-inner'>
                 <a href='#nav-research' ><span>{`<`}</span> About my research <span>{`>`}</span></a>
-                <div class='expandable nav-top' id='nav-research'>
+                <div className='expandable nav-top' id='nav-research'>
                   <p className='description'>{`"As I specialised, my academic research consisted of two overlapping avenues; ADHD and sleep.`}<br></br><br></br>{`My focus was always on understanding the current challenges faced for young people with both ADHD and poor sleep, in order to develop interventions to better support them"`}</p>
                 </div>
 
@@ -79,7 +99,7 @@ const Academics = () => {
 
               <div className='long-text-inner' >
                 <a href='#nav-pub' ><span>{`<`}</span> About my talks <span>{`>`}</span></a>
-                <div class='expandable nav-top' id='nav-pub'>
+                <div className='expandable nav-top' id='nav-pub'>
                   <p className='description'>{`"Given my field of research, I felt the importance of public engagement; presenting current findings to the people that it affects promoting understanding and open discussion.`}<br></br><br></br>{`In addition to academic presentations, I regularly gave talks at ADHD & development support groups, as well as to pupils, parents & teachers at schools"`}</p>
                 </div>
 
