@@ -67,6 +67,11 @@
       text-align: center;
     }
 
+    .toggle {
+      display: flex;
+      justify-content: space-between;
+    }
+
     // FIND WEIRD FORMATTING FROM HERE
 
     .long-text-inner {
@@ -86,7 +91,7 @@
 
       .description {
         font-style: italic;
-        font-size: 35px;
+        font-size: 25px;
         padding: 20px;
         text-align: center;
         line-height: 110%;
