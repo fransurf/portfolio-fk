@@ -5,7 +5,7 @@ import NavBar from './components/NavBar'
 import LandingPage from './components/Landing'
 import About from './components/About'
 import Projects from './components/Projects'
-import Academics from './components/AcademicsTrial'
+import Academics from './components/Academics'
 import Contact from './components/Contact'
 import Accordion from './components/AccordianWVW'
 

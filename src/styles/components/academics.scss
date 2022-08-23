@@ -50,7 +50,7 @@
       color: $blue;
     }
 
-    // MAKING EXPANDABLE CONTENT
+    // EXPANDABLE CONTENT
     .long-text {
       padding-top: 20px;
       width: 600px;
@@ -58,21 +58,57 @@
       overflow: hidden;
       transition: height .3s ease-in-out forward;
       transition-delay: .25s;
-      // border: 3px magenta solid;
     }
+
     .expand:hover .long-text {
-      // margin-top: 20px;
       height: 600px;
       width: 600px;
       text-align: center;
+      box-shadow: rgba(0, 0, 0, 0.2) 0px 60px 40px -7px;
+      border-radius: 4px;
     }
 
+    // TOGGLE BETWEEN CONTENT
     .toggle {
+      background-color: $yellow;
       display: flex;
       justify-content: space-between;
     }
 
-    // FIND WEIRD FORMATTING FROM HERE
+    .toggle h3 {
+      font-family: $body;
+      color: $blue;
+      font-size: 35px;
+      font-weight: bold;
+      padding: 0 20px;
+      line-height: 45px;
+
+      transition: all .5s ease-in-out;
+
+      span {
+        color: white;
+        font-size: 45px;
+        font-weight: bold;
+      }
+    }
+
+    .toggle h3:hover {
+      // color: $pink;
+      font-size: 45px;
+      text-decoration: underline;
+      cursor: url('../assets/lets-go2.png'), pointer;
+    }
+
+
+    // EXPANDABLE CONTENT FORMATTING
+    h3 {
+      text-align: left;
+      font-size: .6em;
+      font-family: $title;
+      margin: 0;
+      margin-top: 10px;
+      padding-left: .2em;
+    }
 
     .long-text-inner {
       margin-top: 20px;
@@ -82,20 +118,35 @@
       background-color: whitesmoke;
       color: black;
       overflow: hidden;
-
-      // box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
-
-      // border: 2px $aqua solid;
+      // border-radius: 4px;
 
       transition: all .5s ease-in-out;
 
       .description {
-        font-style: italic;
-        font-size: 25px;
+        color: $blue;
+        font-size: 33px;
         padding: 20px;
         text-align: center;
         line-height: 110%;
       }
+
+    .quals {
+      padding-top: 20px;
+    }
+    ul {
+      margin: 0;
+    }
+
+    .description-li {
+      text-align: left;
+      font-family: $title;
+      font-size: .4em;
+      margin: 0;
+    }
+
+    #li-pubs {
+      padding-top: .5em;
+    }
 
 
 
@@ -103,17 +154,20 @@
       #nav2-pubs {
         width: inherit;
       }
+
       #publication-divs {
         width: inherit;
         height: 480px;
         position: absolute;
         // border: 2px $aqua solid;
       }
+
       .pubs-link {
         width: 100%;
         height: calc(480px / 4);
 
       }
+
       .pubs {
         width: 70%;
         height: inherit;
@@ -128,10 +182,7 @@
         text-align: right;
         position: relative;
         left: 0;
-
-        // #emoji {
-        //   display: none;
-        // }
+        cursor: url('../assets/lets-go2.png'), pointer;
       }
 
       #myrto {
@@ -160,94 +211,17 @@
 
     }
 
-    // EXPANDABLE CONTENT - CLICKING BETWEEN SECTIONS 
-    .expandable {
-      background: #fff;
-      overflow: hidden;
-      color: #000;
-      line-height: 50px;
 
-      transition: all .5s ease-in-out;
-      height: 0;
-    }
-
-    .expandable:target {
-      height: 500px;
-      overflow: hidden;
-    }
-
-    // #nav-careeron {
-    //   background-color: magenta;
-    //   height: 100px;
-    //   overflow: hidden;
-    //   display: block;
-    //   transition: all .5s ease-in-out;
-    // }
-    
-    // #nav-careeroff {
-    //   background-color: aqua;
-    //   height: 0;
-    //   overflow: hidden;
-    //   display: block;
-    //   transition: all .5s ease-in-out;
-    // }
-
-    // EXPANDABLE CONTENT FORMATTING
-
-    p {
-      font-size: 1em;
-      margin-top: 0;
-    }
-
-    a {
-      font-family: $body;
-      color: $blue;
-      font-size: 35px;
-      font-weight: bold;
-    }
-
-    span {
-      color: $pink;
-      font-size: 30px;
-      font-weight: bold;
-    }
-
-    h3 {
-      text-align: left;
-      font-size: .6em;
-      font-family: $title;
-      margin: 0;
-      margin-top: 10px;
-      padding-left: .2em;
-    }
-
-    ul {
-      margin: 0;
-    }
-
-    .description-li {
-      text-align: left;
-      font-family: $title;
-      font-size: .4em;
-      margin: 0;
-    }
-    #li-pubs {
-      padding-top: .5em;
-
-    }
 
 
     // FORMATTING OF EXPANDABLE DIVS
-    #research{
+    #research {
       transform: translateX(-25%);
     }
+
     #pub-eng {
       transform: translateX(-50%);
     }
-
-
-
-
 
   }
 
