@@ -27,14 +27,14 @@ const Academics = (props) => {
 
                 {/* ABOUT CAREER */}
                 {(selected === 0) && <div id="nav-career">
-                  <p className='description '>{`"Before making the transition into software engineering, I started my career as a psychology lecturer, specialising in neuroscience.`}<br></br><br></br>{`I enjoyed the challenge of presenting complex concepts in accessible, engaging & humorous ways.`}<br></br><br></br>{`Across my research career, I have been drawn to understanding how different technologies can be used to support the diagnosis & intervention of developmental disorders. It was collaborating on the development of these technologies that sparked my interest in the world of software development."`}</p>
+                  <p className='description '>{`"I started my career as a psychology lecturer, specialising in neuroscience. I have an embedded interest in human behaviour & understanding how it relates to neuropsychological mechanisms in the brain & body.`}<br></br><br></br>{`In teaching, I enjoyed the challenge of presenting complex concepts in accessible, engaging & humorous ways. Students frequently reported that my visual presentation & interactive demonstrations were key to their understanding.`}<br></br><br></br>{`Across my academic career, I moved quickly from associate to senior lecturer, leading on 2 popular neuroscience modules & directing the BSc Psychology in Education at the University of Bristol."`}</p>
                 </div>}
 
                 {/* QUALIFICATIONS */}
                 {(selected === 1) && <div className='quals' id="nav2-career">
                   <h3 className='acad-heading'>Education</h3>
                   <ul>
-                    <li className='description-li'>AURORA Women in Leadership | Leadership Foundation for Higher Education | 2019-2020</li>
+                    <li className='description-li'><span>AURORA Women in Leadership</span> | Leadership Foundation for Higher Education | 2019-2020</li>
                     <li className='description-li'>Fellowship in Higher Education | Higher Education Academy | 2016-2017</li>
                     <li className='description-li'>Ph.D Developmental Neuroscience, Psychology | Goldsmiths, UoL | 2010-2013</li>
                     <li className='description-li'>MSc Cognitive {'&'} Clinical Neuroscience (Distinction) | Goldsmiths, UoL | 2009-2010</li>
@@ -67,7 +67,7 @@ const Academics = (props) => {
 
                 {/* ABOUT MY RESEARCH */}
                 {(selected === 0) && <div id="nav-research">
-                  <p className='description'>{`"As I specialised, my academic research consisted of two overlapping avenues; ADHD and sleep.`}<br></br><br></br>{`My focus was always on understanding the current challenges faced for young people with both ADHD and poor sleep, in order to develop interventions to better support them"`}</p>
+                  <p className='description'>{`"Across my research career, I have been drawn to understanding how different technologies can be used to support the diagnosis & intervention of developmental disorders. It was collaborating on the development of these technologies that sparked my interest in the world of software development.`}<br></br><br></br>{`As I specialised, my academic research consisted of two overlapping avenues; ADHD and sleep.`}<br></br><br></br>{`I used a range of physiological technologies including electroencephalography (EEG: measuring eletrical brain activity), actigraphy (measuring sleep patterns) & VR measures of attentional processing."`}</p>
                 </div>}
 
                 {/* PUBLICATIONS */}
@@ -98,7 +98,7 @@ const Academics = (props) => {
 
                 {/* ABOUT MY TALKS */}
                 {(selected === 0) && <div id="nav-research">
-                  <p className='description'>{`"Given my field of research, I felt the importance of public engagement; presenting current findings to the people that it affects promoting understanding and open discussion.`}<br></br><br></br>{`In addition to academic presentations, I regularly gave talks at ADHD & development support groups, as well as to pupils, parents & teachers at schools"`}</p>
+                  <p className='description'>{`"Given my field of research, I have felt the importance of public engagement. Presenting current findings to the people that they affect, promoting understanding & open discussion is crucial for support & advancement.`}<br></br><br></br>{`In addition to academic presentations, I regularly gave talks at ADHD & development support groups, as well as to pupils, parents & teachers at schools"`}</p>
                 </div>}
 
                 {/* RECENT TALKS */}
