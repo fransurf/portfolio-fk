@@ -27,7 +27,6 @@ function App() {
 
       </HashRouter>
 
-      {/* <div className="custom-cursor"></div> */}
     </main>
   );
 }

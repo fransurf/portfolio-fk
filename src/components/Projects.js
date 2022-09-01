@@ -28,6 +28,7 @@ const Projects = () => {
         {/* SECTIONS FOR EACH PROJECT */}
         <div className='proj-selectors img-left' id='proj4'>
 
+          {/* WOMEN THAT SHRED */}
           <div className='content-outer' >
             <div className='proj-content proj-content-left'>
               <a className='proj-text' target='blank' href="https://women-that-shred.herokuapp.com/" ><h2 className='title-rotate'>Women that Shred</h2></a>
@@ -42,6 +43,7 @@ const Projects = () => {
 
         {/* <Skills /> */}
 
+        {/* NATURAL BEAUTY */}
         <div className='proj-selectors img-right' id='proj3'>
           <div className='content-outer'>
             <img className='proj-img' id='nb-img' src={Proj3img} alt='national park page' />
@@ -57,6 +59,7 @@ const Projects = () => {
 
         {/* <Skills /> */}
 
+        {/* FRUITY-4-YOU */}
         <div className='proj-selectors img-left' id='proj2'>
           <div className='content-outer' >
             <div className='proj-content proj-content-left'>
@@ -73,6 +76,7 @@ const Projects = () => {
 
         {/* <Skills /> */}
 
+        {/* FROGGERS IN SPACE */}
         <div className='proj-selectors img-right' id='proj1'>
           <div className='content-outer' >
             <img className='proj-img' id='fis-img' src={Proj1img} alt='Froggers in Space intro' />
@@ -89,6 +93,7 @@ const Projects = () => {
 
         {/* <Skills /> */}
 
+        {/* MOBERO SLEEP APP */}
         <div className='proj-selectors img-left' id='uob'>
           <div className='content-outer' >
             <div className='proj-content proj-content-left'>

@@ -6,10 +6,11 @@ import Loading from '../helpers/Loading.js'
 
 const About = () => {
 
+  // SETTING STATE FOR LOADING ICON
   const [loading, setLoading] = useState(true)
 
   useEffect(() => {
-    setTimeout(() => setLoading(false), 3000)
+    setTimeout(() => setLoading(false), 4500)
   }, [])
 
   return (
@@ -27,7 +28,7 @@ const About = () => {
               <div className='about-top'>
                 <div className='top-contents img-overlay' id='se-img'></div>
                 <div className=' top-contents about-text'>
-                  <p>{`My particular fixation in software engineering is on producing well-structured content in beautiful & fun, dynamic interfaces.`} <br></br><br></br> {`I take the same approach with my code: I don't believe the shortest code is the best. I aim to produce readable code that any body can quickly manoeuvre.`} <br></br><br></br> {`As a software engineer, I am always learning. If there's a problem to solve, you can call me Poirot`}</p>
+                  <p>{`My particular fixation in software engineering is on producing well-structured content in beautiful & fun, dynamic interfaces.`} <br></br><br></br> {`I take the same approach with my code: I don't believe the shortest code is the best. I aim to produce readable code that anybody can quickly manoeuvre.`} <br></br><br></br> {`As a software engineer, I am always learning. If there's a problem to solve, you can call me Poirot. Take a look at the banner below for my current languages/frameworks`}</p>
                 </div>
               </div>
               {/* <Link to='/projects' className='about-link'>Projects</Link> */}

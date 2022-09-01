@@ -3,6 +3,7 @@ import Container from 'react-bootstrap/Container'
 
 const Academics = (props) => {
 
+  // SETTING STATE FOR TOGGLE BETWEEN DESCRIPTION & QUALIFICATION
   const [selected, setSelected] = useState(0)
 
   return (
@@ -14,7 +15,7 @@ const Academics = (props) => {
         </div>
 
         <div id='academics' >
-          {/* ACADEMIC CAREER */}
+          {/* ACADEMIC CAREER SECTION */}
           <div className='academic-div expand' id='career'>
             <h2 className='academic-subtitle' id='se-text'>Academic career</h2>
             <div className='long-text long-text-box academics' id='career'>
@@ -25,7 +26,7 @@ const Academics = (props) => {
                   <h3 onClick={() => setSelected(1)}> <span>{`<<`}</span> Qualifications <span>{`>>`}</span></h3>
                 </div>
 
-                {/* ABOUT CAREER */}
+                {/* CAREER DESCRIPTION */}
                 {(selected === 0) && <div id="nav-career">
                   <p className='description '>{`"I started my career as a psychology lecturer, specialising in neuroscience. I have an embedded interest in human behaviour & understanding how it relates to neuropsychological mechanisms in the brain & body.`}<br></br><br></br>{`In teaching, I enjoyed the challenge of presenting complex concepts in accessible, engaging & humorous ways. Students frequently reported that my visual presentation & interactive demonstrations were key to their understanding.`}<br></br><br></br>{`Across my academic career, I moved quickly from associate to senior lecturer, leading on 2 popular neuroscience modules & directing the BSc Psychology in Education at the University of Bristol."`}</p>
                 </div>}
@@ -34,7 +35,8 @@ const Academics = (props) => {
                 {(selected === 1) && <div className='quals' id="nav2-career">
                   <h3 className='acad-heading'>Education</h3>
                   <ul>
-                    <li className='description-li'><span>AURORA Women in Leadership</span> | Leadership Foundation for Higher Education | 2019-2020</li>
+                    <li className='description-li'>Software Engineering Immersive | General Assembly | 2022</li>
+                    <li className='description-li'>AURORA Women in Leadership | Leadership Foundation for Higher Education | 2019-2020</li>
                     <li className='description-li'>Fellowship in Higher Education | Higher Education Academy | 2016-2017</li>
                     <li className='description-li'>Ph.D Developmental Neuroscience, Psychology | Goldsmiths, UoL | 2010-2013</li>
                     <li className='description-li'>MSc Cognitive {'&'} Clinical Neuroscience (Distinction) | Goldsmiths, UoL | 2009-2010</li>
@@ -53,7 +55,7 @@ const Academics = (props) => {
             </div>
           </div>
 
-          {/* RESEARCH */}
+          {/* RESEARCH SECTION */}
           <div className='academic-div expand' id='publications'>
             <h2 className='academic-subtitle' id='pubs-text'>Research</h2>
             <div className='long-text long-text-box academics' id='research'>
@@ -65,7 +67,7 @@ const Academics = (props) => {
                   <h3 onClick={() => setSelected(1)}> <span>{`<<`}</span> Publications of note <span>{`>>`}</span></h3>
                 </div>
 
-                {/* ABOUT MY RESEARCH */}
+                {/* RESEARCH DESCRIPTION */}
                 {(selected === 0) && <div id="nav-research">
                   <p className='description'>{`"Across my research career, I have been drawn to understanding how different technologies can be used to support the diagnosis & intervention of developmental disorders. It was collaborating on the development of these technologies that sparked my interest in the world of software development.`}<br></br><br></br>{`As I specialised, my academic research consisted of two overlapping avenues; ADHD and sleep.`}<br></br><br></br>{`I used a range of physiological technologies including electroencephalography (EEG: measuring eletrical brain activity), actigraphy (measuring sleep patterns) & VR measures of attentional processing."`}</p>
                 </div>}
@@ -84,7 +86,7 @@ const Academics = (props) => {
             </div>
           </div>
 
-          {/* PUBLIC ENGAGEMENT */}
+          {/* PUBLIC ENGAGEMENT SECTION */}
           <div className='academic-div expand' id='snowboarder'>
             <h2 className='academic-subtitle' id='pubeng-text'>Public engagement</h2>
             <div className='long-text long-text-box academics' id='pub-eng'>
@@ -92,18 +94,19 @@ const Academics = (props) => {
               <div className='long-text-inner' >
                 {/* TOGGLE BAR */}
                 <div className='toggle'>
-                  <h3 onClick={() => setSelected(0)}><span>{`<<`}</span> About my research <span>{`>>`}</span></h3>
-                  <h3 onClick={() => setSelected(1)}><span>{`<<`}</span> Publications of note <span>{`>>`}</span></h3>
+                  <h3 onClick={() => setSelected(0)}><span>{`<<`}</span> About my talks <span>{`>>`}</span></h3>
+                  <h3 onClick={() => setSelected(1)}><span>{`<<`}</span> Presentations of note <span>{`>>`}</span></h3>
                 </div>
 
-                {/* ABOUT MY TALKS */}
+                {/* PUBLIC ENGAGEMENT DESCRIPTION */}
                 {(selected === 0) && <div id="nav-research">
-                  <p className='description'>{`"Given my field of research, I have felt the importance of public engagement. Presenting current findings to the people that they affect, promoting understanding & open discussion is crucial for support & advancement.`}<br></br><br></br>{`In addition to academic presentations, I regularly gave talks at ADHD & development support groups, as well as to pupils, parents & teachers at schools"`}</p>
+                  <p className='description'>{`"Given my field of research, I have felt the importance of public engagement. Presenting current findings to the people that they affect, promoting understanding & open discussion is crucial for support & advancement.`}<br></br><br></br>{`In addition to academic presentations, I regularly gave talks at ADHD & development support groups, as well as to pupils, parents & teachers at schools`}<br></br><br></br>{`In order to promote participatory research (research that is guided by the people that it affects), my colleagues and I gained funding for a research network engaging neurodiverse students in setting the research agenda."`}</p>
                 </div>}
 
                 {/* RECENT TALKS */}
                 {(selected === 1) && <div className='quals' id="nav2-pubs">
                 <ul>
+                    <li className='description-li' id='li-pubs'>Caldwell, Russell, Sedgewick {'&'} Knight | <a href='https://emergingminds.org.uk/special-interest-research-group-neurodiversity-and-young-peoples-mental-health-in-higher-education/' alt='link to REASON network' target='blank'>ReASoN network: Researchers {'&'} Students on Neurodiversity</a>| UoB {'&'} Exeter University | 2020</li>
                     <li className='description-li' id='li-pubs'>Brownhill, Knight {'&'} Norris | <b>Invited speaker: An ADHD Teacher Toolkit - what are the needs?</b> | Bristol Conversations, UoB | 2020</li>
                     <li className='description-li' id='li-pubs'>Knight | <b>Keynote panellist: SEEL Debate for Educational Psychologists: Is an ADHD diagnosis helpful or harmful?</b> | BPS DECP, UCL | 2019</li>
                     <li className='description-li' id='li-pubs'>Knight {'&'} Fancourt | <b>Poster: Sleepy teens: What a difference a delay makes | World Sleep Society conference</b> | 2019</li>
