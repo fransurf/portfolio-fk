@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "./static/css/main.93748482.css",
-    "main.js": "./static/js/main.c58d2b41.js",
+    "main.css": "./static/css/main.7139c154.css",
+    "main.js": "./static/js/main.74a6ec9a.js",
     "static/js/787.d5c17575.chunk.js": "./static/js/787.d5c17575.chunk.js",
     "static/media/p3-img1.png": "./static/media/p3-img1.161d6dcd04efe58e1197.png",
     "static/media/p4-img6.png": "./static/media/p4-img6.63e418e6489af2166fa4.png",
@@ -31,14 +31,15 @@
     "static/media/myrto.png": "./static/media/myrto.87e547020d4fceb1c99c.png",
     "static/media/adol-sleep.png": "./static/media/adol-sleep.5a95fe3477940360c59c.png",
     "static/media/wink.png": "./static/media/wink.7ce44040821125a91ce8.png",
+    "static/media/logoThick.png": "./static/media/logoThick.3c416a33e513f08c2592.png",
     "static/media/geek.png": "./static/media/geek.076856d9df3d007fbd60.png",
     "index.html": "./index.html",
-    "main.93748482.css.map": "./static/css/main.93748482.css.map",
-    "main.c58d2b41.js.map": "./static/js/main.c58d2b41.js.map",
+    "main.7139c154.css.map": "./static/css/main.7139c154.css.map",
+    "main.74a6ec9a.js.map": "./static/js/main.74a6ec9a.js.map",
     "787.d5c17575.chunk.js.map": "./static/js/787.d5c17575.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.93748482.css",
-    "static/js/main.c58d2b41.js"
+    "static/css/main.7139c154.css",
+    "static/js/main.74a6ec9a.js"
   ]
 }
