@@ -1,22 +1,93 @@
-#navbar {
+.navbar {
   height: 50px;
   background-color: white;
   border: 2px solid black;
   display: flex;
+
+}
+
+
+.link {
+  text-decoration: none;
+  color: black;
+  font-family: $marker;
+  font-size: 30px;
+  width: 200px;
+}
+.link:hover {
+  color: $aqua;
+  font-size: 35px;
+}
+.logo {
+  height: 45px;
+  object-fit: contain;
+
+}
+
+// RESPONSIVE FOR DESKTOP
+#navbar-desktop {
   justify-content: space-around;
   z-index: 1000;
+  overflow: hidden;
+}
+#navbar-mobile {
+  display: none;
+}
 
-  .link {
-    text-decoration: none;
-    color: black;
-    font-family: $marker;
-    font-size: 30px;
-    width: 200px;
+// RESPONSIVE FOR MOBILE
+@media screen and (max-width: 600px) {
+
+  #navbar-desktop {
+    display: none;
+  }
+
+  #navbar-mobile {
+    width: 100vw;
+    display: none;
+    justify-content: space-between;
+    overflow: visible;
+    position: absolute;
+    top: 0;
+    right: 0;
+
+    transition: all 0.3s ease;
+  }
+
+  #hamburger-menu {
+    display: none;
+    flex-direction: column;
+    background-color: $yellow;
+    z-index: 1000;
+    float: right;
+    position: absolute;
+    top: 50px;
+    right: 0;
+    width: 100vw;
+    height: 200px;
+    text-align: right;
+
 
   }
 
-  .link:hover {
-    color: $aqua;
-    font-size: 35px;
+  .icon {
+    width: 50px;
+    height: 50px;
+    padding: 8px;
+    // border: 2px solid lime;
   }
+
+  .burger {
+    display: block;
+    width: 33px;
+    height: 5px;
+    margin-bottom: 5px;
+    position: relative;
+    background: $pink;
+    border-radius: 3px;
+    
+    z-index: 1;
+
+  }
+
+  
 }

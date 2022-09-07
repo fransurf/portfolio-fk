@@ -32,6 +32,12 @@ const LandingPage = () => {
         <div className='scroll-content' id='landing-scroll'> - this website is a work in progress - it's not perfect - it's designed to showcase some of the things I enjoy doing - I hope you enjoy it too - </div>
       </div> */}
 
+      <div id='mobile-message'>
+        <div className='tagline'>
+          <h2 className='landing-subtitle typewriter mobile' id='type1'><span>{`{`}</span> My mobile site is under construction... </h2>
+          <h2 className='landing-subtitle typewriter mobile' id='type2'> enjoy me on a desktop for now <span>{`}`}</span></h2>
+        </div>
+      </div>
     </Container>
 
 
