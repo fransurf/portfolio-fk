@@ -9,16 +9,17 @@ const NavBar = () => {
   // const [ active, setActive ] = useState('hamburger-menu')
   // const [ toggleIcon, setToggleIcon ] = useState('nav-toggler')
 
-
+// * REVEAL DROPDOWN MENU ON HAMBURGER CLICK
   const menuReveal = () => {
     let menu = document.getElementById("hamburger-menu")
-
     if (menu.style.display === 'flex') {
       menu.style.display = 'none'
     } else {
       menu.style.display = 'flex'
     }
 
+    let hamburger = document.getElementById("hamburger")
+    hamburger.classList.toggle('active')
   }
 
   return (
@@ -26,18 +27,18 @@ const NavBar = () => {
       <nav id='navbar-desktop' className='navbar'>
         <Link className='link' to='/about'>About</Link>
         <Link className='link' to='/projects'>Projects</Link>
-        <Link className='link' to='/'><img src={Logo} alt='FK logo' className='logo' /></Link>
+        <Link className='link' to='/'><img src={Logo} alt='FK logo' className='logo link' /></Link>
         <Link className='link' to='/academics'>Academics</Link>
         <Link className='link' to='/contact'>Contact</Link>
       </nav>
 
       <nav id='navbar-mobile' className='navbar'>
-        <Link className='link' to='/'><img src={Logo} alt='FK logo' className='logo' /></Link>
+        <Link className='hamburger-link link' to='/'><img src={Logo} alt='FK logo' className='logo' /></Link>
         <div id='hamburger-menu' className='hamburger-menu'>
-          <Link className='link' to='/about'>About</Link>
-          <Link className='link' to='/projects'>Projects</Link>
-          <Link className='link' to='/academics'>Academics</Link>
-          <Link className='link' to='/contact'>Contact</Link>
+          <Link className='hamburger-link' to='/about'>About</Link>
+          <Link className='hamburger-link' to='/projects'>Projects</Link>
+          <Link className='hamburger-link' to='/academics'>Academics</Link>
+          <Link className='hamburger-link' to='/contact'>Contact</Link>
         </div>
         <div id='hamburger' onClick={menuReveal} className='icon'>
           <div className='burger'></div>

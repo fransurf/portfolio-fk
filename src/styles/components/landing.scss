@@ -164,6 +164,9 @@ li:nth-of-type(4) .link:hover:before {
   .landing-container #mobile-message {
     display: block;
     margin: 0 auto;
+    .landing-title {
+      font-size: 2.5rem;
+    }
 
     .mobile {
       font-size: 1.5em;

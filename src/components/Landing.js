@@ -33,6 +33,7 @@ const LandingPage = () => {
       </div> */}
 
       <div id='mobile-message'>
+        <h1 className='landing-title'>Frances Knight<span>.</span></h1>
         <div className='tagline'>
           <h2 className='landing-subtitle typewriter mobile' id='type1'><span>{`{`}</span> My mobile site is under construction... </h2>
           <h2 className='landing-subtitle typewriter mobile' id='type2'> enjoy me on a desktop for now <span>{`}`}</span></h2>
