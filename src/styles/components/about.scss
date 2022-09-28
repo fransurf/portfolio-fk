@@ -88,6 +88,24 @@
     }
   }
 
+  // * RESPONSIVE DESIGN
+  @media screen and (max-width: 600px) {
+    .about-content {
+      display: block;
+
+      .about-div {
+        width: 80%;
+
+        .about-top {
+          .about-text p {
+            font-size: 1.5rem;
+          }
+        }
+      }
+    }
+
+
+  }
 
   
   // * FOR ADDING PAGE LINKS TO DIVS

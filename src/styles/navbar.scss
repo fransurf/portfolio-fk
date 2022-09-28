@@ -45,7 +45,7 @@
   }
 
   #navbar-mobile {
-    width: 100vw;
+    width: 100%;
     display: flex;
     justify-content: space-between;
     overflow: visible;
@@ -127,7 +127,6 @@
 
   // * HAMBURGER-X TRANSITION
   #hamburger.active {
-    z-index: 100;
     .burger {
       background: $blue;
     }
