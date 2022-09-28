@@ -98,13 +98,6 @@
     z-index: 2;
   }
 
-  .proj-img:hover {
-    transform: scale(1.2);
-    filter: contrast(1.75) !important;
-    // cursor: url('../assets/circle-big.png'), pointer;
-    z-index: -30;
-  }
-
   .expand {
     display: none;
   }
@@ -117,11 +110,7 @@
     transition: all .5s ease-in-out;
   }
 
-  .title-rotate:hover {
-    font-size: 1.3em;
-    font-weight: bold;
-    cursor: url('../assets/circle-big.png'), pointer;
-  }
+
 
   .img-left.title-rotate {
     text-align: right;
@@ -146,6 +135,59 @@
     .proj-detail {
       width: 50%;
       color: white;
+    }
+  }
+
+  // * RESPONSIVE DESIGN
+  // ONHOVER FOR LAPTOP/DESKTOP
+  @media screen and (min-width: 770px) {
+    .proj-img:hover {
+      transform: scale(1.2);
+      filter: contrast(1.75) !important;
+      // cursor: url('../assets/circle-big.png'), pointer;
+      z-index: -30;
+    }
+
+    .title-rotate:hover {
+      font-size: 1.3em;
+      font-weight: bold;
+      cursor: url('../assets/circle-big.png'), pointer;
+    }
+  }
+
+
+  // * FOR TABLET
+  @media screen and (min-width: 481px) and (max-width: 768px) {
+
+    .proj-selectors {
+      height: 550px;
+    }
+    .proj-selectors .content-outer {
+      display: block;
+      .proj-content p {
+        font-size: 2vw;
+        line-height: 3vw;
+        font-family: $title;
+      }
+      .proj-content .proj-tech {
+        font-size: 2vw;
+        line-height: 3vw;
+      }
+    }
+
+    .proj-text h2 {
+      margin-top: 20px;
+    }
+
+    .img-right .proj-img {
+      margin-top: 20px;
+    }
+
+    .img-portrait {
+      display: none;
+    }
+    .img-landscape {
+      display: inline;
     }
   }
 

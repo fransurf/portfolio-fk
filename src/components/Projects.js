@@ -10,6 +10,7 @@ import Proj4img from '../styles/assets/projects/p4-img1.png'
 import Proj3img from '../styles/assets/projects/p3-img1.png' 
 import Proj2img from '../styles/assets/projects/p2-img1.png' 
 import Proj1img from '../styles/assets/projects/p1-img1.png' 
+import Proj1img2 from '../styles/assets/projects/p1-img2.png' 
 import MOBEROimg from '../styles/assets/projects/mobero.png' 
 
 const Projects = () => {
@@ -79,7 +80,8 @@ const Projects = () => {
         {/* FROGGERS IN SPACE */}
         <div className='proj-selectors img-right' id='proj1'>
           <div className='content-outer' >
-            <img className='proj-img' id='fis-img' src={Proj1img} alt='Froggers in Space intro' />
+            {/* <img className='proj-img img-portrait' id='fis-img' src={Proj1img} alt='Froggers in Space intro' /> */}
+            <img className='proj-img img-landscape' id='fis-img' src={Proj1img2} alt='Froggers in Space intro' />
 
             <div className='proj-content proj-content-right'>
               <a className='proj-text' target='blank' href="https://fransurf.github.io/SEI-Project-ONE/" ><h2 className='title-rotate'>Froggers in Space</h2></a>
