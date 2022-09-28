@@ -1,4 +1,3 @@
-
 #about-container {
   color: white;
   max-width: 1400px;
@@ -30,6 +29,7 @@
         font-size: 40px;
         white-space: nowrap;
         margin: 15px auto;
+
         span {
           color: yellow;
           font-size: 2em;
@@ -45,10 +45,12 @@
         width: 100%;
         height: 80%;
         overflow: hidden;
-        box-shadow: $strong;       
-        .about-text{
+        box-shadow: $strong;
+
+        .about-text {
           width: 100%;
           text-align: justify !important;
+
           p {
             font-size: 40px;
             color: $blue;
@@ -59,7 +61,7 @@
     }
   }
 
-// * IMAGE OVERLAYS FOR TEXT REVEAL
+  // * IMAGE OVERLAYS FOR TEXT REVEAL
   .img-overlay {
     width: 100%;
     height: 100%;
@@ -74,10 +76,12 @@
     background-image: url('../assets/Excalidraw.png');
     background-position: bottom;
   }
+
   #neuro-img {
     background-image: url('../assets/brain1.JPG');
     background-position: center;
   }
+
   #snowboarder-img {
     background-image: url('../assets/boardingCloseup.png');
   }
@@ -89,6 +93,50 @@
   }
 
   // * RESPONSIVE DESIGN
+
+  // * FOR TABLET
+  @media screen and (min-width: 481px) and (max-width: 768px) {
+    #about-container {
+      display: block;
+    }
+    .about-content {
+      display: flex;
+      flex-direction: column;
+      // justify-content: space-evenly;
+
+      .about-div {
+        width: 90%;
+        height: 400px;
+
+        .about-heading {
+          margin-top: 0;
+          text-align: left;
+        }
+        .about-top{
+          display: flex;
+          height: 70%;
+          .img-overlay {
+            position: relative;
+            width: 45%;
+            height: 100%;
+            background-size: cover;
+          }
+          .about-text p {
+            font-size: 1.5rem;
+            br {
+              display: none;
+            }
+          }
+        }
+      }
+
+    }
+
+    #about-scroll{
+      display: block;
+    }
+  }
+
   @media screen and (max-width: 600px) {
     .about-content {
       display: block;
@@ -99,15 +147,14 @@
         .about-top {
           .about-text p {
             font-size: 1.5rem;
+            line-height: 1rem;
           }
         }
       }
     }
-
-
   }
 
-  
+
   // * FOR ADDING PAGE LINKS TO DIVS
   // .about-link {
   //   margin: 20px auto;

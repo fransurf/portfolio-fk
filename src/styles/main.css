@@ -994,11 +994,6 @@ h1 {
           animation-delay: 5s;
 }
 
-#about-scroll {
-  position: absolute;
-  bottom: 0;
-}
-
 @-webkit-keyframes scroll {
   to {
     transform: translateX(-100%);

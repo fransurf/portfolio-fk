@@ -10,7 +10,7 @@ const About = () => {
   const [loading, setLoading] = useState(true)
 
   useEffect(() => {
-    setTimeout(() => setLoading(false), 4500)
+    setTimeout(() => setLoading(false), 500)
   }, [])
 
   return (
@@ -23,7 +23,7 @@ const About = () => {
 
           {/* CONTENT IN 3 DIVS WITH IMAGE OVERLAY REVEALING TEXT ON HOVER */}
           <div className='about-content'>
-            <div className='about-div expand' id='se'>
+            <div className='about-div' id='se'>
               <h2 className='about-heading' id='se-text'><span>.</span>sofware engineer</h2>
               <div className='about-top'>
                 <div className='top-contents img-overlay' id='se-img'></div>
@@ -34,7 +34,7 @@ const About = () => {
               {/* <Link to='/projects' className='about-link'>Projects</Link> */}
             </div>
 
-            <div className='about-div expand' id='neuro'>
+            <div className='about-div' id='neuro'>
               <h2 className='about-heading' id='neuro-text'><span>.</span>neuroscientist</h2>
               <div className='about-top'>
                 <div className='img-overlay' id='neuro-img'></div>
@@ -45,7 +45,7 @@ const About = () => {
               {/* <Link to='/academics' className='about-link'>Academics</Link> */}
             </div>
 
-            <div className='about-div expand' id='snowboarder'>
+            <div className='about-div' id='snowboarder'>
               <h2 className='about-heading' id='snowboarder-text'><span>.</span>snowboarder</h2>
               <div className='about-top'>
 
@@ -59,7 +59,7 @@ const About = () => {
           </div>
 
           {/* SCROLL BAR - PRESENTING TECH SKILLS */}
-          <div className='scroll-bar'>
+          <div className='scroll-bar' id='about-scroll'>
             <div className='scroll-content'> HTML5 <span>|</span> CSS <span>|</span> JavaScript <span>|</span> Sass <span>|</span> Bootstrap <span>|</span> React <span>|</span> Python <span>|</span> Django <span>|</span> PostgreSQL <span>|</span> Node.js <span>|</span> Axios <span>|</span> Express.js <span>|</span> Insomnia <span>|</span> Yarn <span>|</span> npm <span>|</span> HTML5 <span>|</span> CSS <span>|</span> JavaScript <span>|</span> Sass <span>|</span> Bootstrap <span>|</span> React <span>|</span> Python <span>|</span> Django <span>|</span> PostgreSQL <span>|</span> Node.js <span>|</span> Axios <span>|</span> Express.js <span>|</span> Insomnia <span>|</span> Yarn <span>|</span> npm <span>|</span></div>
           </div>
 
