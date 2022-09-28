@@ -5,6 +5,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    // margin-left: 20px;
   }
 
   // EMOJI WINK ON HOVER
@@ -15,6 +16,7 @@
     height: 100px;
     width: 100px;
     transition: all .2s ease-in-out;
+    margin-right: 10px;
   }
 
   #emoji:hover {
@@ -22,7 +24,6 @@
     background-size: cover;
     background-repeat: no-repeat;
   }
-
 
   #academics {
     width: 100%;
@@ -49,6 +50,7 @@
       box-shadow: inset 300px 0 0 0 yellow;
       color: $blue;
     }
+
 
     // EXPANDABLE CONTENT
     .long-text {
@@ -92,14 +94,6 @@
       }
     }
 
-    .toggle h3:hover {
-      // color: $pink;
-      font-size: 45px;
-      text-decoration: underline;
-      cursor: url('../assets/circle-big.png'), pointer;
-    }
-
-
     // EXPANDABLE CONTENT FORMATTING
     h3 {
       text-align: left;
@@ -131,23 +125,24 @@
         margin: 0;
       }
 
-    .quals {
-      padding-top: 20px;
-    }
-    ul {
-      margin: 0;
-    }
+      .quals {
+        padding-top: 20px;
+      }
 
-    .description-li {
-      text-align: left;
-      font-family: $title;
-      font-size: .4em;
-      margin: 0;
-    }
+      ul {
+        margin: 0;
+      }
 
-    #li-pubs {
-      padding-top: .5em;
-    }
+      .description-li {
+        text-align: left;
+        font-family: $title;
+        font-size: .4em;
+        margin: 0;
+      }
+
+      #li-pubs {
+        padding-top: .5em;
+      }
 
 
 
@@ -211,9 +206,6 @@
 
     }
 
-
-
-
     // FORMATTING OF EXPANDABLE DIVS
     #research {
       transform: translateX(-25%);
@@ -226,3 +218,71 @@
   }
 
 }
+
+  // * RESPONSIVE DESIGN
+  // ONHOVER FOR LAPTOP/DESKTOP
+  @media screen and (min-width: 770px) {
+    .expand:hover .academic-subtitle {
+      box-shadow: inset 300px 0 0 0 yellow;
+      color: $blue;
+    }
+
+    .expand:hover .long-text {
+      height: 600px;
+      width: 600px;
+      text-align: center;
+      box-shadow: rgba(0, 0, 0, 0.2) 0px 60px 40px -7px;
+      border-radius: 4px;
+    }
+
+    .toggle h3:hover {
+      // color: $pink;
+      font-size: 45px;
+      text-decoration: underline;
+      cursor: url('../assets/circle-big.png'), pointer;
+    }
+  }
+
+  // FOR TABLET
+  @media screen and (min-width: 481px) and (max-width: 768px) {
+    #academics-container {
+      width: 90%;
+      border: 2px solid yellow;
+    }
+
+    // ! REMOVE WHEN RESPONSIVE DESIGN IS DONE
+    #academic-title .page-title {
+      color: $pink;
+    }
+    // ! REMOVE WHEN RESPONSIVE DESIGN IS DONE
+
+    .academic-div {
+      border-bottom: solid 2px $pink !important;
+      height: 75px;
+      width: calc(100% / 3 - 20px) !important;
+
+      .academic-subtitle {
+        font-size: 4vw !important;
+      }
+
+      .long-text {
+        height: 600px !important;
+        width: 89vw !important;
+        margin: 0 auto !important;
+      }
+
+      #research {
+        transform: translateX(-35%) !important;
+      }
+  
+      #pub-eng {
+        transform: translateX(-70%) !important;
+      }
+    }
+    
+
+
+    // .expand {
+    //   display: block;
+    // }
+  }

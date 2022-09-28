@@ -5,6 +5,7 @@ const Academics = (props) => {
 
   // SETTING STATE FOR TOGGLE BETWEEN DESCRIPTION & QUALIFICATION
   const [selected, setSelected] = useState(0)
+  const [titleSelected, setTitleSelected] = useState(0)
 
   return (
     <>
@@ -17,8 +18,8 @@ const Academics = (props) => {
         <div id='academics' >
           {/* ACADEMIC CAREER SECTION */}
           <div className='academic-div expand' id='career'>
-            <h2 className='academic-subtitle' id='se-text'>Academic career</h2>
-            <div className='long-text long-text-box academics' id='career'>
+            <h2 className='academic-subtitle' id='se-text' onClick={() => setTitleSelected(0)}>Academic career</h2>
+              {(titleSelected === 0) && <div className='long-text long-text-box academics' id='career'>
               <div className='long-text-inner'>
                 {/* TOGGLE BAR */}
                 <div className='toggle'>
@@ -52,13 +53,13 @@ const Academics = (props) => {
                 </div>}
 
               </div>
-            </div>
+            </div>}
           </div>
 
           {/* RESEARCH SECTION */}
           <div className='academic-div expand' id='publications'>
-            <h2 className='academic-subtitle' id='pubs-text'>Research</h2>
-            <div className='long-text long-text-box academics' id='research'>
+            <h2 className='academic-subtitle' id='pubs-text' onClick={() => setTitleSelected(1)}>Research</h2>
+            {(titleSelected === 1) && <div className='long-text long-text-box academics' id='research'>
 
               <div className='long-text-inner'>
                 {/* TOGGLE BAR */}
@@ -83,13 +84,13 @@ const Academics = (props) => {
                 </div>}
 
               </div>
-            </div>
+            </div>}
           </div>
 
           {/* PUBLIC ENGAGEMENT SECTION */}
           <div className='academic-div expand' id='snowboarder'>
-            <h2 className='academic-subtitle' id='pubeng-text'>Public engagement</h2>
-            <div className='long-text long-text-box academics' id='pub-eng'>
+            <h2 className='academic-subtitle' id='pubeng-text' onClick={() => setTitleSelected(2)}>Public engagement</h2>
+            {(titleSelected === 2) && <div className='long-text long-text-box academics' id='pub-eng'>
 
               <div className='long-text-inner' >
                 {/* TOGGLE BAR */}
@@ -115,7 +116,7 @@ const Academics = (props) => {
                   </ul>
                 </div>}
               </div>
-            </div>
+            </div>}
           </div>
         </div>
 
