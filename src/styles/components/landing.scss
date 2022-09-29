@@ -1,62 +1,73 @@
 // * GENERAL FORMATTING
 body {
-  background-color: $blue;  
-  h1, h2 {
+  background-color: $blue;
+
+  h1,
+  h2 {
     font-family: $title;
   }
-  
-  h1{
+
+  h1 {
     color: white;
   }
 
-  // * TITLES
-  .landing-title {
-    font-size: min(5vw, 80px);
-    line-height: min(5vw, 80px);
-    text-align: right;
-    margin-top: 0;
-    padding-top: 0;
-    span {
-      color: yellow;
-      font-size: 2em;
-    }
-  }
-  .landing-subtitle {
-    font-size: min(3vw, 50px);
-    text-align: right;
-    span {
-      color: yellow;
-      font-size: 1.5em;
-    }
-  }
-}
-
-// * PAGE FORMATTING
-.landing-container {
-  height: calc(100vh - 50px);
-  max-width: 1200px;
-  margin: 0 auto;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  font-family: $marker;
-  color: white;
-
-  .landing-content {
-    width: 75%;
-    // top: 50px;
+  // * PAGE FORMATTING
+  .landing-container {
+    height: calc(100vh - 50px);
+    max-width: 1200px;
+    margin: 0 auto;
     display: flex;
-    flex-direction: column;
-    align-items: flex-end;
-    justify-content: center;
+    align-items: center;
+    row-gap: 20px;
 
-    // height: calc(100% - 50px);
-    // transform: translateY(-8vh);
+    font-family: $marker;
+    color: white;
+
+    .landing-content {
+      // width: 70%;
+      // top: 50px;
+      height: 400px;
+      flex-grow: 2;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+      justify-content: center;
+
+      // height: calc(100% - 50px);
+      // transform: translateY(-8vh);
+
+      // * TITLES
+      .landing-title {
+        font-size: min(5vw, 80px);
+        line-height: min(5vw, 80px);
+        text-align: right;
+        margin-top: 0;
+        padding-top: 0;
+
+        span {
+          color: yellow;
+          font-size: 2em;
+        }
+      }
+
+      .landing-subtitle {
+        font-size: min(3vw, 50px);
+        text-align: right;
+
+        span {
+          color: yellow;
+          font-size: 1.5em;
+        }
+      }
+    }
 
   }
 
   .landing-nav {
-    width: 25%;
+    // width: 30%;
+    height: 400px;
+    flex-grow: 1;
+
     display: flex;
     flex-direction: column;
     align-items: flex-end;
@@ -70,16 +81,16 @@ body {
       float: right;
 
       li {
-  
+
         min-height: 75px;
-        min-width: 300px;
+        // min-width: 300px;
         border-top: solid 2px white;
         font-size: 30px;
         margin: 0 auto;
 
 
         .link {
-          font-family: $marker !important;
+          font-family: $marker  !important;
           color: white;
           text-decoration: none !important;
           vertical-align: -50%;
@@ -94,13 +105,17 @@ body {
 
 // * TYPEWRITER EFFECT
 .typewriter {
-  overflow: hidden; /* Ensures the content is not revealed until the animation */
-  white-space: nowrap; /* Keeps the content on a single line */
-  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+  overflow: hidden;
+  /* Ensures the content is not revealed until the animation */
+  white-space: nowrap;
+  /* Keeps the content on a single line */
+  margin: 0 auto;
+  /* Gives that scrolling effect as the typing happens */
   // letter-spacing: .15em; /* Adjust as needed */
-  animation: 
-  typing 2.5s steps(16, end) forwards;
+  animation:
+    typing 2.5s steps(16, end) forwards;
 }
+
 // SECOND LINE APPEAR AFTER FIRST
 #type2 {
   animation-delay: 2.5s;
@@ -110,9 +125,24 @@ body {
 
 // KEY FRAMES FOR TYPING EFFECT
 @keyframes typing {
-  from { width: 0; border-right: .15em solid $pink /* The typwriter cursor */;   }
-  99% { width: 99%; border-right: .15em solid $pink }
-  to { width: 100%; border-right: transparent /* The typwriter cursor */; }
+  from {
+    width: 0;
+    border-right: .15em solid $pink
+      /* The typwriter cursor */
+    ;
+  }
+
+  99% {
+    width: 99%;
+    border-right: .15em solid $pink
+  }
+
+  to {
+    width: 100%;
+    border-right: transparent
+      /* The typwriter cursor */
+    ;
+  }
 }
 
 
@@ -122,7 +152,10 @@ body {
   content: '';
   position: absolute;
   display: block;
-  top: 0; bottom: 0; left: 0; right: 0;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
   z-index: -1;
 }
 
@@ -135,12 +168,15 @@ body {
 li:nth-of-type(1) .link:hover:before {
   background-color: $aqua;
 }
+
 li:nth-of-type(2) .link:hover:before {
   background-color: $pink;
 }
+
 li:nth-of-type(3) .link:hover:before {
   background-color: $navy;
 }
+
 li:nth-of-type(4) .link:hover:before {
   background-color: $blue;
 }
@@ -154,16 +190,18 @@ li:nth-of-type(4) .link:hover:before {
 
 @media screen and (max-width: 600px) {
 
-  .landing-container .landing-content{
+  .landing-container .landing-content {
     display: none;
   }
-  .landing-container .landing-nav{
+
+  .landing-container .landing-nav {
     display: none;
   }
 
   .landing-container #mobile-message {
     display: block;
     margin: 0 auto;
+
     .landing-title {
       font-size: 2.5rem;
     }
@@ -175,4 +213,3 @@ li:nth-of-type(4) .link:hover:before {
   }
 
 }
-
