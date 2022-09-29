@@ -7,6 +7,22 @@ const Academics = (props) => {
   const [selected, setSelected] = useState(0)
   const [titleSelected, setTitleSelected] = useState(0)
 
+  // const highlightCareer = () => {
+  //   let title = document.getElementById('se-text')
+  //   title.classList.toggle('active')
+  // }
+  // const highlightResearch = () => {
+  //   let title = document.getElementById('res-text')
+  //   title.classList.toggle('active')
+  // }
+
+  // const selectCareer = () => setTitleSelected(0)
+  // const selectResearch = () => setTitleSelected(1)
+  // const selectPubeng = () => setTitleSelected(2)
+
+  // onClick={() => { selectCareer(); highlightCareer() }}
+  
+
   return (
     <>
       <Container className='content-container' id='academics-container'>
@@ -58,7 +74,7 @@ const Academics = (props) => {
 
           {/* RESEARCH SECTION */}
           <div className='academic-div expand' id='publications'>
-            <h2 className='academic-subtitle' id='pubs-text' onClick={() => setTitleSelected(1)}>Research</h2>
+            <h2 className='academic-subtitle' id='res-text' onClick={() => setTitleSelected(1)}>Research</h2>
             {(titleSelected === 1) && <div className='long-text long-text-box academics' id='research'>
 
               <div className='long-text-inner'>
@@ -88,7 +104,7 @@ const Academics = (props) => {
           </div>
 
           {/* PUBLIC ENGAGEMENT SECTION */}
-          <div className='academic-div expand' id='snowboarder'>
+          <div className='academic-div expand' id='pubeng'>
             <h2 className='academic-subtitle' id='pubeng-text' onClick={() => setTitleSelected(2)}>Public engagement</h2>
             {(titleSelected === 2) && <div className='long-text long-text-box academics' id='pub-eng'>
 

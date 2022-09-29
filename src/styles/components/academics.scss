@@ -265,6 +265,11 @@
         font-size: 4vw !important;
       }
 
+      .academic-subtitle.active {
+        box-shadow: inset 200px 0 0 0 yellow !important;
+        color: $blue;
+      }
+
       .long-text {
         height: 600px !important;
         width: 89vw !important;
