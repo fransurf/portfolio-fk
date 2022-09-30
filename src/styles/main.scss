@@ -45,6 +45,14 @@
 }
 
 
+body {
+  background-color: $blue;
+  h1, h2 {
+    font-family: $title;
+    color: white;
+  }
+}
+
 // RESPONSIVE
 // @media screen and (max-width: 600px) {
 //   .main-container {

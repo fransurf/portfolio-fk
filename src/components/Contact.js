@@ -14,7 +14,7 @@ const Contact = () => {
           <div className='name'>
             <h1 className='landing-title' id='contact-title'>Frances Knight<span>.</span></h1>
           </div>
-          <h2 className='landing-subtitle typewriter' id='contact-subtitle' ><span>{`{`}</span> You can find me at ... <span>{`}`}</span></h2>
+          <h2 className='landing-subtitle typewriter' id='contact-subtitle' ><span>{`{`}</span> You can contact me on ... <span>{`}`}</span></h2>
           <ul id='contacts-list' >
             <a href='https://www.linkedin.com/in/frances-knight-757691b8/' className='contact-link' alt='link to LinkedIn profile' target='blank'>LinkedIn</a>
             <a href='https://github.com/fransurf/' className='contact-link' alt='link to GitHub profile' target='blank'>GitHub</a>
@@ -22,14 +22,14 @@ const Contact = () => {
           </ul>
         </section>
 
-        {/* SIDEBAR NAV COPIED FROM LANDING PAGE */}
+        {/* FUN COLOUR TRANSITIONS DOTS */}
         <section className='landing-nav'>
-          <ul className='list'>
-            <li><Link to='/about' className='link' id='about'>ABOUT</Link></li>
-            <li><Link to='/projects' className='link' id='projects'>PROJECTS</Link></li>
-            <li><Link to='/academics' className='link' id='academics'>ACADEMICS</Link></li>
-            <li><Link to='/contact' className='link' id='contact'>CONTACT</Link></li>
-          </ul>
+        <ul className='list'>
+          <li><div className='dot' id='aqua'></div></li>
+          <li><div className='dot' id='pink'></div></li>
+          <li><div className='dot' id='navy'></div></li>
+          <li><div className='dot' id='blue'></div></li>
+        </ul>
         </section>
 
         {/* SCROLL BAR */}

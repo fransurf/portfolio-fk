@@ -64,13 +64,16 @@
 .navbar {
   height: 50px;
   background-color: white;
-  border: 2px solid black;
+  border: 2px solid #141B41;
   display: flex;
+  position: fixed;
+  top: 0;
+  width: 100%;
 }
 
 .navbar .link {
   text-decoration: none;
-  color: black;
+  color: #141B41;
   font-family: "Permanent Marker", cursive;
   font-size: 30px;
   width: 200px;
@@ -281,17 +284,7 @@
     top: 0;
   }
 }
-body {
-  background-color: #454ADE;
-}
-body h1,
-body h2 {
-  font-family: "Sawarabi Mincho", serif;
-}
-body h1 {
-  color: white;
-}
-body .landing-container {
+.landing-container {
   height: calc(100vh - 50px);
   max-width: 1200px;
   margin: 0 auto;
@@ -301,7 +294,7 @@ body .landing-container {
   font-family: "Permanent Marker", cursive;
   color: white;
 }
-body .landing-container .landing-content {
+.landing-container .landing-content {
   height: 400px;
   flex-grow: 2;
   display: flex;
@@ -309,7 +302,7 @@ body .landing-container .landing-content {
   align-items: flex-end;
   justify-content: center;
 }
-body .landing-container .landing-content .landing-title {
+.landing-container .landing-content .landing-title {
   flex-grow: 1;
   font-size: min(5vw, 80px);
   line-height: min(5vw, 80px);
@@ -317,20 +310,20 @@ body .landing-container .landing-content .landing-title {
   margin-top: 0;
   padding-top: 0;
 }
-body .landing-container .landing-content .landing-title span {
+.landing-container .landing-content .landing-title span {
   color: yellow;
   font-size: 2em;
 }
-body .landing-container .landing-content .landing-subtitle {
-  flex-grow: 1;
+.landing-container .landing-content .landing-subtitle {
   font-size: min(3vw, 50px);
   text-align: right;
 }
-body .landing-container .landing-content .landing-subtitle span {
+.landing-container .landing-content .landing-subtitle span {
   color: yellow;
   font-size: 1.5em;
 }
-body .landing-nav {
+
+.landing-nav {
   height: 400px;
   flex-grow: 1;
   display: flex;
@@ -339,17 +332,17 @@ body .landing-nav {
   justify-content: center;
   float: right;
 }
-body .landing-nav .list {
+.landing-nav .list {
   width: 100%;
   list-style: none;
   float: right;
 }
-body .landing-nav .list li {
+.landing-nav .list li {
   min-height: 75px;
   font-size: 30px;
   margin: 0 auto;
 }
-body .landing-nav .list li .link {
+.landing-nav .list li .link {
   font-family: "Permanent Marker", cursive !important;
   color: white;
   text-decoration: none !important;
@@ -405,17 +398,13 @@ body .landing-nav .list li .link {
   }
 }
 .dot {
-  height: 50px;
-  width: 50px;
+  height: 65px;
+  width: 65px;
   border-radius: 50%;
-}
-
-.shadow {
-  height: 53px;
-  width: 53px;
-  border-radius: 50%;
-  filter: drop-shadow(5px 5px 5px rgba(0, 0, 0, 0.3)) !important;
-  z-index: 10;
+  margin: 10px;
+  overflow: visible;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
+  transition: all 0.5s ease;
 }
 
 #aqua {
@@ -447,10 +436,6 @@ body .landing-nav .list li .link {
   transition: all 0.5s ease;
 }
 
-.link:hover {
-  white-space: nowrap;
-}
-
 li:nth-of-type(1) .dot:hover:before {
   background-color: #00F0B5;
 }
@@ -464,6 +449,10 @@ li:nth-of-type(3) .dot:hover:before {
 }
 
 li:nth-of-type(4) .dot:hover:before {
+  background-color: #FCF300;
+}
+
+#blue:hover {
   background-color: #FCF300;
 }
 
@@ -1097,7 +1086,8 @@ h1 {
   }
 }
 #contact-subtitle {
-  margin-bottom: 1em;
+  margin-bottom: 1rem;
+  font-size: min(3vw, 50px);
 }
 
 #contacts-list {
@@ -1244,4 +1234,12 @@ h1 {
 }
 * .link:hover {
   cursor: url("./assets/circle-big.png"), pointer;
+}
+
+body {
+  background-color: #454ADE;
+}
+body h1, body h2 {
+  font-family: "Sawarabi Mincho", serif;
+  color: white;
 }/*# sourceMappingURL=main.css.map */

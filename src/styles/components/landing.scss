@@ -1,109 +1,84 @@
 // * GENERAL FORMATTING
-body {
-  background-color: $blue;
 
-  h1,
-  h2 {
-    font-family: $title;
-  }
+// * PAGE FORMATTING
+.landing-container {
+  height: calc(100vh - 50px);
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  row-gap: 20px;
 
-  h1 {
-    color: white;
-  }
-
-  // * PAGE FORMATTING
-  .landing-container {
-    height: calc(100vh - 50px);
-    max-width: 1200px;
-    margin: 0 auto;
-    display: flex;
-    align-items: center;
-    row-gap: 20px;
-
-    font-family: $marker;
-    color: white;
-
-    .landing-content {
-      // width: 70%;
-      // top: 50px;
-      height: 400px;
-      flex-grow: 2;
-      display: flex;
-      flex-direction: column;
-      align-items: flex-end;
-      justify-content: center;
-
-      // height: calc(100% - 50px);
-      // transform: translateY(-8vh);
-
-      // * TITLES
-      .landing-title {
-        flex-grow: 1;
-
-        font-size: min(5vw, 80px);
-        line-height: min(5vw, 80px);
-        text-align: right;
-        margin-top: 0;
-        padding-top: 0;
-
-        span {
-          color: yellow;
-          font-size: 2em;
-        }
-      }
-
-      .landing-subtitle {
-        flex-grow: 1;
-        
-        font-size: min(3vw, 50px);
-        text-align: right;
-
-        span {
-          color: yellow;
-          font-size: 1.5em;
-        }
-      }
-    }
-
-  }
-
-  .landing-nav {
-    // width: 30%;
+  .landing-content {
     height: 400px;
-    flex-grow: 1;
-
+    flex-grow: 2;
     display: flex;
     flex-direction: column;
     align-items: flex-end;
     justify-content: center;
-    float: right;
-    // background-color: magenta;
 
-    .list {
-      width: 100%;
-      list-style: none;
-      float: right;
+    // * TITLES
+    .landing-title {
+      font-size: min(5vw, 80px);
+      line-height: min(5vw, 80px);
+      text-align: right;
+      margin-top: 0;
+      padding-top: 0;
 
-      li {
-        min-height: 75px;
-        // min-width: 300px;
-        // border-top: solid 2px white;
-        font-size: 30px;
-        margin: 0 auto;
-
-
-        .link {
-          font-family: $marker  !important;
-          color: white;
-          text-decoration: none !important;
-          vertical-align: -50%;
-          padding: 14px;
-        }
+      span {
+        color: yellow;
+        font-size: 2em;
       }
     }
 
-  }
+    .landing-subtitle {
+      font-size: min(3vw, 50px);
+      text-align: right;
 
+      span {
+        color: yellow;
+        font-size: 1.5em;
+      }
+    }
+  }
+}
+
+.landing-nav {
+  height: 400px;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  .list {
+    list-style: none;
+
+    li {
+      min-height: 75px;
+    }
+
+    // * FUN COLOUR TRANSITION DOTS
+    .dot {
+      height: 65px;
+      width: 65px;
+      border-radius: 50%;
+      margin: 10px;
+      box-shadow: (5px 5px 5px rgba(0, 0, 0, 0.3));
+      transition: all .5s ease;
+    }
+    #aqua {
+      background-color: $aqua;
+    }
+    #pink {
+      background-color: $pink;
+    }
+    #navy {
+      background-color: $navy;
+    }
+    #blue {
+      background-color: white;
+    }
+  }
 }
 
 // * TYPEWRITER EFFECT
@@ -114,7 +89,6 @@ body {
   /* Keeps the content on a single line */
   margin: 0 auto;
   /* Gives that scrolling effect as the typing happens */
-  // letter-spacing: .15em; /* Adjust as needed */
   animation:
     typing 2.5s steps(16, end) forwards;
 }
@@ -130,9 +104,8 @@ body {
 @keyframes typing {
   from {
     width: 0;
-    border-right: .15em solid $pink
-      /* The typwriter cursor */
-    ;
+    border-right: .15em solid $pink;
+    // ^ Typewriter cursor
   }
 
   99% {
@@ -142,41 +115,12 @@ body {
 
   to {
     width: 100%;
-    border-right: transparent
-      /* The typwriter cursor */
-    ;
+    border-right: transparent;
+    // Remove typewriter cursor at end
   }
 }
 
-.dot {
-  height: 65px;
-  width: 65px;
-  border-radius: 50%;
-  margin: 10px;
-  overflow: visible;
-  box-shadow: (5px 5px 5px rgba(0,0,0,0.3));
-
-  transition: all .5s ease;
-}
-
-#aqua {
-  background-color: $aqua;
-}
-
-#pink {
-  background-color: $pink;
-}
-
-#navy {
-  background-color: $navy;
-}
-
-#blue {
-  background-color: white;
-}
-
-
-// * CHANGE BACKGROUND COLOUR ON HOVER
+// * CHANGE BACKGROUND COLOUR DOT:ONHOVER
 .landing-nav .dot:hover:before {
   content: '';
   position: absolute;
@@ -187,17 +131,10 @@ body {
   left: 0;
   right: 0;
   z-index: -1;
-
   transition: all .5s ease;
 }
 
-.link:hover {
-  // letter-spacing: .4rem;
-  white-space: nowrap;
-  // text-decoration: underline;
-}
-
-// CREATING DIFFERENT COLOUR FOR EACH PAGE
+// DIFFERENT PAGE COLOUR FOR EACH DOT
 li:nth-of-type(1) .dot:hover:before {
   background-color: $aqua;
 }
@@ -214,11 +151,13 @@ li:nth-of-type(4) .dot:hover:before {
   background-color: $yellow;
 }
 
-// li:nth-of-type(4) #blue:hover {
-//   background-color: $yellow;
-// }
+// MAKE WHITE DOT MATCH YELLOW BACKGROUND
+#blue:hover {
+  background-color: $yellow;
+}
 
-// NOT FOR MOBILE
+
+// ! NOT FOR MOBILE
 #mobile-message {
   display: none;
 }

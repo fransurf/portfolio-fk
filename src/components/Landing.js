@@ -16,21 +16,14 @@ const LandingPage = () => {
         </div>
       </section>
 
-      {/* MENU BAR WITH FUN COLOUR TRANSITIONS */}
+      {/* FUN COLOUR TRANSITIONS DOTS */}
       <section className='landing-nav'>
-        {/* <ul className='list'>
-          <li><Link to='/about' className='link' id='about'>ABOUT</Link></li>
-          <li><Link to='/projects' className='link' id='projects'>PROJECTS</Link></li>
-          <li><Link to='/academics' className='link' id='academics'>ACADEMICS</Link></li>
-          <li><Link to='/contact' className='link' id='contact'>CONTACT</Link></li>
-        </ul> */}
         <ul className='list'>
           <li><div className='dot' id='aqua'></div></li>
           <li><div className='dot' id='pink'></div></li>
           <li><div className='dot' id='navy'></div></li>
           <li><div className='dot' id='blue'></div></li>
         </ul>
-
       </section>
 
       {/* POTENTIAL TO ADD SCROLLING MESSAGE ACROSS SCREEN */}
