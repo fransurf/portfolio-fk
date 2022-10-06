@@ -291,8 +291,6 @@
   display: flex;
   align-items: center;
   row-gap: 20px;
-  font-family: "Permanent Marker", cursive;
-  color: white;
 }
 .landing-container .landing-content {
   height: 400px;
@@ -303,7 +301,6 @@
   justify-content: center;
 }
 .landing-container .landing-content .landing-title {
-  flex-grow: 1;
   font-size: min(5vw, 80px);
   line-height: min(5vw, 80px);
   text-align: right;
@@ -328,26 +325,33 @@
   flex-grow: 1;
   display: flex;
   flex-direction: column;
-  align-items: flex-end;
   justify-content: center;
-  float: right;
 }
 .landing-nav .list {
-  width: 100%;
   list-style: none;
-  float: right;
 }
 .landing-nav .list li {
   min-height: 75px;
-  font-size: 30px;
-  margin: 0 auto;
 }
-.landing-nav .list li .link {
-  font-family: "Permanent Marker", cursive !important;
-  color: white;
-  text-decoration: none !important;
-  vertical-align: -50%;
-  padding: 14px;
+.landing-nav .list .dot {
+  height: 65px;
+  width: 65px;
+  border-radius: 50%;
+  margin: 10px;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
+  transition: all 0.5s ease;
+}
+.landing-nav .list #aqua {
+  background-color: #00F0B5;
+}
+.landing-nav .list #pink {
+  background-color: #FF3CC7;
+}
+.landing-nav .list #navy {
+  background-color: #141B41;
+}
+.landing-nav .list #blue {
+  background-color: white;
 }
 
 .typewriter {
@@ -397,32 +401,6 @@
     border-right: transparent;
   }
 }
-.dot {
-  height: 65px;
-  width: 65px;
-  border-radius: 50%;
-  margin: 10px;
-  overflow: visible;
-  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
-  transition: all 0.5s ease;
-}
-
-#aqua {
-  background-color: #00F0B5;
-}
-
-#pink {
-  background-color: #FF3CC7;
-}
-
-#navy {
-  background-color: #141B41;
-}
-
-#blue {
-  background-color: white;
-}
-
 .landing-nav .dot:hover:before {
   content: "";
   position: absolute;
@@ -459,6 +437,10 @@ li:nth-of-type(4) .dot:hover:before {
 #mobile-message {
   display: none;
 }
+#mobile-message span {
+  color: yellow;
+  font-size: 2em;
+}
 
 @media screen and (max-width: 600px) {
   .landing-container .landing-content {
@@ -485,10 +467,10 @@ li:nth-of-type(4) .dot:hover:before {
   margin: 0 auto;
 }
 #about-container #about-title {
-  margin-top: 0;
+  margin-top: 50px;
   margin-bottom: 0;
   padding-left: 20px;
-  font-size: 40px;
+  font-size: 2.5em;
 }
 #about-container .about-content {
   display: flex;
@@ -502,7 +484,7 @@ li:nth-of-type(4) .dot:hover:before {
   height: inherit;
 }
 #about-container .about-content .about-div .about-heading {
-  font-size: 40px;
+  font-size: 3vw;
   white-space: nowrap;
   margin: 15px auto;
 }
@@ -524,9 +506,13 @@ li:nth-of-type(4) .dot:hover:before {
   text-align: justify !important;
 }
 #about-container .about-content .about-div .about-top .about-text p {
-  font-size: 40px;
+  font-size: 3vw;
   color: #454ADE;
   padding: 0 5px;
+  margin-top: 20px;
+}
+#about-container .about-content .about-div .about-top .about-text p br {
+  font-size: 1.5vw;
 }
 #about-container .img-overlay {
   width: 100%;
@@ -566,6 +552,7 @@ li:nth-of-type(4) .dot:hover:before {
     height: 400px;
   }
   #about-container .about-content .about-div .about-heading {
+    font-size: 2em;
     margin-top: 0;
     text-align: left;
   }
@@ -582,15 +569,38 @@ li:nth-of-type(4) .dot:hover:before {
   #about-container .about-content .about-div .about-top .about-text p {
     font-size: 3.5vw;
     line-height: 4vw;
+    margin-top: 10px;
   }
   #about-container .about-content .about-div .about-top .about-text p br {
-    display: none;
+    line-height: 1vw;
   }
   #about-container #about-scroll {
     display: block;
   }
   #about-container #about-scroll .scroll-content {
     font-size: 5vw;
+  }
+}
+@media screen and (max-width: 480px) {
+  #about-container .about-content {
+    display: flex;
+    flex-direction: column;
+  }
+  #about-container .about-content .about-div {
+    width: 90%;
+    height: 400px;
+  }
+  #about-container .about-content .about-div .about-top .img-overlay {
+    display: none;
+  }
+  #about-container .about-content .about-div .about-top .about-heading {
+    font-size: 2rem;
+  }
+  #about-container .about-content .about-div .about-top .about-text p {
+    font-size: 1.5rem !important;
+  }
+  #about-container .about-content .about-div .about-top .about-text p br {
+    display: none;
   }
 }
 

@@ -6,10 +6,10 @@
 
   // * PAGE HEADING
   #about-title {
-    margin-top: 0;
+    margin-top: 50px;
     margin-bottom: 0;
     padding-left: 20px;
-    font-size: 40px;
+    font-size: 2.5em;
   }
 
   .about-content {
@@ -26,7 +26,7 @@
 
       // * DIV SUBHEADING
       .about-heading {
-        font-size: 40px;
+        font-size: 3vw;
         white-space: nowrap;
         margin: 15px auto;
 
@@ -52,9 +52,13 @@
           text-align: justify !important;
 
           p {
-            font-size: 40px;
+            font-size: 3vw;
             color: $blue;
             padding: 0 5px;
+            margin-top: 20px;
+            br {
+              font-size: 1.5vw;
+            }
           }
         }
       }
@@ -113,6 +117,7 @@
         height: 400px;
 
         .about-heading {
+          font-size: 2em;
           margin-top: 0;
           text-align: left;
         }
@@ -128,8 +133,10 @@
           .about-text p {
             font-size: 3.5vw;
             line-height: 4vw;
+            margin-top: 10px;
             br {
-              display: none;
+              // display: none;
+              line-height: 1vw;
             }
           }
         }
@@ -145,9 +152,40 @@
     }
   }
 
-  // @media screen and (max-width: ) {
+  // FOR MOBILE
+  @media screen and (max-width: 480px) {
+    // #about-container {
+    //   display: block;
+    // }
+    .about-content {
+      display: flex;
+      flex-direction: column;
 
-  // }
+      .about-div {
+        width: 90%;
+        height: 400px;
+        .about-heading {
+          font-size: 2rem;
+        }
+        .about-top {
+          display: block;
+          
+          .img-overlay {
+            position: relative;
+          }
+
+          .about-text p {
+            font-size: 1.5rem !important;
+            position: relative;
+            // line-height: 4vw;
+            br {
+              display: none;
+            }
+          }
+        }
+      }
+    }
+  }
 
 
   // @media screen and (max-width: 600px) {
